@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+cite,
+time {
+  all: unset;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--white-900);
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  /* COLORS */
+  --black-900: #000000;
+  --black-100: rgba(0, 0, 0, 0.3);
+  --white-900: #ffffff;
+  --white-100: rgba(255, 255, 255, 0.3);
+  --grey-400: #dfdfdf;
+  --red-900: #c91e10;
+  --yellow-900: #f1e500;
+
+  /* SPACING */
+  --p-block-spacing: 2rem;
+  --box-block-padding: 1.5rem;
+  --global-inline-padding: max(2rem, calc((100vw - 1440px) / 2));
+}

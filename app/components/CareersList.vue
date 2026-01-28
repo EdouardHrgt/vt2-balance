@@ -1,0 +1,99 @@
+<template>
+  <nav>
+    <ul>
+      <li v-for="career in careers" :key="career.name" class="tooltip" :data-tooltip="career.name">
+        <NuxtLink :to="`/${career.name}`">
+          <img :src="career.icon" :alt="'icon of ' + career.name" />
+        </NuxtLink>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<script setup>
+import { careers } from '../../data/careers'
+</script>
+
+<style scoped>
+nav {
+  /* background-color: var(--black-100); */
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+li {
+  cursor: pointer;
+  text-align: center;
+}
+
+li img {
+  transition: all 0.3s ease;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+@media (hover: hover) {
+  li:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.08);
+  }
+
+  .tooltip:hover::after {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  ul {
+    gap: 0;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+  }
+  li img {
+  }
+}
+
+@media (max-width: 750px) {
+  li img {
+    width: 5.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  li img {
+    width: 4rem;
+  }
+}
+</style>
