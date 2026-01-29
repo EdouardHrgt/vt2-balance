@@ -1,6 +1,8 @@
 <template>
   <header>
-    <img src="/images/logo.webp" alt="logo Vermintide 2" />
+    <NuxtLink to="/">
+      <img src="/images/logo.webp" alt="logo Vermintide 2" />
+    </NuxtLink>
   </header>
 </template>
 
@@ -10,10 +12,13 @@
 header {
   display: flex;
   align-items: center;
-  background-color: var(--black-100);
-  padding-block: 1rem;
+  padding-top: 1rem;
 }
 
+a {
+  display: block;
+  margin: auto;
+}
 
 img {
   width: 20rem;

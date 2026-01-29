@@ -15,16 +15,13 @@ import { careers } from '../../data/careers'
 </script>
 
 <style scoped>
-nav {
-  /* background-color: var(--black-100); */
-}
 
 ul {
   display: flex;
   align-items: center;
   gap: 3rem;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 li {
@@ -34,11 +31,6 @@ li {
 
 li img {
   transition: all 0.3s ease;
-}
-
-h2 {
-  font-size: 20px;
-  margin-top: 0.5rem;
 }
 
 .tooltip {

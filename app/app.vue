@@ -11,8 +11,8 @@ const backgroundImage = ref('')
 onMounted(() => {
   const images = [
     '/images/shared/vt2-background-1.webp',
-    '/images/shared/vt2-background-2.png',
-    '/images/shared/vt2-background-3.png',
+    '/images/shared/vt2-background-2.webp',
+    '/images/shared/vt2-background-3.webp',
     '/images/shared/vt2-background-4.webp',
   ]
 
