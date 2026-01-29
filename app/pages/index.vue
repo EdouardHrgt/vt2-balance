@@ -1,9 +1,5 @@
 <template>
   <main>
-    <h1>
-      Welcome to The Balance mods Changelogs<br />
-      please choose a career
-    </h1>
     <CareersList />
   </main>
 </template>

@@ -13,7 +13,6 @@ onMounted(() => {
     '/images/shared/vt2-background-1.webp',
     '/images/shared/vt2-background-2.webp',
     '/images/shared/vt2-background-3.webp',
-    '/images/shared/vt2-background-4.webp',
   ]
 
   const randomIndex = Math.floor(Math.random() * images.length)

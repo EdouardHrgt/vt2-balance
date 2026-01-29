@@ -12,7 +12,6 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sed dolores corrupti
               cupiditate ullam. Maxime harum minus
             </p>
-            <pre v-if="modData">{{ modData }}</pre>
           </div>
         </article>
       </section>
@@ -44,7 +43,6 @@ const modFiles = {
 }
 
 const handleModSelection = async (mod) => {
-  console.log('Mod sélected:', mod.label, mod.id)
   modName.value = mod.label
   try {
     const fileName = modFiles[mod.id]
@@ -87,8 +85,8 @@ article {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
