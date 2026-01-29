@@ -8,6 +8,7 @@
       </li>
     </ul>
   </nav>
+  <p>please pick a career to see all changes made by the main rebalance Mods.</p>
 </template>
 
 <script setup>
@@ -20,7 +21,7 @@ ul {
   align-items: center;
   gap: 3rem;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 li {
@@ -49,6 +50,12 @@ li img {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+}
+
+p {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 18px;
 }
 
 @media (hover: hover) {

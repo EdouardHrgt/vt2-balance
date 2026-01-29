@@ -1,9 +1,9 @@
 <template>
   <main v-if="career">
     <h1>{{ career }} : {{ modName }}</h1>
-
-    <ModPicker @modSelected="handleModSelection" />    
-    <div class="articles-container">
+    <ModPicker @modSelected="handleModSelection" />
+    <p class="err" v-if="errorMsg">No Changelogs found for this Mod :c</p>
+    <div class="articles-container" v-if="errorMsg == false">
       <article v-if="modData" v-for="cls in modData.careers" :key="cls" class="blur-box">
         <img :src="cls.icon" :alt="'picture of ' + cls.name" />
 
@@ -28,13 +28,13 @@
       </article>
     </div>
 
-    <section class="weapons blur-box" @click="openModal" v-if="modData.weapons?.length">
+    <!-- <section class="weapons blur-box" @click="openModal" v-if="modData.weapons">
       <h2>Weapons: <span class="click-hint">(Click to expand)</span></h2>
       <ul v-for="weapon in modData.weapons" :key="weapon.name">
         <h3>{{ weapon.name }} :</h3>
         <li v-for="wpc in weapon.changes">{{ wpc }}</li>
       </ul>
-    </section>
+    </section> -->
 
     <Transition name="modal">
       <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
@@ -60,6 +60,7 @@ const career = ref(route.params.career)
 const modData = ref(null)
 const modName = ref('Core Balance')
 const isModalOpen = ref(false)
+const errorMsg = ref(false)
 
 const modFiles = {
   1: 'tourney-balance.json',
@@ -84,13 +85,16 @@ const loadModData = async (fileName) => {
 
     if (!response.ok) {
       throw new Error(`Error while loading of : ${fileName}`)
+      errorMsg.value = true
     }
 
     const jsonData = await response.json()
     modData.value = jsonData[career.value] || null
+    errorMsg.value = false
   } catch (error) {
     console.error('Error:', error)
     modData.value = null
+    errorMsg.value = true
   }
 }
 
@@ -102,14 +106,17 @@ const handleModSelection = async (mod) => {
 
     if (!response.ok) {
       throw new Error(`Error while loading of : ${fileName}`)
+      errorMsg.value = true
     }
 
     const jsonData = await response.json()
 
     modData.value = jsonData[career.value] || null
+    errorMsg.value = false
   } catch (error) {
     console.error('Error:', error)
     modData.value = null
+    errorMsg.value = true
   }
 }
 
@@ -125,6 +132,7 @@ main {
   grid-template-columns: 1fr 500px;
   gap: 2rem;
   align-items: start;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -208,8 +216,16 @@ li p {
 
 .err {
   text-align: center;
-  width: 100%;
-  color: rgb(91, 255, 99);
+  color: rgb(253, 215, 0);
+  background-color: rgba(255, 0, 0, 0.315);
+  margin-inline: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding-block: 5rem;
+  transform: translateY(-50%);
 }
 
 .weapons li {

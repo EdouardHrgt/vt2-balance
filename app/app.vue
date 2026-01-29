@@ -24,7 +24,10 @@ onMounted(() => {
 .page {
   width: 100%;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-bottom: 1rem;
 }
 </style>
