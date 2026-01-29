@@ -2,205 +2,166 @@
   "kruber": {
     "careers": {
       "mercenary": {
-        "passives": [""],
-        "talents": {
-          "10": [
-            {
-              "name": "limb-splitter",
-              "changes": ["now 100% instead of 50%"]
-            },
-            {
-              "name": "hellborg's tutelage",
-              "changes": ["now allows crits"]
-            }
-          ],
-          "15": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "20": [
-            {
-              "name": "reikland reaper",
-              "changes": ["gives 20% power"]
-            },
-            {
-              "name": "enhanced training",
-              "changes": ["only needs 1 target to trigger"]
-            }
-          ],
-          "25": [
-            {
-              "name": "Stand Clear",
-              "changes": ["also grants infinite effective dodges"]
-            },
-            {
-              "name": "black market",
-              "changes": ["receive 2.5% ammo on elite melee kills"]
-            }
-          ],
-          "30": [
-            {
-              "name": "On yer feet",
-              "changes": ["now gives 70% dr to players that get revived"]
-            }
-          ]
-        }
+        "name": "mercenary",
+        "icon": "/images/kruber/kruber-mercenary.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "limb-splitter",
+            "level": 10,
+            "changes": ["now 100% instead of 50%"]
+          },
+          {
+            "name": "hellborg's tutelage",
+            "level": 10,
+            "changes": ["now allows crits"]
+          },
+          {
+            "name": "reikland reaper",
+            "level": 20,
+            "changes": ["gives 20% power"]
+          },
+          {
+            "name": "enhanced training",
+            "level": 20,
+            "changes": ["only needs 1 target to trigger"]
+          },
+          {
+            "name": "Stand Clear",
+            "level": 25,
+            "changes": ["also grants infinite effective dodges"]
+          },
+          {
+            "name": "black market",
+            "level": 25,
+            "changes": ["receive 2.5% ammo on elite melee kills"]
+          },
+
+          {
+            "name": "On yer feet",
+            "level": 30,
+            "changes": ["now gives 70% dr to players that get revived"]
+          }
+        ]
       },
       "huntsman": {
+        "name": "huntsman",
+        "icon": "/images/kruber/kruber-huntsman.webp",
         "passives": [
           "aura range increased to 10",
           "aura now gives 1 ammo on headshot instead of 5% crit",
           "now has 15% increased reload passive",
           "now has a passive that gives 10% ammo on special kill"
         ],
-        "talents": {
-          "10": [
-            {
-              "name": "make ‘em bleed",
-              "changes": [
-                "is replaced with Haste. Every ranged hit has a 10% chance to activate Haste. When Haste is active you gain 40% attack speed and your reloads don’t consume ammo for 7 seconds."
-              ]
-            }
-          ],
-          "15": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "20": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "25": [
-            {
-              "name": "shot crafter",
-              "changes": ["now bleeds enemies hit by melee attacks"]
-            },
-            {
-              "name": "thick Hide",
-              "changes": ["now gives 5% dr for 15 seconds on elite/special kill. Max stacks of 4"]
-            },
-            {
-              "name": "longshanks",
-              "changes": [
-                "is replaced with a talent that removes aim punch/makes shots pinpoint accurate. See blunderbuss for some interesting side effects (mostly its a bit jank ok)"
-              ]
-            }
-          ],
-          "30": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ]
-        }
+        "talents": [
+          {
+            "name": "make 'em bleed",
+            "level": 10,
+            "changes": [
+              "is replaced with Haste. Every ranged hit has a 10% chance to activate Haste. When Haste is active you gain 40% attack speed and your reloads don't consume ammo for 7 seconds."
+            ]
+          },
+          {
+            "name": "shot crafter",
+            "level": 25,
+            "changes": ["now bleeds enemies hit by melee attacks"]
+          },
+          {
+            "name": "thick Hide",
+            "level": 25,
+            "changes": ["now gives 5% dr for 15 seconds on elite/special kill. Max stacks of 4"]
+          },
+          {
+            "name": "longshanks",
+            "level": 25,
+            "changes": [
+              "is replaced with a talent that removes aim punch/makes shots pinpoint accurate. See blunderbuss for some interesting side effects (mostly its a bit jank ok)"
+            ]
+          }
+        ]
       },
       "foot-knight": {
+        "name": "foot knight",
+        "icon": "/images/kruber/kruber-foot-knight.webp",
         "passives": [
           "aura size is now 20",
           "aura dr lowered to 10%",
           "cd on getting hit from 0.5 to 0.35",
           "ult cooldown increased to 40 seconds"
         ],
-        "talents": {
-          "10": [
-            {
-              "name": "Have at Thee!",
-              "changes": ["Duration 10 -> 15"]
-            },
-            {
-              "name": "Crowd Clearer",
-              "changes": ["Duration 3 -> 5"]
-            }
-          ],
-          "15": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "20": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "25": [
-            {
-              "name": "Inspiring Blow",
-              "changes": [
-                "Now gives 200% cooldown regen for 1.5 seconds. Only applies to Footknight"
-              ]
-            },
-            {
-              "name": "It’s Hero Time",
-              "changes": ["Make its so going from 1 -> 2 Incapacitated and up also gives ult back"]
-            }
-          ],
-          "30": [
-            {
-              "name": "Numb to Pain",
-              "changes": ["Also grants immunity to disablers and duration increased to 4 seconds."]
-            },
-            {
-              "name": "Wide Charge",
-              "changes": ["50% Increase in Power of Melee attacks for 6 seconds"]
-            }
-          ]
-        }
+        "talents": [
+          {
+            "name": "Have at Thee!",
+            "level": 10,
+            "changes": ["Duration 10 -> 15"]
+          },
+          {
+            "name": "Crowd Clearer",
+            "level": 10,
+            "changes": ["Duration 3 -> 5"]
+          },
+          {
+            "name": "Inspiring Blow",
+            "level": 25,
+            "changes": ["Now gives 200% cooldown regen for 1.5 seconds. Only applies to Footknight"]
+          },
+          {
+            "name": "It's Hero Time",
+            "level": 25,
+            "changes": ["Make its so going from 1 -> 2 Incapacitated and up also gives ult back"]
+          },
+          {
+            "name": "Numb to Pain",
+            "level": 30,
+            "changes": ["Also grants immunity to disablers and duration increased to 4 seconds."]
+          },
+          {
+            "name": "Wide Charge",
+            "level": 30,
+            "changes": ["50% Increase in Power of Melee attacks for 6 seconds"]
+          }
+        ]
       },
       "grail-knight": {
+        "name": "grail knight",
+        "icon": "/images/kruber/kruber-grail-knight.webp",
         "passives": [
           "Lowered cleave on base and stab from 0.3 to 0.2",
           "Increased cleave on swipe ult from 0.5 to 0.75",
           "Halved boss damage on ult",
           "Increased headshot coefficient from 0.5 to 1"
         ],
-        "talents": {
-          "10": [
-            {
-              "name": "Knightly temper",
-              "changes": ["now also gives 10% crit chance"]
-            },
-            {
-              "name": "Heroism",
-              "changes": [
-                "now increases your damage against first targets to 70% (From the passive 25%) (It's not as good as you think)"
-              ]
-            }
-          ],
-          "15": [
-            {
-              "name": "",
-              "changes": ["", "", ""]
-            }
-          ],
-          "20": [
-            {
-              "name": "Penitent",
-              "changes": [" now scales with cata 2 and 3. Gives 250 on cata 2 and 300 on cata 3"]
-            }
-          ],
-          "25": [
-            {
-              "name": "Virtue of Discipline",
-              "changes": ["Increases dodge range by 20%% and grants infinite effective dodges."]
-            }
-          ],
-          "30": [
-            {
-              "name": "Virtue of the Impetuous Knight",
-              "changes": [
-                "now also gives immunity to ranged knock back like ratilings. Has a cooldown reduction of 30%"
-              ]
-            }
-          ]
-        }
+        "talents": [
+          {
+            "name": "Knightly temper",
+            "level": 10,
+            "changes": ["now also gives 10% crit chance"]
+          },
+          {
+            "name": "Heroism",
+            "level": 10,
+            "changes": [
+              "now increases your damage against first targets to 70% (From the passive 25%) (It's not as good as you think)"
+            ]
+          },
+          {
+            "name": "Penitent",
+            "level": 20,
+            "changes": [" now scales with cata 2 and 3. Gives 250 on cata 2 and 300 on cata 3"]
+          },
+          {
+            "name": "Virtue of Discipline",
+            "level": 25,
+            "changes": ["Increases dodge range by 20%% and grants infinite effective dodges."]
+          },
+          {
+            "name": "Virtue of the Impetuous Knight",
+            "level": 30,
+            "changes": [
+              "now also gives immunity to ranged knock back like ratilings. Has a cooldown reduction of 30%"
+            ]
+          }
+        ]
       }
     },
     "weapons": [

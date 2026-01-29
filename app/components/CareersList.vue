@@ -15,7 +15,6 @@ import { careers } from '../../data/careers'
 </script>
 
 <style scoped>
-
 ul {
   display: flex;
   align-items: center;

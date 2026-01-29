@@ -83,7 +83,7 @@ li {
   --black-100: rgba(0, 0, 0, 0.3);
   --white-900: #ffffff;
   --white-100: rgba(255, 255, 255, 0.3);
-  --grey-400: #dfdfdf;
+  --grey-400: #e6d4bf;
   --red-900: #c91e10;
   --yellow-900: #f1e500;
 
@@ -91,4 +91,19 @@ li {
   --p-block-spacing: 2rem;
   --box-block-padding: 1.5rem;
   --global-inline-padding: max(2rem, calc((100vw - 1440px) / 2));
+}
+
+.blur-box {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 750px) {
+ .blur-box {
+  padding: 1rem;
+} 
 }
