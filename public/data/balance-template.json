@@ -1,0 +1,55 @@
+{
+  "kruber": {
+    "careers": {
+      "mercenary": {
+        "name": "mercenary",
+        "icon": "/images/kruber/kruber-mercenary.webp",
+        "passives": ["passive change 1", "passive change 2"],
+        "talents": [
+          {
+            "name": "talent name",
+            "level": 10,
+            "changes": ["talent change 1", "talent change 2"]
+          },
+          {
+            "name": "another talent",
+            "level": 15,
+            "changes": ["talent change 1", "talent change 2"]
+          }
+        ]
+      },
+      "huntsman": {
+        "name": "huntsman",
+        "icon": "/images/kruber/kruber-huntsman.webp",
+        "passives": [],
+        "talents": []
+      },
+      "foot-knight": {
+        "name": "foot knight",
+        "icon": "/images/kruber/kruber-foot-knight.webp",
+        "passives": [],
+        "talents": []
+      },
+      "grail-knight": {
+        "name": "grail knight",
+        "icon": "/images/kruber/kruber-grail-knight.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "weapon name",
+        "changes": [
+          "light 1: description of the change",
+          "light 2: description of the change",
+          "Heavy 3: description of the change"
+        ]
+      },
+      {
+        "name": "another weapon ",
+        "changes": ["light 1: description of the change"]
+      }
+    ]
+  }
+}
