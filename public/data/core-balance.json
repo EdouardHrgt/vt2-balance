@@ -846,28 +846,148 @@
   "sienna": {
     "careers": {
       "battle-wizard": {
-        "name": "",
-        "icon": "",
-        "passives": [],
-        "talents": []
+        "name": "battle wizard",
+        "icon": "/images/sienna/sienna-battle-wizard.webp",
+        "passives": [
+          "Ultimate changes: The teleport is instant again. No longer a dash with invis but an actual teleport."
+        ],
+        "talents": [
+          {
+            "name": "Famished",
+            "level": 10,
+            "changes": ["Lowered increased burn damage to 100%. Removed negative effect"]
+          },
+          {
+            "name": "Centred",
+            "level": 20,
+            "changes": ["Now gives 10% attack speed when tranquillity is active."]
+          },
+          {
+            "name": "Soot Shield",
+            "level": 25,
+            "changes": ["Now max stacks of 4 and 5% dr per stack"]
+          },
+          {
+            "name": "Kaboom",
+            "level": 30,
+            "changes": ["Gave it a bit of direct damage"]
+          },
+          {
+            "name": "Burnout",
+            "level": 30,
+            "changes": ["Increased cooldown duration of ult to 60 seconds"]
+          }
+        ]
       },
       "pyromancer": {
-        "name": "",
-        "icon": "",
-        "passives": [],
-        "talents": []
+        "name": "pyromancer",
+        "icon": "/images/sienna/sienna-pyromancer.webp",
+        "passives": [
+          "No longer slowed by overcharge",
+          "Ultimate Changes: Increased cleave and damage of the ult and added an explosion on impact. Ult cooldown lowered to 40 seconds"
+        ],
+        "talents": [
+          {
+            "name": "Ride the Fire Wind",
+            "level": 10,
+            "changes": ["Minimum stacks it can drop to is 10 instead of 1"]
+          },
+          {
+            "name": "Martial Study",
+            "level": 10,
+            "changes": ["Now removes 10 overcharge per melee kill."]
+          },
+          {
+            "name": "Spirit Casting",
+            "level": 10,
+            "changes": [
+              "Now gives 1 stack of 5% crit if above 50% health. 2 stacks if above 65% and 3 stacks if above 80%"
+            ]
+          },
+          {
+            "name": "The Volans Doctrine",
+            "level": 25,
+            "changes": ["Now grants heat sink"]
+          },
+          {
+            "name": "Fleetflame",
+            "level": 25,
+            "changes": [
+              "Venting no longer causes damage but the rate of venting is decreased by 50%."
+            ]
+          },
+          {
+            "name": "Exhaust",
+            "level": 30,
+            "changes": ["now also gives a 15 crit chance buff for 10 seconds."]
+          },
+          {
+            "name": "Bonded Flame",
+            "level": 30,
+            "changes": ["now gives 20 thp instead of 35."]
+          }
+        ]
       },
       "unchained": {
-        "name": "",
-        "icon": "",
-        "passives": [],
-        "talents": []
-      },
-      "necromancer": {
-        "name": "",
-        "icon": "",
-        "passives": [],
-        "talents": []
+        "name": "unchained",
+        "icon": "/images/sienna/sienna-unchained.webp",
+        "passives": [
+          "Abandon now a passive",
+          "Passive no longer works on aoe effects like gas, warp and ratlings.",
+          "Melee power only increases to a max of 45%",
+          "No longer generates overcharge from friendly fire damage taken"
+        ],
+        "talents": [
+          {
+            "name": "Flaming Weapons",
+            "level": 10,
+            "changes": ["Hitting 7 headshots causes your melee attacks to apply a burn "]
+          },
+          {
+            "name": "Outburst",
+            "level": 10,
+            "changes": ["Killing elites and specials in melee causes your next kill to explode."]
+          },
+          {
+            "name": "Chain Reaction",
+            "level": 10,
+            "changes": [
+              "100% proc chance and applies a long lasting and low damage burn in an aoe."
+            ]
+          },
+          {
+            "name": "Dissipate",
+            "level": 20,
+            "changes": ["Now Frenzied Flame"]
+          },
+          {
+            "name": "Conduit",
+            "level": 20,
+            "changes": [
+              "Killing burning enemies in melee increases your max health by 3% for 10 seconds. Stacks 10 times."
+            ]
+          },
+          {
+            "name": "Abandon",
+            "level": 25,
+            "changes": ["Now Dissipate"]
+          },
+          {
+            "name": "Natural Talent",
+            "level": 25,
+            "changes": ["Now deals damage to enemies around you if you take damage."]
+          },
+          {
+            "name": "Fuel for the fire",
+            "level": 30,
+            "changes": ["Now reduces cd of ult by 40%"]
+          },
+          {
+            "name": "Wildfire",
+            "level": 30,
+            "changes": ["Now also has the effects of Fuel for the fire"]
+          }
+        ]
       }
     },
     "weapons": []
