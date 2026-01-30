@@ -477,7 +477,77 @@
           }
         ]
       }
-    }
+    },
+    "weapons": [
+      {
+        "name": "1h Hammer",
+        "changes": [
+          "Gave it a dodge count of 4",
+          "Light 1,2 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2,Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
+          "Light 3,4: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
+          "Heavy: Increased range by 20%, Super armour damage is now equal to infantry damage, Damage multiplier against monsters improved from 1.75 to 2.5"
+        ]
+      },
+      {
+        "name": "2h Hammer",
+        "changes": [
+          "lights: Increased monster damage from 2.5 to 3",
+          "light 3: Sped up by a lot and gave 1hhammer light 1 and 2 damage profile, added 10% crit chance",
+          "Heavies: Added shield break, Increased damage cleave from 0.3 to 0.5, Increased the damage on the first and second target, Now deals damage to armour on the second target, Lowered zerker damage on the first 2 targets from 0.6 to 0.5, Lowered armour damage on the first 2 targets from 0.5 to 0.3",
+          "Push attack: Gave it the same profile as 1h hammer light 1 and 2 damage profile and sped it up by a lot"
+        ]
+      },
+      {
+        "name": "1h Axe",
+        "changes": [
+          "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 3 by 20%",
+          "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%"
+        ]
+      },
+      {
+        "name": "War Pick",
+        "changes": [
+          "lights: Now have the same damage profile as Bret sword 1, Increased attack speed by ~10%",
+          "Heavy: Sped up by ~20%",
+          "Heavy charged: Added 100% crit chance, Boost curve coefficient headshot increased to 1.5 from 1, Power Distribution attack lowered from 1.2 to 0.8, Increased monster damage from 1.5 to 2.5",
+          "Push Attack: Now uses new custom Cog Hammer light damage profile with shield breaking."
+        ]
+      },
+      {
+        "name": "Great Axe",
+        "changes": ["Heavies: Now have armour sliding and Heavy linesman (Instead of linesman)"]
+      },
+      {
+        "name": "Cog Hammer",
+        "changes": [
+          "light 1 and 2 slightly slower",
+          "light 3 and 4 additional crit chance",
+          "Push attack Sped up by 20%"
+        ]
+      },
+      {
+        "name": "Dual Axes:",
+        "changes": [
+          "Push: Is now a light push and costs 1 stamina instead of 2",
+          "Heavies: Slowed down first heavy slightly, Sped up second heavy slightly, Gave heavy 3 20% crit chance"
+        ]
+      },
+      {
+        "name": "Hammer and Shield",
+        "changes": [
+          "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light",
+          "Light 3 and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
+          "Heavy 3: Now has the same damage profile as tuskgor heavy"
+        ]
+      },
+      {
+        "name": "Axe and Shield",
+        "changes": [
+          "lights and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
+          "Heavy 3: Buffed damage by ~10% against the first target bigger buff against later targets"
+        ]
+      }
+    ]
   },
   "kerillian": {
     "careers": {
@@ -645,7 +715,67 @@
           }
         ]
       }
-    }
+    },
+    "weapons": [
+      {
+        "name": "1h Axe",
+        "changes": [
+          "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
+          "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%"
+        ]
+      },
+      {
+        "name": "Glaive",
+        "changes": [
+          "lights and push attack: Increased the damage the attack does to targets 2 and 3",
+          "Heavy 1: Added 100% crit chance",
+          "Heavy 2: Increased overall damage by ~10%, Increased damage against armour and super armour by ~20%, Increased monster damage by ~40%"
+        ]
+      },
+      {
+        "name": "1h Sword",
+        "changes": [
+          "light 1,2: Buffed infantry damage by 20%",
+          "light 3: Buffed damage by ~15%",
+          "Lowered action delay from 0.65 to 0.5 (Less time stuck after last light basically)",
+          "Heavy 3 (Sweep): Gave it greatsword light damage profile"
+        ]
+      },
+      {
+        "name": "Sword and Dagger",
+        "changes": [
+          "Heavy 1: Increased armour damage by ~10%, Increased damage by ~15% on all targets, Slowed down attack by ~15%",
+          "Heavy 2: Removed 10% crit chance",
+          "Push attack: Removed 10% crit chance"
+        ]
+      },
+      {
+        "name": "Dual Swords:",
+        "changes": [
+          "Heavies: Increased armour damage by ~10%, Increased damage by ~15% on all targets, Slowed down heavy 1 by ~10%, Sped up Heavy 2 by ~15%"
+        ]
+      },
+      {
+        "name": "2h Sword",
+        "changes": [
+          "Lights: Sped up by ~20%",
+          "Push attack: Slowed down attack by ~25%",
+          "Heavy 1: Increased armour damage by ~25%, Sped up attack by ~15%, Increased headshot boost from 1.5 to 2, Reduced move speed bonus slightly",
+          "Heavy 2: Sped up by ~30%, Increased damage to all targets"
+        ]
+      },
+      {
+        "name": "Elf Spear:",
+        "changes": [
+          "Light 3 and push attack: Reduced crit/headshot damage drastically (40%)",
+          "Heavy 1: Increased damage and made the damage spread more even"
+        ]
+      },
+      {
+        "name": "Spear and Shield",
+        "changes": ["Light 1 now chains into heavy 3", "Heavy 3: Increased damage by ~10%"]
+      }
+    ]
   },
   "saltzpyre": {
     "careers": {
@@ -841,7 +971,101 @@
         ]
       }
     },
-    "weapons": []
+    "weapons": [
+      {
+        "name": "1h Hammer",
+        "changes": [
+          "Gave it a dodge count of 4",
+          "Light 1,2 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
+          "Light 3,4: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
+          "Heavy: Increased range by 20%, Super armour damage is now equal to infantry damage, Damage multiplier against monsters improved from 1.75 to 2.5"
+        ]
+      },
+      {
+        "name": "1h Axe",
+        "changes": [
+          "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3,Sped up light 3 by 20%",
+          "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%",
+          "Warrior Priest now has access"
+        ]
+      },
+      {
+        "name": "2h Sword",
+        "changes": [
+          "Lights: Increased headshot coefficient to 2 from 1.5, Increased stagger cleave by ~20%, Increased damage by 20%",
+          "Push attack: Sped up by 15%",
+          "Heavy: Increased the damage targets 2 and up receive, Lowered zerker damage from 1 to 0.6, Lowered armour damage against first target from 0.3 to 0.25, Lowered armour damage against second target from 0.4 to 0.2",
+          "Warrior Priest now has access"
+        ]
+      },
+      {
+        "name": "Flail",
+        "changes": [
+          "Light 1,2: Increased damage by ~20%",
+          "Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.2, Damage multiplier against monsters improved from 2.5 to 3",
+          "Heavy 1 now chains into light 3 and 4",
+          "Push attack now chains into light 1 and 2"
+        ]
+      },
+      {
+        "name": "Flail & Shield",
+        "changes": [
+          "Reduced dodge distance from 15% to 0",
+          "light 1,2: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Removed Tank",
+          "Light 4,5: Increased damage by ~20%, Added Tank"
+        ]
+      },
+      {
+        "name": "Falchion:",
+        "changes": [
+          "light 1,2 and push attack: Increased headshot damage on lights, Increased damage by 20%",
+          "light 3: Can now chain into light 3 from heavy 2",
+          "Heavies: Now use a ninja curve instead of a smiter curve",
+          "Warrior Priest now has access"
+        ]
+      },
+      {
+        "name": "Hammer and Tome:",
+        "changes": [
+          "Lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up by ~10%",
+          "Push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
+          "Charge time doubled",
+          "Heavy 1 charged: Doubled duration of dash allowing you to cover more distance",
+          "Heavy 2 charged: Increased range by 20%, Greatly increased damage, stagger of the explosion"
+        ]
+      },
+      {
+        "name": "Axe and Falchion:",
+        "changes": [
+          "Axe lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
+          "Falchion Lights and push attack: Increased headshot damage on lights 2 and 3, Increased damage by 20%",
+          "Warrior Priest now has access"
+        ]
+      },
+      {
+        "name": "Billhook:",
+        "changes": [
+          "light 1 and 3: Increased damage by ~20%",
+          "Light 2 and push attack: Reduced crit/headshot damage drastically (40%)"
+        ]
+      },
+      {
+        "name": "Hammer and Shield",
+        "changes": [
+          "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light",
+          "Light 3 and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
+          "Heavy 3: Now has the same damage profile as tuskgor heavy"
+        ]
+      },
+      {
+        "name": "Holy Great Hammer",
+        "changes": [
+          "Light 1,2: Sped up animation by 10%",
+          "Light 3: Now has Bret light 1 profile",
+          "Heavy 1: Now has shield breaking"
+        ]
+      }
+    ]
   },
   "sienna": {
     "careers": {
@@ -990,6 +1214,55 @@
         ]
       }
     },
-    "weapons": []
+    "weapons": [
+      {
+        "name": "1h Sword",
+        "changes": [
+          "Gave it a dodge count of 4",
+          "light 1 and 2: Changed headshot curve from smiter to ninja. This increases the headshot damage and critdamage but the headshot + crit damage is the same as before. Increased base damage by ~20%",
+          "light 3: Added shield break, Increased range by 20%",
+          "Heavy: Reduced cleave, Increased armour damage from 0.5 to 0.75, Increased range by 20%, Increased damage against target 1 from 0.3 to 0.4, Increased damage against target 2 from 0.1 to 0.2"
+        ]
+      },
+      {
+        "name": "Mace",
+        "changes": [
+          "Light 3,4 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light, Sped up light 4 by ~20%,Sped up push attack by ~15%",
+          "Light 1,2: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)"
+        ]
+      },
+      {
+        "name": "Dagger",
+        "changes": ["Push attack now chains into heavy 2"]
+      },
+      {
+        "name": "Flaming Flail",
+        "changes": [
+          "Light 1,2: Increased damage by ~20%, Added Tank",
+          "Light 3,4: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
+          "Heavy 1: Slowed down heavy by ~10%, Increased damage by ~15%, Lowered damage of the explosion by 50%, Lowered stagger from the heavy form 0.95 to 0.375, Lowered stagger from the explosion from 0.5 to 0.375"
+        ]
+      },
+      {
+        "name": "Crowbill",
+        "changes": [
+          "lights and push attack: Buffed overall damage by ~30%, Buffed damage against infantry by ~60%, Doubled monster damage on light 4",
+          "Heavies: Buffed damage by ~15%, Added 10% crit chance"
+        ]
+      },
+      {
+        "name": "Fire Sword",
+        "changes": [
+          "Gave it a dodge count of 4",
+          "Reduced amount of burn ticks on heavy aoe from ~3 to ~1. Now same as dagger bash (Bit rng how many ticks)",
+          "Buffed direct damage and stagger on heavy",
+          "light 3 now ignores shields",
+          "light 3 now chains into Heavy 2",
+          "Heavy 2 damage buffed significantly especially against armour",
+          "light 1 and 2 now have the same damage profile as 1h sword (Still lack linesman)",
+          "Sped up lights by 10%"
+        ]
+      }
+    ]
   }
 }
