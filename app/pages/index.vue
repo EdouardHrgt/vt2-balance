@@ -9,7 +9,7 @@ onMounted(() => {
   if (!hasClosedPopup) {
     setTimeout(() => {
       showPopup.value = true
-    }, 900)
+    }, 700)
   }
 })
 
@@ -169,12 +169,9 @@ span {
   }
   p {
     max-width: 100%;
-    color: var(--white-900);
     text-align: center;
   }
-  strong {
-    color: var(--grey-400);
-  }
+
   button {
     margin-inline: auto;
   }
