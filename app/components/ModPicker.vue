@@ -43,6 +43,7 @@ div {
 
 p {
   text-transform: capitalize;
+  font-size: 20px;
 }
 
 @media (hover: hover) {

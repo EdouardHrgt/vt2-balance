@@ -4,7 +4,7 @@
       "mercenary": {
         "name": "mercenary",
         "icon": "/images/kruber/kruber-mercenary.webp",
-        "passives": ["", ""],
+        "passives": [],
         "talents": [
           {
             "name": "Helborg’s Tutelage",
@@ -245,7 +245,7 @@
           {
             "name": "Surprise Guest",
             "level": 30,
-            "changes": ["In addition - 30% CDR added."]
+            "changes": ["In addition: 30% CDR added."]
           }
         ]
       },
@@ -292,6 +292,7 @@
       "outcast-engineer": {
         "name": "outcast engineer",
         "icon": "/images/bardin/bardin-outcast-engineer.webp",
+        "untouched": true,
         "passives": [],
         "talents": []
       }
@@ -469,7 +470,7 @@
         "icon": "/images/kerillian/kerillian-shade.webp",
         "passives": [
           "Blur: Parry window increased by 50% (from 0.5 to 0.75).",
-          "Ultimate (Infiltrate): Duration reduced by 50% (from 5 to 2.5 seconds), Damage against monsters increased by ~15%"
+          "Ultimate (Infiltrate): Duration reduced by 50% (from 5 to 2.5 seconds), Damage against monsters increased by ~15%."
         ],
         "talents": [
           {
