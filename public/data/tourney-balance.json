@@ -1,0 +1,923 @@
+{
+  "kruber": {
+    "careers": {
+      "mercenary": {
+        "name": "mercenary",
+        "icon": "/images/kruber/kruber-mercenary.webp",
+        "passives": ["", ""],
+        "talents": [
+          {
+            "name": "Helborg’s Tutelage",
+            "level": 10,
+            "changes": ["No longer prevents random crits from occurring."]
+          },
+          {
+            "name": "Enhanced Training",
+            "level": 20,
+            "changes": ["Target requirement decreased from 4 to 3."]
+          }
+        ]
+      },
+      "huntsman": {
+        "name": "huntsman",
+        "icon": "/images/kruber/kruber-huntsman.webp",
+        "passives": [
+          "Call Out Weakness: Range (radius) of aura increased from 5 to 20.",
+          "Poacher's Mark: Reload Speed increased by 15% (moved from Ult).",
+          "Ultimate : CD decreased from 90s to 75s, Reload Speed bonus decreased from 40% to 25% (i.e. 15% moved to passive)."
+        ],
+        "talents": [
+          {
+            "name": "Burst of Enthusiasm",
+            "level": 20,
+            "changes": [
+              "Changed from THP on ranged Headshot/Crit to THP on ranged kill with the THP being 25% of Kill THP (Bloodlust) Value."
+            ]
+          },
+          {
+            "name": "Longshanks",
+            "level": 25,
+            "changes": [
+              "Replaced: Ranged weapons, except blunderbuss, have pinpoint accuracy and no 'Aim Punch'."
+            ]
+          }
+        ]
+      },
+      "foot-knight": {
+        "name": "foot knight",
+        "icon": "/images/kruber/kruber-foot-knight.webp",
+        "passives": [
+          "CDR from Damage Taken: Decreased from 0.5 to 0.35.",
+          "Protective Presence: Aura DR decreased from 15% to 10%, Range (radius) of Aura increased from 5 to 20.",
+          "Ultimate: CD increased from 30s to 40s, Cleave of baseline ult (not battering ram) increased by 100% (from 2 to 4), Ending explosion radius of baseline ult (not battering ram) increased by ~33%."
+        ],
+        "talents": [
+          {
+            "name": "Have at Thee!",
+            "level": 10,
+            "changes": ["Duration increased from 10s to 15s."]
+          },
+          {
+            "name": "Crowd Clearer",
+            "level": 10,
+            "changes": ["Duration increased from 3s to 5s."]
+          },
+          {
+            "name": "Staggering Force",
+            "level": 10,
+            "changes": ["Additional Stagger Power decreased from 35% to 20%."]
+          },
+          {
+            "name": "It's Hero Time",
+            "level": 25,
+            "changes": [
+              "CDR decreased from 100% to 70%.",
+              "If someone is already incapacitated, the default talent does not trigger if a 2nd person becomes incapacitated; it now does so."
+            ]
+          },
+          {
+            "name": "Inspiring Blow",
+            "level": 25,
+            "changes": [
+              "Only affects FK, not allies.",
+              "Duration increased from 0.5s to 1.5s.",
+              "Bonus cooldown regeneration increased from 100% to 200%."
+            ]
+          }
+        ]
+      },
+      "grail-knight": {
+        "name": "grail knight",
+        "icon": "/images/kruber/kruber-grail-knight.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "Virtue of Knightly Temper",
+            "level": 10,
+            "changes": [
+              "Required HP threshold to crit insta kill changed from 4x damage dealt to 3x damage dealt (i.e. must deal more damage to trigger)."
+            ]
+          },
+          {
+            "name": "Virtue of the Penitent",
+            "level": 20,
+            "changes": ["Now requires 500 kills per strength potion on Cata 3."]
+          },
+          {
+            "name": "Virtue of the Impetuous Knight",
+            "level": 30,
+            "changes": ["Duration increased from 15s to 25s.", "In addition, 30% CDR added."]
+          },
+          {
+            "name": "Virtue of Confidence",
+            "level": 30,
+            "changes": [
+              "Damage Cleave lowered to 0.5 from infinite.",
+              "Heavy Linesman added.",
+              "Hitbox starts at 0.05s instead of 0.15s into animation."
+            ]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "Bretonnian Longsword",
+        "changes": [
+          "Light 2: Damage on 2nd Target increased by 60%, Damage on 3rd Target increased by 50%.",
+          "Heavies 1 and 2: Damage Cleave increased by 30%, Stagger Cleave increased by 30%."
+        ]
+      },
+      {
+        "name": "Great Hammer",
+        "changes": [
+          "Push Attack: Non-Crit Infantry Damage increased by 50%.",
+          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
+        ]
+      },
+      {
+        "name": "Greatsword",
+        "changes": [
+          "Lights: Finesse Coefficient increased by ~33%, Damage Cleave increased by ~14%, Damage on 1st Target increased by 10%, Damage on 2nd Target decreased by 10%, Damage on 3rd Target increased by ~17%.",
+          "Push Attack: Attack Speed increased by ~14%, Damage decreased by 50%, Stagger decreased by 20%,  Non-Crit Infantry Damage increased by 25%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by 60%, Infantry Crit Multiplier increased by 25%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%, Heavies Damage on 1st Target decreased by 10%, Damage on 2nd Target increased by ~14%, Damage on 4th Target decreased by ~17%, Damage on 5th Target and above increased by 40%, Non-Crit Armor Damage on 1st Target decreased by ~17%, Non-Crit Armor Damage on 2nd Target decreased by ~33%, Non-Crit Zerker Damage decreased by ~40%."
+        ]
+      },
+      {
+        "name": "Halberd",
+        "changes": [
+          "Overall, damage is increased and spread more evenly across attacks.",
+          "Light 1: Damage Cleave increased by ~45%, Non-Crit Infantry Damage increased by 25%, Damage on 2nd Target increased by 50%, Damage on 3rd Target increased by 50%.",
+          "Light 2: Damage increased by 25%, Non-Crit Armor Damage increased by 180%, Armor Crit Multiplier increased by 100%.",
+          "Light 3 and Push Attack: Finesse Coefficient increased by 50%, Headshot/Crit Curve changed from Smiter to Ninja (higher headshot or crit damage, but the same headshot crit damage), Non-Crit Armor and Super Armor Damage decreased by 5%, Armor and Super Armor Crit Multipliers decreased by 5%.",
+          "Heavy 1: Non-Crit Armor Damage increased by ~24%, Armor Crit Multiplier increased by 12%.",
+          "Heavy 2: Damage increased by 38%, Non-Crit Infantry Damage increased by 15%, Time to chain into attack from L1 decreased from 0.65 to 0.5."
+        ]
+      },
+      {
+        "name": "Mace & Sword",
+        "changes": [
+          "Light 1 and 2 (Mace): Damage profile changed to be similar to L1/L2 of Kruber 1H Mace,  Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Tank added, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
+          "Light 3 and 4 (Sword): Damage profile changed to be similar to L1/L2 of Kruber 1H Sword, Damage increased by ~20%, Finesse Coefficient increased by ~33%, Headshot/Crit Curve changed from Linesman to Ninja (higher headshot or crit damage, but the same headshot crit damage).",
+          "Push Attack: Damage Cleave decreased by ~25%, Finesse Coefficient decreased by ~33%, Headshot/Crit Curve is Tank, Total Damage increased by ~1%, Non-Crit Infantry Damage increased by ~5%, Non-Crit Armor Damage increased by ~300%, Non-Crit Monster Damage increased by ~67%, Non-Crit Zerker Damage increased by ~3%, Non-Crit Super Armor Damage increased by 300%.",
+          "Heavies: Damage Cleave decreased by ~45%, Zerker Crit Multiplier decreased by 40%, Stagger Cleave increased by 20%."
+        ]
+      },
+      {
+        "name": "Spear and Shield",
+        "changes": [
+          "Light 2: Tank added.",
+          "Heavy 2: Finesse Coefficient increased by ~167%, Damage on 1st Target decreased by ~16%, Stagger on 1st Target increased by 35%, Damage on 2nd Target increased by 170%, Stagger on 2nd Target increased by ~237%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by ~23%, Non-Crit Armor Stagger decreased by 40%, Non-Crit Super Armor Stagger decreased by 40%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%, Stagger Armor Crit Multiplier decreased by 20%, Stagger Super Armor Crit Multiplier decreased by 50%."
+        ]
+      },
+      {
+        "name": "1H Mace",
+        "changes": [
+          "Dodge Count increased from 3 to 4.",
+          "Lights 1 and 2: Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
+          "Light 3 and 4: Finesse Coefficient increased by 100%, Non-Crit Zerker Damage increased by ~67%, Non-Crit Monster Damage increased by 20%, L4 Attack Speed increased by ~23%.",
+          "Heavies: Range increased by 20%, Non-Crit Zerker Damage increased by ~33%, Non-Crit Monster Damage increased by ~43%."
+        ]
+      },
+      {
+        "name": "1H Sword",
+        "changes": [
+          "Dodge Count increased from 3 to 4.",
+          "Light 1 and 2: Damage on 1st Target decreased by ~5%, Damage on 2nd Target decreased by ~19%, Damage on 3rd Target and above increased by ~67%, Headshot/Crit Curve changed from Linesman to Ninja.",
+          "Light 3: Range increased by 20%, Shield Break added.",
+          "Heavies: Damage Cleave decreased by ~33%, Stagger Cleave decreased by 25%, Damage on 1st Target increased by ~9%, Damage on 2nd Target decreased by ~3%, Damage on 3rd Target decreased by ~33%, Non-Crit Armor Damage on 1st Target increased by ~8%, Non-Crit Super Armor Damage on 1st Target increased by ~8%, Non-Crit Monster Damage on 1st Target increased by 100%, Armor Crit Multiplier increased by 30%, Super Armor Crit Multiplier increased by 30%, Monster Crit Multiplier increased by 150%, Range increased by ~15%, Headshot/Crit Curve changed from Tank to Ninja, Finesse Coefficient decreased by 25%."
+        ]
+      },
+      {
+        "name": "Empire Longbow",
+        "changes": [
+          "Zoom on charged shot changed from automatic to manual trigger (via weapon special).",
+          "Spread, timings, and other stuff tweaked to decrease the 'jolty stiffness' after shooting.",
+          "Partial/Full charge given quick arrow chained action.",
+          "Quick Shot: Finesse Coefficient decreased by 20%, Boost Coefficient decreased by 52%.",
+          "Full Charge: Non-Crit Armor Damage increased by 25%, Monster Crit Multiplier decreased by ~33%."
+        ]
+      },
+      {
+        "name": "Handgun",
+        "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
+      }
+    ]
+  },
+  "bardin": {
+    "careers": {
+      "ranger-veteran": {
+        "name": "ranger veteran",
+        "icon": "/images/bardin/bardin-ranger-veteran.webp",
+        "passives": [
+          "Fast Hands: In addition Ranged Power increased by 10%.",
+          "Effective range for Ranged weapons increased by 100%."
+        ],
+        "talents": [
+          {
+            "name": "Foe Feller",
+            "level": 10,
+            "changes": ["Bonus attack speed increased from 5% to 15%."]
+          },
+          {
+            "name": "Drunken Brawler",
+            "level": 20,
+            "changes": ["Time to drink Ale decreased from 1.9s to 0.8s."]
+          },
+          {
+            "name": "Scavenger",
+            "level": 20,
+            "changes": [
+              "Proc chance decreased from 20% to ~6%.",
+              "Bombs can no longer drop.",
+              "Guaranteed supply drop every 14-17 special kills, and can never get the same potion twice in a row."
+            ]
+          },
+          {
+            "name": "Exuberance",
+            "level": 25,
+            "changes": ["DR decreased from 30% to 20%."]
+          },
+          {
+            "name": "Parting Gift",
+            "level": 30,
+            "changes": ["Bomb-dupe buff now has a finite duration of 10s"]
+          },
+          {
+            "name": "Surprise Guest",
+            "level": 30,
+            "changes": ["In addition - 30% CDR added."]
+          }
+        ]
+      },
+      "ironbreaker": {
+        "name": "iron breaker",
+        "icon": "/images/bardin/bardin-iron-breaker.webp",
+        "passives": ["CDR from Damage Taken: Decreased from 0.5 to 0.4."],
+        "talents": []
+      },
+      "slayer": {
+        "name": "slayer",
+        "icon": "/images/bardin/bardin-slayer.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "A Thousand Cuts",
+            "level": 10,
+            "changes": ["Increased attack speed increased to 15% (from 10%)."]
+          },
+          {
+            "name": "Hack and Slash",
+            "level": 10,
+            "changes": ["Increased critical hit chance increased to 10% (from 5%)."]
+          },
+          {
+            "name": "Impatience",
+            "level": 20,
+            "changes": ["In addition -5% dodge range per stack of Trophy Hunter added."]
+          },
+          {
+            "name": "Adrenaline Surge",
+            "level": 20,
+            "changes": [
+              "Ult Recharge rate changed to 67% per stack of Trophy Hunter instead of 200% only when at full (3) stacks (i.e. still 200% at 3 stacks)."
+            ]
+          },
+          {
+            "name": "Barge",
+            "level": 25,
+            "changes": ["In addition: 10% dodge range and 15% damage reduction added."]
+          }
+        ]
+      },
+      "outcast-engineer": {
+        "name": "outcast engineer",
+        "icon": "/images/bardin/bardin-outcast-engineer.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "Dual Axes",
+        "changes": [
+          "Push:  Push changed from regular push to light push, stamina cost decreased from 2 to 1, weaker stagger",
+          "Heavies: H1 Attack Speed decreased by ~11%, H2 Attack Speed increased by ~6%, Bonus Crit Chance of 20% added to H3."
+        ]
+      },
+      {
+        "name": "Greataxe",
+        "changes": [
+          "Light 3: Attack speed increased by ~10%.",
+          "Push Attack: Stagger Cleave increased by ~140%, Bonus Crit Chance of 10% added.",
+          "Heavies: Armor Sliding and Heavy Linesman added, Damage Cleave increased by ~71%, Damage on 3rd Target increased by 100%, Non-Crit Armor Damage decreased by ~33%."
+        ]
+      },
+      {
+        "name": "Great Hammer",
+        "changes": [
+          "Push Attack: Non-Crit Infantry Damage increased by 50%.",
+          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
+        ]
+      },
+      {
+        "name": "1H Axe",
+        "changes": [
+          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
+          "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
+        ]
+      },
+      {
+        "name": "1H Hammer",
+        "changes": [
+          "Dodge Count increased from 3 to 4.",
+          "Lights 1 and 2: Finesse Coefficient increased by ~33.3%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
+          "Lights 3 and 4: Finesse Coefficient increased by 100%, Non-Crit Zerker Damage increased by ~67%, Non-Crit Monster Damage increased by 20%, L4 Attack Speed increased by ~23%.",
+          "Heavies: Range increased by 20%, Non-Crit Zerker Damage increased by ~33%, Non-Crit Monster Damage increased by ~43%."
+        ]
+      },
+      {
+        "name": "War Pick",
+        "changes": [
+          "Dodge count increased from 2 to 3.",
+          "Lights: Finesse Coefficient increased by 50%, headshot/Crit Curve changed from Tank to Linesman, Damage Cleave increased by ~33%, Stagger Cleave decreased by 50% (from 0.8 to 0.4). Damage against 1st Target increased by 12.5%, Damage against 2nd Target increased by 110%, Damage against 3rd Target increased by ~87%, Damage against 4th Target and above increased by 50%, Non-Crit Infantry Damage on 1st Target increased by 25%, Non-Crit Armor Damage on 1st Target increased by 50%, Non-Crit Monster Damage on 1st Target increased by 50%, Non-Crit Infantry Damage on 2nd Target and above decreased by 10%, Non-Crit Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Super Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Monster Damage on 2nd Target and above increased by 50%, Monster Crit Multiplier increased by 50%,  Attack Speed increased by ~31%.",
+          "Heavies: Non-Crit Monster Damage increased by 50%."
+        ]
+      },
+      {
+        "name": "Drakegun",
+        "changes": [
+          "Alt Fire: Damage Interval increased by 20%, Does not affect DoT, Target cap decreased from 50 enemies to 19 enemies."
+        ]
+      },
+      {
+        "name": "Handgun",
+        "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
+      },
+      {
+        "name": "Trollhammer Torpedo",
+        "changes": [
+          "Reload Duration increased from 3s to 4s.",
+          "AoE damage against Armor and Super Armor decreased by 50%.",
+          "Outer explosion radius damage against Infantry, Armor, and Super Armor decreased.",
+          "Strength Coefficient of both the projectile and explosion decreased by 50%."
+        ]
+      }
+    ]
+  },
+  "kerillian": {
+    "careers": {
+      "waystalker": {
+        "name": "waystalker",
+        "icon": "/images/kerillian/kerillian-waystalker.webp",
+        "passives": [
+          "Amaranthe: <50% HP threshold removed; now regen heals at any % HP.",
+          "If there is THP, Regen does not replace THP with Green HP, and instead heals on top of that THP.",
+          "Ultimate (Trueshot Volley) (Non-Piercing Version): CD decreased from 80s to 65s, Non-Crit Infantry Damage increased by 50% (from 1 to 1.5) and Non-Crit Bodyshot Super Armor Damage increased by 140% (from 0.25 to 0.6) (3 arrows should 1-shot headshot C3 Maulers), Cleave increased by 50% (from 0.25 to 0.375), FF decreased to 0."
+        ],
+        "talents": [
+          {
+            "name": "Drakira's Alacrity",
+            "level": 10,
+            "changes": [
+              "Bonus Attack Speed increased from 15% to 20%.",
+              "Duration increased from 5s to 10s."
+            ]
+          },
+          {
+            "name": "Isha's Embrace",
+            "level": 20,
+            "changes": ["Bonus to Amaranthe regen increased from 50% to 100%."]
+          },
+          {
+            "name": "Spirit Arrows",
+            "level": 20,
+            "changes": [
+              "Replaced.",
+              "Amaranthe gives 5% of max ammo to Waystalker per tick.",
+              "Does not remove the regen of Amaranthe."
+            ]
+          },
+          {
+            "name": "Piercing Shot",
+            "level": 30,
+            "changes": ["FF decreased by 75%."]
+          }
+        ]
+      },
+      "handmaiden": {
+        "name": "handmaiden",
+        "icon": "/images/kerillian/kerillian-handmaiden.webp",
+        "passives": [
+          "NEW 'Bendy': Gives 30% DR.",
+          "Renewal: Range (radius) of Aura increased from 5 to 20."
+        ],
+        "talents": [
+          {
+            "name": "Focused Spirit",
+            "level": 10,
+            "changes": [
+              "No longer grants generic Power,  instead grants Melee Power.",
+              "Bonus Melee Power increased from 15% to 30%.",
+              "Time required to activate the buff decreased from 10s to 4s.",
+              "Buff is no longer broken by FF."
+            ]
+          },
+          {
+            "name": "Oak Stance",
+            "level": 10,
+            "changes": [
+              "Bonus Crit Chance increased from 5% to 10%.",
+              "In addition: 30% Crit Power added."
+            ]
+          },
+          {
+            "name": "Asrai Alacrity",
+            "level": 10,
+            "changes": ["Number of buffed strikes increased from 2 to 3."]
+          },
+          {
+            "name": "Dance of Blades",
+            "level": 25,
+            "changes": [
+              "Bonus Power increased from 10% to 15%.",
+              "Duration increased from 2s to 3.5s."
+            ]
+          },
+          {
+            "name": "Heart of Oak",
+            "level": 25,
+            "changes": ["Bonus Max Health increased from 15% to 20%."]
+          },
+          {
+            "name": "Quiver of Plenty",
+            "level": 25,
+            "changes": ["Bonus Ammunition increased from 40% to 70%."]
+          },
+          {
+            "name": "Power From Pain",
+            "level": 30,
+            "changes": [
+              "Hitbox to gain Crit Chance stacks increased.",
+              "Width increased from 1.5 to 5.",
+              "Length increased from 0.4 to 0.5."
+            ]
+          }
+        ]
+      },
+      "shade": {
+        "name": "shade",
+        "icon": "/images/kerillian/kerillian-shade.webp",
+        "passives": [
+          "Blur: Parry window increased by 50% (from 0.5 to 0.75).",
+          "Ultimate (Infiltrate): Duration reduced by 50% (from 5 to 2.5 seconds), Damage against monsters increased by ~15%"
+        ],
+        "talents": [
+          {
+            "name": "Cruelty",
+            "level": 10,
+            "changes": [
+              "Critical strike damage bonus increased to 80% (from 50%).",
+              "Now also grants 5% bonus Crit Chance."
+            ]
+          },
+          {
+            "name": "Bloodfletcher",
+            "level": 20,
+            "changes": ["Backstabs now return 5% of maximum ammo."]
+          },
+          {
+            "name": "Cloak of Pain",
+            "level": 30,
+            "changes": [
+              "Dual weapons no longer sometimes consume both charges of ult instead of 1 with a single attack."
+            ]
+          },
+          {
+            "name": "Shimmer Strike",
+            "level": 30,
+            "changes": ["Limited to a total of 4 attacks during ult."]
+          }
+        ]
+      },
+      "sister-of-the-thorn": {
+        "name": "sister of the thorn",
+        "icon": "/images/kerillian/kerillian-sister-of-the-thorn.webp",
+        "passives": [
+          "A Sustenance of Leechlings: THP leech decreased from 100% to 10%.",
+          "Ultimate (Thornwake): CD increased from 40s to 60s."
+        ],
+        "talents": [
+          {
+            "name": "Bonded Spirit",
+            "level": 20,
+            "changes": ["Radiance CDR bonus decreased from 50% to 25%."]
+          },
+          {
+            "name": "Radiant Inheritance",
+            "level": 20,
+            "changes": ["Duration increased by 100% (from 10 to 20 seconds)."]
+          },
+          {
+            "name": "Ironbark Thicket",
+            "level": 30,
+            "changes": ["Increased duration removed (decreased from 10s to default 6s)."]
+          },
+          {
+            "name": "Blackvenom Thicket (Bush)",
+            "level": 30,
+            "changes": ["In addition: 30% CDR added."]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "Dual Daggers",
+        "changes": [
+          "Stamina increased from 4 to 6.",
+          "Light 1 and 2: Bonus Crit Chance of 10% added.",
+          "Heavies: Weapon chaining after H1/H2 made smoother."
+        ]
+      },
+      {
+        "name": "Dual Swords",
+        "changes": [
+          "Light 1 and 2: Damage Cleave increased by 20%, Damage on 1st Target increased by ~48%, Finesse Coefficient on 1st Target increased by ~33%,  Strength Coefficient on 1st Target increased by 100%, Damage on 2nd Target increased by  ~67%, Finesse Coefficient on 2nd Target increased by 100%, Headshot/Crit Curve on 2nd Target changed from Linesman to Ninja, Damage on 3rd Target and on increased by ~67%, Armor Crit Multiplier increased by ~67%, Non-Crit Infantry Damage lowered by 32%, Infantry Crit Multiplier decreased by 40%, Monster Crit Multiplier decreased by 40%.",
+          "Heavies: Damage Cleave increased by 80%, Stagger Cleave increased by 100%, Damage on 1st Target increased by 100%, Strength Coefficient on 1st Target increased by 100%, Finesse Coefficient on 1st Target decreased by 100%, Headshot/Crit Curve on 1st Target changed from Ninja to Linesman, Non-Crit Armor Damage on 1st Target decreased by 37.5%, Damage on 2nd Target increased by 60%, Non-Crit Armor Damage on 2nd Target decreased by 20%, Damage on 3rd Target increased by ~67%, Damage on 5th Target and on decreased by ~7%, Finesse Coefficient on 5th Target and on decreased by 75%.",
+          "Heavy 1: Non-Crit Infantry damage decreased by 25%, Non-Crit Berserker damage decreased by 50%",
+          "Heavy 2: Non-Crit Berserker damage decreased 40%."
+        ]
+      },
+      {
+        "name": "Elf Greatsword",
+        "changes": [
+          "Lights: Attack Speed increased by ~10%.",
+          "Push Attack: Attack Speed decreased by ~30%.",
+          "Heavy 1: Attack Speed increased by ~19%, Finesse Coefficient increased by ~33%, Non-Crit Armor Damage increased by ~38%, Move Speed bonus when holding heavy decreased by ~15% during the first half of the attack, but increased by 100% at the end, total movespeed overall decreased.",
+          "Heavy 2: Attack Speed increased by ~48%, Damage on 1st Target increased by ~19%, Damage on 2nd Target increased by 25%."
+        ]
+      },
+      {
+        "name": "Elf 1H Sword",
+        "changes": [
+          "Dodge count decreased from 100 to 4.",
+          "Lights: L2 range increased by ~8%, L3 range increased by ~17%, L1 Attack Speed decreased by ~11%, L2 Attack Speed decreased by ~14%, PA Attack Speed decreased by ~17%, L3 Attack Speed decreased by ~33%, Chain timing decreased by ~23% to compensate."
+        ]
+      },
+      {
+        "name": "Elf Spear",
+        "changes": [
+          "Various hitbox windows extended so that hitboxes better reflect animation and feel more accurate."
+        ]
+      },
+      {
+        "name": "Glaive",
+        "changes": [
+          "Lights and Push Attack: L2 Attack Speed increased by 15%, L3 Attack Speed increased by 12%, PA Attack Speed increased by ~4%, Linesman added to PA, Damage Cleave increased by ~30%, Stagger Cleave increased by 44%.",
+          "Heavy 1:Now shares a damage profile with Heavy 2, Linesman removed."
+        ]
+      },
+      {
+        "name": "Deepwood Staff",
+        "changes": [
+          "Alt-Fire (Lift): Duration of Lift decreased from 8s to 5s (0.5x multiplier unchanged for Chaos Warriors, so 2.5s/2.5s lift/prone for Chaos Warriors)."
+        ]
+      },
+      {
+        "name": "Javelin",
+        "changes": [
+          "Thrown: Damage Cleave increased by ~433%, Stagger Cleave increased by ~433%, Finesse Coefficient increased by ~7%, Damage on all near targets increased by ~5%, Damage on all far targets increased by ~45%, Dropoff ranges increased, Non-crit Armor Damage increased by ~11%, Non-crit Super Armor Damage increased by 25%."
+        ]
+      },
+      {
+        "name": "Hagbane Shortbow",
+        "changes": ["AoE Cloud:Infantry Damage of DoT increased by 28%."]
+      },
+      {
+        "name": "Moonfire Bow",
+        "changes": [
+          "Full Charged Arrow: Damage increased by ~83%, Finesse Coefficient increased by ~133%, Non-Crit Infantry Damage increased by 100%, Non-Crit Armor Damage increased by 100%, Non-Crit Monster Damage increased by 100%, Non-Crit Berserker Damage increased by 100%, Damage of DoT lowered by ~83%."
+        ]
+      },
+      {
+        "name": "Swift Bow",
+        "changes": [
+          "Quick Shot: Damage at near range increased by 20%, Damage at far range increased by 100%, Headshot/Crit Curve changed from Ninja to Linesman, Strength Coefficient lowered by 20%, Damage Cleave increased by ~66%, Stagger Cleave increased by ~66%, Friendly Fire decreased by 85%, Non-Crit Armor Damage added, Non-crit Berserker Damage decreased by 50%.",
+          "Charged Shot: Damage at near range increased by 10%, Damage at near range increased by ~17%, Damage Cleave increased by ~66%, Stagger Cleave increased by ~66%."
+        ]
+      }
+    ]
+  },
+  "saltzpyre": {
+    "careers": {
+      "witch-hunter-captain": {
+        "name": "witch hunter captain",
+        "icon": "/images/saltzpyre/saltzpyre-witch-hunter-captain.webp",
+        "passives": [""],
+        "talents": []
+      },
+      "bounty-hunter": {
+        "name": "bounty hunter",
+        "icon": "/images/saltzpyre/saltzpyre-bounty-hunter.webp",
+        "passives": [
+          "Blessed Shots: Part of Blessed Combat added.",
+          "Blessed Shot cooldown resets when Bounty Hunter kills a creature with a melee attack."
+        ],
+        "talents": [
+          {
+            "name": "Blessed Combat",
+            "level": 20,
+            "changes": [
+              "Feature where killing an enemy with a melee attack resets cooldown of Blessed Shot is removed from the talent and now a passive."
+            ]
+          },
+          {
+            "name": "Blessed Combat",
+            "level": 20,
+            "changes": [
+              "Ranged hits now also grants up to the next 6 melee strikes 15% increased attack speed."
+            ]
+          },
+          {
+            "name": "Job Well Done",
+            "level": 25,
+            "changes": ["Maximum amount of DR decreased from 30% to 20%."]
+          },
+          {
+            "name": "Double-Shotted",
+            "level": 30,
+            "changes": ["CDR on headshot increased from 60% to 80%."]
+          },
+          {
+            "name": "Indiscriminate Blast",
+            "level": 30,
+            "changes": [
+              "CDR increased from 25% to 60%.",
+              "Killing enemies with the ult no longer grants additional pellets to the next ult."
+            ]
+          }
+        ]
+      },
+      "zealot": {
+        "name": "zealot",
+        "icon": "/images/saltzpyre/saltzpyre-zealot.webp",
+        "passives": ["Ultimate (Holy Fervour): When used, converts all green HP to THP."],
+        "talents": [
+          {
+            "name": "Smite",
+            "level": 10,
+            "changes": ["No longer prevents random crits from occurring."]
+          },
+          {
+            "name": "Unbending Purpose",
+            "level": 10,
+            "changes": [
+              "No longer grants generic Power, instead grants Melee Power.",
+              "Bonus Melee Power increased from 5% to 20%."
+            ]
+          }
+        ]
+      },
+      "warrior-priest": {
+        "name": "warrior priest",
+        "icon": "/images/saltzpyre/saltzpyre-warrior-priest.webp",
+        "passives": [
+          "Ultimate (Shield of Faith): No longer staggers nearby enemies while active nor provides immunity to ranged knockback."
+        ],
+        "talents": [
+          {
+            "name": "Prayer of Might",
+            "level": 25,
+            "changes": [
+              "Replaced with 'Prayer of Flight':",
+              "Provides the team with 10% increased movement speed."
+            ]
+          },
+          {
+            "name": "United in Prayer",
+            "level": 30,
+            "changes": ["Duration reduced by 40% (from 5 to 3 seconds)."]
+          },
+          {
+            "name": "Unyielding Blessing",
+            "level": 30,
+            "changes": ["Duration reduced by 30% (from 10 to 3 seconds)."]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "Axe & Falchion",
+        "changes": [
+          "Lights 2 and 3 (Falchion): Linesman added.",
+          "Push Attack: Linesman removed.",
+          "Heavies: Non-Crit Armor Damage increased by ~26%, Non-Crit Super Armor Damage increased by ~37."
+        ]
+      },
+      {
+        "name": "Billhook",
+        "changes": ["Special: THP gained per target while using Vanguard decreased by ~78%."]
+      },
+      {
+        "name": "Falchion",
+        "changes": [
+          "Lights and Push Attack: Lights and PA given the same damage profile and buffs as Kruber's/Sienna's 1H Sword, except when contradicted by the following: L1, L2, and PA Damage Cleave increased by 20%, L1, L2, and PA Non-Crit Armor Damage decreased by 20%, L1, L2, and PA Monster Crit Multiplier decreased by 20%."
+        ]
+      },
+      {
+        "name": "Flail",
+        "changes": [
+          "Lights 1 and 2: L1 Attack Speed increased by 25%, L2 Attack Speed increased by 35%, L1 and L2 Move Speed during animation increased by ~13%, Stagger Cleave increased by 100%.",
+          "Push Attack: Attack Speed increased by ~18%, Stagger Cleave increased by 100%.",
+          "Lights 3 and 4: Finesse Coefficient increased by 50%, Non-Crit Armor Damage increased by ~38%, Non-Crit Super Armor Damage increased by 50%, Non-Crit Zerker Damage increased by ~33%, Armor Crit Multiplier increased by 20%, Super Armor Crit Multiplier increased by 20% (from 0.75 to 0.9). Zerker Crit Multiplier decreased by 10%, L3 Move Speed during animation increased by ~33%, L4 Move Speed during animation increased by ~13%.",
+          "Heavies: Damage on 2nd Target increased by ~46%, Damage on 3rd Target increased by ~33%, Damage on 4th Target increased by 50%, Non-Crit Infantry Damage on 2nd Target on decreased by ~23%, Non-Crit Armor Damage on 2nd Target on decreased by ~69%, Non-Crit Super Armor Damage on 2nd Target on decreased by 75%, Non-Crit Monster Damage on 2nd Target on decreased by ~23%, Non-Crit Zerker Damage on 2nd Target on decreased by ~43%."
+        ]
+      },
+      {
+        "name": "Greatsword",
+        "changes": [
+          "Lights: Finesse Coefficient increased by ~33, Damage Cleave increased by ~14%, Damage on 1st Target increased by 10%, Damage on 2nd Target decreased by 10%, Damage on 3rd Target increased by ~17%.",
+          "Push Attack: Attack Speed increased by ~14%, Damage decreased by 50%, Stagger decreased by 20%, Non-Crit Infantry Damage increased by 25%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by 60%, Infantry Crit Multiplier increased by 25%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%.",
+          "Heavies: Damage on 1st Target decreased by 10%, Damage on 2nd Target increased by ~14%, Damage on 4th Target decreased by ~17%, Damage on 5th Target and above increased by 40%, Non-Crit Armor Damage on 1st Target decreased by ~17%, Non-Crit Armor Damage on 2nd Target decreased by ~33% (from 0.3 to 0.2). Non-Crit Zerker Damage decreased by ~40%."
+        ]
+      },
+      {
+        "name": "Holy Greathammer",
+        "changes": [
+          "Light 3: Damage on 2nd Target increased by 100%.",
+          "Heavy 1: Damage on 2nd Target decreased by ~78%.",
+          "Heavy 2: Damage Cleave increased by ~33%, Damage on 1st Target increased by ~81%, Damage on 2nd Target increased by ~33%.",
+          "Heavy 3: Non-Crit Armor Damage increased by ~103%, Armor Crit Multiplier increased by ~64%, Non-Crit Super Armor Damage increased by ~20%."
+        ]
+      },
+      {
+        "name": "1H Axe",
+        "changes": [
+          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
+          "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
+        ]
+      },
+      {
+        "name": "1H Hammer",
+        "changes": [
+          "Dodge Count increased from 3 to 4.",
+          "Lights 1 and 2: Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
+          "Light 3 and 4: Finesse Coefficient increased by ~33%, Non-Crit Zerker Damage increased by ~67%, Non-Crit Monster Damage increased by 20%, L4 Attack Speed increased by ~23%.",
+          "Heavies: Range increased by 20%, Non-Crit Zerker Damage increased by ~33%, Non-Crit Monster Damage increased by ~43%."
+        ]
+      },
+      {
+        "name": "Brace of Pistols",
+        "changes": ["Maximum ammo increased by ~67%.", "Reload time decreased by 20%."]
+      },
+
+      {
+        "name": "Griffon foot",
+        "changes": [
+          "Number of pellets decreased from 18 to 12.",
+          "Cleave decreased by 50%.",
+          "Spread tightened."
+        ]
+      }
+    ]
+  },
+  "sienna": {
+    "careers": {
+      "battle-wizard": {
+        "name": "battle wizard",
+        "icon": "/images/sienna/sienna-battle-wizard.webp",
+        "passives": [
+          "Ultimate (Fire Walk): CD increased from 50s to 60s.",
+          "On-ground fire damage decreased by ~50-60%."
+        ],
+        "talents": [
+          {
+            "name": "Famished Flames",
+            "level": 10,
+            "changes": [
+              "Burn damage bonus increased from 100% to 150%.",
+              "Non-burn damage penalty increased from 15% to 30%."
+            ]
+          },
+          {
+            "name": "Lingering Flames",
+            "level": 10,
+            "changes": ["Additional tick rate removed."]
+          },
+          {
+            "name": "Soot Shield",
+            "level": 25,
+            "changes": [
+              "DR per stack decreased from 8% to 5%.",
+              "Max stacks increased from 3 to 4.",
+              "(DR Decreased from 24% to 20% at max stacks)"
+            ]
+          },
+          {
+            "name": "Fires From Ash",
+            "level": 25,
+            "changes": ["CDR per burning enemy killed decreased from 3% to 2%."]
+          },
+          {
+            "name": "Kaboom",
+            "level": 30,
+            "changes": ["In addition, 20% CDR added."]
+          }
+        ]
+      },
+      "pyromancer": {
+        "name": "pyromancer",
+        "icon": "/images/sienna/sienna-pyromancer.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "unchained": {
+        "name": "unchained",
+        "icon": "/images/sienna/sienna-unchained.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "necromancer": {
+        "name": "necromancer",
+        "icon": "/images/sienna/sienna-necromancer.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      },
+      {
+        "name": "",
+        "changes": [""]
+      },
+      {
+        "name": "",
+        "changes": [""]
+      },
+      {
+        "name": "",
+        "changes": [""]
+      },
+      {
+        "name": "",
+        "changes": [""]
+      },
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  }
+}

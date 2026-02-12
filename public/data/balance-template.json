@@ -51,5 +51,185 @@
         "changes": ["light 1: description of the change"]
       }
     ]
+  },
+  "bardin": {
+    "careers": {
+      "ranger-veteran": {
+        "name": "ranger veteran",
+        "icon": "/images/bardin/bardin-ranger-veteran.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "ironbreaker": {
+        "name": "iron breaker",
+        "icon": "/images/bardin/bardin-iron-breaker.webp",
+        "passives": [],
+        "talents": []
+      },
+      "slayer": {
+        "name": "slayer",
+        "icon": "/images/bardin/bardin-slayer.webp",
+        "passives": [],
+        "talents": []
+      },
+      "outcast-engineer": {
+        "name": "outcast engineer",
+        "icon": "/images/bardin/bardin-outcast-engineer.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  },
+  "kerillian": {
+    "careers": {
+      "waystalker": {
+        "name": "waystalker",
+        "icon": "/images/kerillian/kerillian-waystalker.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "handmaiden": {
+        "name": "handmaiden",
+        "icon": "/images/kerillian/kerillian-handmaiden.webp",
+        "passives": [],
+        "talents": []
+      },
+      "shade": {
+        "name": "shade",
+        "icon": "/images/kerillian/kerillian-shade.webp",
+        "passives": [],
+        "talents": []
+      },
+      "sister-of-the-thorn": {
+        "name": "sister of the thorn",
+        "icon": "/images/kerillian/kerillian-sister-of-the-thorn.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  },
+  "saltzpyre": {
+    "careers": {
+      "witch-hunter-captain": {
+        "name": "witch hunter captain",
+        "icon": "/images/saltzpyre/saltzpyre-witch-hunter-captain.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "bounty-hunter": {
+        "name": "bounty hunter",
+        "icon": "/images/saltzpyre/saltzpyre-bounty-hunter.webp",
+        "passives": [],
+        "talents": []
+      },
+      "zealot": {
+        "name": "zealot",
+        "icon": "/images/saltzpyre/saltzpyre-zealot.webp",
+        "passives": [],
+        "talents": []
+      },
+      "warrior-priest": {
+        "name": "warrior priest",
+        "icon": "/images/saltzpyre/saltzpyre-warrior-priest.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  },
+  "sienna": {
+    "careers": {
+      "battle-wizard": {
+        "name": "battle wizard",
+        "icon": "/images/sienna/sienna-battle-wizard.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "pyromancer": {
+        "name": "pyromancer",
+        "icon": "/images/sienna/sienna-pyromancer.webp",
+        "passives": [],
+        "talents": []
+      },
+      "unchained": {
+        "name": "unchained",
+        "icon": "/images/sienna/sienna-unchained.webp",
+        "passives": [],
+        "talents": []
+      },
+      "necromancer": {
+        "name": "necromancer",
+        "icon": "/images/sienna/sienna-necromancer.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
   }
 }

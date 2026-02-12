@@ -1,53 +1,60 @@
 <template>
   <main v-if="career">
-    <h1>{{ career }} : {{ modName }}</h1>
+    <h1>{{ modName ? `${career} : ${modName}` : `${career} (please select a mod)` }}</h1>
     <ModPicker @modSelected="handleModSelection" />
-    <p class="err" v-if="errorMsg">No Changelogs found for this Mod :c</p>
-    <div class="articles-container" v-if="errorMsg == false">
-      <article v-if="modData" v-for="cls in modData.careers" :key="cls" class="blur-box">
-        <img :src="cls.icon" :alt="'picture of ' + cls.name" />
+    <div class="" v-if="modName">
+      <p class="err" v-if="errorMsg">No Changelogs found for this Mod :c</p>
+      <div class="articles-container" v-if="errorMsg == false">
+        <article
+          v-for="(cls, index) in modData.careers"
+          :key="cls.name || index"
+          :style="{ '--article-index': index }"
+          class="blur-box article-animate">
+          <img :src="cls.icon" :alt="'picture of ' + cls.name" />
 
-        <div class="content">
-          <div class="passives" v-if="cls.passives?.length">
-            <h2>Passives:</h2>
-            <ul v-for="passive in cls.passives" :key="passive" class="passives-ul">
-              <li>{{ passive }}</li>
-            </ul>
+          <div class="content">
+            <div class="passives" v-if="cls.passives?.length">
+              <h2>Passives:</h2>
+              <ul v-for="passive in cls.passives" :key="passive" class="passives-ul">
+                <li>{{ passive }}</li>
+              </ul>
+            </div>
+
+            <div class="talents" v-if="cls.talents?.length">
+              <h2>Talents:</h2>
+              <ul v-for="talent in cls.talents" :key="talent" class="talents-ul">
+                <li>
+                  Level:{{ talent.level }} : {{ talent.name }}
+                  <p v-for="change in talent.changes">{{ change }}</p>
+                </li>
+              </ul>
+            </div>
           </div>
+        </article>
+      </div>
 
-          <div class="talents" v-if="cls.talents?.length">
-            <h2>Talents:</h2>
-            <ul v-for="talent in cls.talents" :key="talent" class="talents-ul">
-              <li>
-                Level:{{ talent.level }} : {{ talent.name }}
-                <p v-for="change in talent.changes">{{ change }}</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- <section class="weapons blur-box" @click="openModal" v-if="modData.weapons">
+      <!-- <section class="weapons blur-box" @click="openModal" v-if="modData.weapons">
       <h2>Weapons: <span class="click-hint">(Click to expand)</span></h2>
       <ul v-for="weapon in modData.weapons" :key="weapon.name">
         <h3>{{ weapon.name }} :</h3>
         <li v-for="wpc in weapon.changes">{{ wpc }}</li>
       </ul>
-    </section> -->
+    </section> 
 
-    <Transition name="modal">
-      <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
-        <div class="modal-content blur-box" @click.stop>
-          <button class="close-btn" @click="closeModal">✕</button>
-          <h2>Weapons:</h2>
-          <ul v-if="modData" v-for="weapon in modData.weapons" :key="weapon.name">
-            <h3>{{ weapon.name }} :</h3>
-            <li v-for="wpc in weapon.changes">{{ wpc }}</li>
-          </ul>
+      <Transition name="modal">
+        <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+          <div class="modal-content blur-box" @click.stop>
+            <button class="close-btn" @click="closeModal">✕</button>
+            <h2>Weapons:</h2>
+            <ul v-if="modData" v-for="weapon in modData.weapons" :key="weapon.name">
+              <h3>{{ weapon.name }} :</h3>
+              <li v-for="wpc in weapon.changes">{{ wpc }}</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </Transition>
+      </Transition>
+      -->
+    </div>
   </main>
 </template>
 
@@ -58,7 +65,7 @@ const route = useRoute()
 const career = ref(route.params.career)
 
 const modData = ref(null)
-const modName = ref('Core Balance')
+const modName = ref('')
 const isModalOpen = ref(false)
 const errorMsg = ref(false)
 
@@ -128,15 +135,9 @@ onMounted(() => {
 <style scoped>
 main {
   padding-inline: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 500px;
-  gap: 2rem;
-  align-items: start;
-  overflow-x: hidden;
 }
 
 h1 {
-  grid-column: 1 / -1;
   font-size: 32px;
   text-align: center;
   margin-block: 1rem;
@@ -152,14 +153,31 @@ h2 {
   font-size: 26px;
 }
 
-main > :nth-child(2) {
-  grid-column: 1 / -1;
+.no-mod {
+  text-align: center;
 }
 
 .articles-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-animate {
+  animation: slideInUp 1s ease-out forwards;
+  animation-delay: calc(var(--article-index) * 0.1s);
+  opacity: 0;
 }
 
 article {
@@ -216,8 +234,9 @@ li p {
 
 .err {
   text-align: center;
-  color: rgb(253, 215, 0);
-  background-color: rgba(255, 0, 0, 0.315);
+  color: var(--white-900);
+  font-size: 18px;
+  background: linear-gradient(to top, rgba(253, 217, 12, 0.3), rgba(255, 94, 0, 0.4));
   margin-inline: auto;
   display: block;
   position: absolute;
@@ -316,10 +335,6 @@ li p {
 @media (max-width: 950px) {
   main {
     padding-inline: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-items: start;
   }
 }
 
