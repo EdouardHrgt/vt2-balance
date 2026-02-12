@@ -8,7 +8,6 @@
       </li>
     </ul>
   </nav>
-  <p>please pick a career to see all changes made by the main rebalance Mods.</p>
 </template>
 
 <script setup>

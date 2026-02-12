@@ -4,17 +4,17 @@
       "mercenary": {
         "name": "mercenary",
         "icon": "/images/kruber/kruber-mercenary.webp",
-        "passives": ["passive change 1", "passive change 2"],
+        "passives": [""],
         "talents": [
           {
-            "name": "talent name",
+            "name": "",
             "level": 10,
-            "changes": ["talent change 1", "talent change 2"]
+            "changes": [""]
           },
           {
-            "name": "another talent",
+            "name": "",
             "level": 15,
-            "changes": ["talent change 1", "talent change 2"]
+            "changes": [""]
           }
         ]
       },
@@ -40,15 +40,7 @@
     "weapons": [
       {
         "name": "weapon name",
-        "changes": [
-          "light 1: description of the change",
-          "light 2: description of the change",
-          "Heavy 3: description of the change"
-        ]
-      },
-      {
-        "name": "another weapon ",
-        "changes": ["light 1: description of the change"]
+        "changes": [""]
       }
     ]
   },

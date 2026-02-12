@@ -22,8 +22,8 @@
             <h3 v-if="cls.untouched" class="untouched">/.\ No changes made /.\</h3>
             <div class="passives" v-if="cls.passives?.length">
               <h2>Passives:</h2>
-              <ul v-for="passive in cls.passives" :key="passive" class="passives-ul">
-                <li>{{ passive }}</li>
+              <ul class="passives-ul">
+                <li v-for="passive in cls.passives" :key="passive">{{ passive }}</li>
               </ul>
             </div>
 
@@ -47,7 +47,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 const route = useRoute()
 const career = ref(route.params.career)
 
@@ -164,6 +164,7 @@ h4 {
   flex-direction: column;
   gap: 2rem;
   padding-inline: 2rem;
+  margin-top: 5rem;
 }
 
 @keyframes slideInUp {
@@ -188,6 +189,9 @@ article {
   align-items: start;
   gap: 2rem;
   position: relative;
+  max-width: 950px;
+  width: 100%;
+  margin-inline: auto;
 }
 
 li {
@@ -241,10 +245,16 @@ li {
 }
 
 .untouched {
+  text-transform: uppercase;
+  font-family: 'Rubik Marker Hatch', system-ui;
+  letter-spacing: 1px;
   display: block;
   position: absolute;
-  top: 5rem;
-  color: var(--red-900);
+  top: 6rem;
+  background: linear-gradient(to left, #fdd90c, #ff5e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media (max-width: 1130px) {

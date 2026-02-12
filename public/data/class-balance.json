@@ -1,0 +1,612 @@
+{
+  "kruber": {
+    "careers": {
+      "mercenary": {
+        "name": "mercenary",
+        "icon": "/images/kruber/kruber-mercenary.webp",
+        "passives": ["Can now equip the Empire Longbow and Bretonnian Sword & Shield."],
+        "talents": [
+          {
+            "name": "Limb-Splitter",
+            "level": 10,
+            "changes": ["Now increases cleave power by 80%."]
+          },
+          {
+            "name": "Helborg’s Tutelage",
+            "level": 10,
+            "changes": [
+              "The guaranteed critical hits now only apply to melee attacks.",
+              "Critical hits can still occur randomly."
+            ]
+          },
+          {
+            "name": "Reikland Reaper",
+            "level": 20,
+            "changes": ["Increases the power by 10% for every player when paced strikes is active."]
+          },
+          {
+            "name": "Enhanced Training",
+            "level": 20,
+            "changes": ["Hitting 3 or more enemies increases power by 20% for 6 seconds."]
+          },
+          {
+            "name": "Black Market Supplies",
+            "level": 25,
+            "changes": [
+              "Every 6th melee kill (2nd for shotguns) reloads Kruber’s ranged weapon.",
+              "Every 15th melee kill (10th for shotguns) makes Kruber’s next ranged attack consume no ammo."
+            ]
+          },
+          {
+            "name": "On Yer Feet, Mates!",
+            "level": 30,
+            "changes": [
+              "Now also frees allies from ledges, hooks and revives allies waiting for rescue.",
+              "Whenever an ally is downed, 40% of Kruber’s ultimate cooldown is refunded.",
+              "Revived allies now receive 50% increased stamina regeneration, 40% block cost reduction, block angle increased by 80%, 3 stamina shields, and significantly increased power for 2 seconds."
+            ]
+          }
+        ]
+      },
+      "huntsman": {
+        "name": "huntsman",
+        "icon": "/images/kruber/kruber-huntsman.webp",
+        "passives": [
+          "Gives a buff based on the ranged weapon Huntsman is wielding:",
+          "Handgun: +25% reload speed.",
+          "Blunderbuss: +20% crit power and +7.5% crit chance.",
+          "Repeater Handgun: -40% reload speed, -20% damage, +1 extra projectile fired with every shot.",
+          "Aura size increased to 10.",
+          "Can now equip the Bretonnian Sword & Shield."
+        ],
+        "talents": [
+          {
+            "name": "Keep It Coming",
+            "level": 10,
+            "changes": ["Every 7 seconds, Huntsman gets a free shot."]
+          },
+          {
+            "name": "Blend In",
+            "level": 30,
+            "changes": ["Reduced duration from 6 to 4 seconds."]
+          },
+          {
+            "name": "Concealed Strikes",
+            "level": 30,
+            "changes": [
+              "Increases the power against the armor type of the first enemy hit by 30% for 10 seconds."
+            ]
+          }
+        ]
+      },
+      "foot-knight": {
+        "name": "foot knight",
+        "icon": "/images/kruber/kruber-foot-knight.webp",
+        "passives": [
+          "Valiant Charge now has the highest stagger value in the game, Other, non-Foot Knight, stagger sources will not overwrite it.",
+          "New additional passive: Living Bulwark. Foot Knight now breaks shields with every melee attack, Stormvermin shields can only be broken with heavy melee attacks.",
+          "Protective Presence: Aura size increased to 10.",
+          "Can now equip the Tuskgor Spear, Empire Longbow and Bretonnian Sword & Shield."
+        ],
+        "talents": [
+          {
+            "name": "Have at Thee!",
+            "level": 10,
+            "changes": ["Now also applies when staggering specials and bosses."]
+          },
+          {
+            "name": "Rock of the Reikland",
+            "level": 20,
+            "changes": [
+              "No longer doubles Protective Presence’s aura size.",
+              "Now grants two additional stamina shields instead of 20% block cost reduction."
+            ]
+          },
+          {
+            "name": "That’s Bloody Teamwork",
+            "level": 20,
+            "changes": [
+              "Replaced the additional damage reduction aura with an aura that increases all healing received: Stacks up to 15% increased healing received (5% per ally within 10 units).",
+              "Protective Presence’s base aura effect (15% damage reduction) is still active."
+            ]
+          },
+          {
+            "name": "It’s Hero Time",
+            "level": 25,
+            "changes": [
+              "Increases Foot Knight’s cooldown regeneration rate by 333% whilst an ally is incapacitated or downed until the ally is freed or Foot Knight’s ultmitate is ready.",
+              "Can stack 3 times."
+            ]
+          },
+          {
+            "name": "Counter Punch",
+            "level": 25,
+            "changes": [
+              "Every 10 seconds, Foot Knight gains massive stagger and cleave power for his next melee attack."
+            ]
+          },
+          {
+            "name": "Inspiring Blow",
+            "level": 25,
+            "changes": [
+              "Replaced with new talent “Inspiring Presence”: Increases the amount of wounds for all players by 1.",
+              "Foot Knight gains 15% increased cooldown regeneration rate."
+            ]
+          },
+          {
+            "name": "Numb to Pain",
+            "level": 30,
+            "changes": [
+              "Replaced with new talent “Excruciating Pain”: Every enemy Foot Knight staggers with his ultimate takes 20% more damage for 8 seconds.",
+              "This effect does not stack."
+            ]
+          }
+        ]
+      },
+      "grail-knight": {
+        "name": "grail knight",
+        "icon": "/images/kruber/kruber-grail-knight.webp",
+        "passives": [
+          "Cooldown regen quest: Increased base value to 20% (up from 10%), improved value now goes up to 30% (up from 20%).",
+          "Damage reduction quest: Increased base value to 12% (up from 10%), improved value now goes up to 18% (up from 15%).",
+          "Changed proc condition from collecting a tome to scoring 500 headshots.",
+          "Health regen quest: Changed proc condition from collecting a grimoire to generating 2000 health (green HP or temp HP).",
+          "Strength potion quest: Increased the amount of kills required to drop a potion to 300 on Cataclysm 3 (up from 200).",
+          "Can now equip the Tuskgor Spear and Halberd."
+        ],
+        "talents": [
+          {
+            "name": "Virtue of the Ideal",
+            "level": 10,
+            "changes": ["Changed to 5 stacks of 6% power (from 3 stacks of 8% power)."]
+          },
+          {
+            "name": "Virtue of Heroism",
+            "level": 10,
+            "changes": [
+              "Now increases melee damage, ultimate included, based on Grail Knight’s current health."
+            ]
+          },
+          {
+            "name": "Virtue of the Penitent",
+            "level": 20,
+            "changes": ["Now only grants one additional quest instead of two."]
+          },
+          {
+            "name": "Virtue of Stoicism",
+            "level": 25,
+            "changes": [
+              "Now stores up to 6 instances of damage taken instead of just one.",
+              "Conversion of health lost and regained as temp HP is reduced to 25% (down from 50%)."
+            ]
+          },
+          {
+            "name": "Virtue of Discipline",
+            "level": 25,
+            "changes": [
+              "Replaced with new talent “Virtue of Agility”: Increases dodge distance by 20%."
+            ]
+          },
+          {
+            "name": "Virtue of Audacity",
+            "level": 30,
+            "changes": ["The second stab now deals the same damage as the first."]
+          },
+          {
+            "name": "Virtue of Confidence",
+            "level": 30,
+            "changes": ["Reduced damage but significantly increased damage cleave."]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "Bretonnian longsword",
+        "changes": [
+          "Swapped the damage profiles of Light 1 and Light 2 to address L1-block cancel shenanigans.",
+          "Light 2: Increased headshot multiplier from 1.5 to 2.",
+          "Heavy 3: Increased headshot multiplier from 0.75 to 1.29.",
+          "Push attack: Now uses the same damage profile as Light 3."
+        ]
+      },
+      {
+        "name": "Bretonnian Sword & Shield",
+        "changes": [
+          "All attacks except the shield bashes (Light 3, Heavy 2) now have 10% crit chance.",
+          "Light 1: Changed to be an overhead.",
+          "Light 2: Changed to be a stab.",
+          "Light 3: Removed.",
+          "Heavy 1: Changed to be a shield-bash.",
+          "Heavy 2: Changed to be stab.",
+          "Heavy 3: Changed to be an overhead, downward swing.",
+          "Push: Now chains into Heavy 2.",
+          "Push attack: Now a shield-bash."
+        ]
+      },
+      {
+        "name": "Executioner Sword",
+        "changes": [
+          "Chaining from Heavy 1 into Heavy 2 is now faster.",
+          "Reduced dodge count from 3 to 2.",
+          "Light attacks: Increased attack speed by 10% to 14%."
+        ]
+      },
+      {
+        "name": "Greatsword",
+        "changes": [
+          "Added a new attack chain with two attacks: two light overheads.",
+          "The Push Attack can now chain into two additional light overhead attacks.",
+          "Push-attacking is the only way of starting the new attack chain.",
+          "Both light overheads have the same damage profile as the Push Attack.",
+          "Light 1:Changed animation into that of Bretonnian Longsword’s Light 1, Added 10% crit chance, Reduced overall damage against the 1st enemy cleaved by 0.025, from 0.25 to 0.225, Reduced overall damage against the 2nd enemy cleaved by 0.095, from 0.22 to 0.125, Reduced overall damage against the 3rd enemy cleaved by 0.08, from 0.18 to 0.1.",
+          "Heavy attacks: Now breaks shields, Reduced overall damage against the 1st enemy cleaved by 0.05, from 0.5 to 0.45, Reduced overall damage against the 2nd enemy cleaved by 0.1, from 0.35 to 0.25, Reduced overall damage against the 3rd enemy cleaved by 0.1, from 0.25 to 0.15, Reduced overall damage against the 4th enemy cleaved by 0.055, from 0.18 to 0.125.",
+          "Push attack: Increased attack speed by 20%, Increased armour and super-armor damage by 20%, Now chains into two overhead light attacks that both have the same damage profile as the Push Attack, Increased Armour damage by 0.3, from 0.5 to 0.8, Increased Monster damage by 0.25, from 1.5 to 1.75, Reduced Stagger against Armoured enemies by 0.4, from 1 to 0.6, Increased Armour Crit damage by 0.3, from 0.5 to 0.8, Increased Monster Crit damage by 1, from 1.5 to 2.5, Reduced Crit Stagger against Armoured enemies by 0.2, Reduced Crit Stagger against Berserkers/Monks by 0.5, Now counts as a Light attack, Increased headshot multiplier from 0.75 to 2, Reduced overall damage against the 1st enemy cleaved by 0.25, from 0.65 to 0.4, Reduced overall damage against the 2nd enemy cleaved by 0.1, from 0.2 to 0.1."
+        ]
+      },
+      {
+        "name": "Great Hammer",
+        "changes": [
+          "Light 3: Increased stagger significantly.",
+          "Heavy attacks: Increased damage cleave by 0.2, from 0.3(8.95 in-game) to 0.5(14.92 in-game), Increased overall damage against 1st enemy cleaved by 0.15, from 0.275 to 0.425, Reduced overall damage against the 2nd enemy cleaved by 0.05, from 0.35 to 3, Increased overall damage against 3rd enemy cleaved by 0.1, from 0.075 to 0.075, Increased infantry crit damage from 1 to 1.2, Decreased Armour damage by 0.135, from 0.5 to 0.365, Reduced Berserker/Monk damage by 0.25, from 0.75 to 0.5.",
+          "Push attack: Added 12.5% crit chance."
+        ]
+      },
+      {
+        "name": "Halberd",
+        "changes": [
+          "Increased dodge distance from 0% to 7.5%.",
+          "Light 2: Increased Berserker/Monk damage by 27%.",
+          "Heavy 1: Increased Berserker/Monk damage by 33%, Increased cleave by 16%, Increased stagger from 0.05 to 0.75",
+          "Heavy 2: Reduced Super-armour damage by 15%, Increased Berserker/Monk damage by 15%, Decreased charge up time slightly, Added armor-sliding.",
+          "Push attack: Increased armor damage by 38%, Reduced Super-armour damage by 10%.",
+          "Weapon special (new): Wide sweep attack with lots of stagger power that breaks shields, Chains into Heavy 2."
+        ]
+      },
+      {
+        "name": "Mace",
+        "changes": [
+          "Reduced stamina count from 4.5 shields to 3.",
+          "Increased stagger for all attacks.",
+          "Increased headshot multipliers slightly for all attacks.",
+          "Light attacks: Now break shields.",
+          "Light 3: Same damage profile as Light 1.",
+          "Heavy 1: Now chains into Light 4.",
+          "Heavy 2: Now a horizontal attack.",
+          "Push: Increased cost from 1 to 2 stamina.",
+          "Weapon special (new): Uppercut with lots of stagger power, Costs 2 stamina (1 shield), has a 2 second cooldown."
+        ]
+      },
+      {
+        "name": "Mace & Shield",
+        "changes": [
+          "Weapon special (new): Super shield bash with lots of stagger power, has a 4 second cooldown."
+        ]
+      },
+      {
+        "name": "Mace & Sword",
+        "changes": [
+          "Heavy 1: Removed Linesman hit mass count.",
+          "Heavy 2: Removed Linesman hit mass count."
+        ]
+      },
+      {
+        "name": "1H Sword",
+        "changes": [
+          "Light 1: Increased overall damage against the 2nd enemy cleaved by 0.015, from 0.21 to 0.225, Reduced overall damage against the 3rd enemy cleaved by 0.01, from 0.185 to 0.175, Increased Armour damage by 0.3, from 0 to 0.3.",
+          "Light 2: Increased overall damage against the 2nd enemy cleaved by 0.015, from 0.21 to 0.225, Reduced overall damage against the 3rd enemy cleaved by 0.01, from 0.185 to 0.175.",
+          "Light 3: Now breaks shields, Increased crit armour damage from 0.75 to 0.8, Increased armour damage by 7%.",
+          "Heavy 1: Increased damage cleave by 0.45, from 0.3(8.95 in-game) to 0.75(22.38 in-game), Reduced overall damage against the 1st enemy hit by 0.02, from 0.32 to 0.3, Increased overall damage against the 2nd enemy cleaved by 0.02, from 0.18 to 0.2, Reduced overall stagger against the 2nd enemy cleaved by 0.03, from 0.18 to 0.15, Reduced overall stagger against the 3rd enemy cleaved by 0.05, from 0.15 to 0.1, Reduced Armour damage by 0.25, from 0.6 to 0.35.",
+          "Heavy 2: Now an overhead attack, Breaks shields. Increased armour damage from 0.5 to 0.75, Increased crit armour damage from 0.5 to 0.65, Reduced time to chain into Light 3 from 0.5 to 0.4.",
+          "Push attack: Increased damage against the 2nd and 3rd enemy cleaved by 22% and 29% respectively, Increased headshot multiplier from 1.5 to 2.5.",
+          "Push: Increased cost from 1 to 2 stamina.",
+          "Weapon special (new): Thrust attack, Has good stagger against most enemies, costs 2 stamina (1 shield), Chains into Light 3, or into Heavy 2, Increased QQ-cancel chain timer by 0.15 seconds, from 0.5 to 0.65 seconds."
+        ]
+      },
+      {
+        "name": "Spear & Shield",
+        "changes": [
+          "Can now chain earlier into either Light or Heavy attacks after any of the weapon special attacks.",
+          "Light 2: Added Tank hit mass count.",
+          "Heavy 1: Added armour-sliding.",
+          "Heavy 2: Now uses the Heavy 2’s damage profile from the Elf’s Spear & Shield."
+        ]
+      },
+      {
+        "name": "Sword & Shield",
+        "changes": [
+          "Heavy 1: Can now reach a second charge state which has a lot more stagger power but leaves you somewhat open (charge up works similar to Rapier’s heavies)."
+        ]
+      },
+      {
+        "name": "Tuskgor Spear",
+        "changes": [
+          "Light 1: Increased cleave by 500%, Now breaks shields.",
+          "Light 2: Increased attack speed by 25%, Increased armour damage by 15%, Increased cleave by 500%, Now breaks shields, Now chains into Heavy 1.",
+          "Light 4: Increased armour damage by 15%, Increased cleave by 500%, Now breaks shields.",
+          "Heavy 1: Increased infantry damage by 10%, Increased armour damage by 117%, Increased crit armour damage by 30%, Increased cleave by 500%."
+        ]
+      },
+      {
+        "name": "Blunderbuss",
+        "changes": [
+          "Weapon special (new): Fires an armor penetrating bullet that deals heavy single target damage, Little to no cleave and very wide spread to incentivize close range use."
+        ]
+      },
+      {
+        "name": "Empire Longbow",
+        "changes": [
+          "Reload time reduced to 0.1, and made the weapon overall faster to use, Increased close range infantry bodyshot damage to kill Assassins with one bodyshot when fully charged or with two bodyshots when partially charged (at 20% Skaven/Chaos, 20% Infantry), Reduced its damage dropoff range (Kruber’s fast sniper for close/mid range).",
+          "Weapon special: Enables a second zoom level when aiming down sights."
+        ]
+      },
+      {
+        "name": "Handgun",
+        "changes": [
+          "Removed damage drop off.",
+          "Increased cleave and added the ability to always cleave through one additional enemy.",
+          "Increased reload speed from 1.8s to 1.875s.",
+          "Increased Infantry damage by 25%",
+          "Increased Super-armour damage by 33%.",
+          "Increased Berserker/Monk damage by 67%.",
+          "Can no longer shoot through shields without aiming down sights.",
+          "Weapon special (new): Enables a second zoom level when aiming down sights."
+        ]
+      }
+    ]
+  },
+  "bardin": {
+    "careers": {
+      "ranger-veteran": {
+        "name": "ranger veteran",
+        "icon": "/images/bardin/bardin-ranger-veteran.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "ironbreaker": {
+        "name": "iron breaker",
+        "icon": "/images/bardin/bardin-iron-breaker.webp",
+        "passives": [],
+        "talents": []
+      },
+      "slayer": {
+        "name": "slayer",
+        "icon": "/images/bardin/bardin-slayer.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      },
+      "outcast-engineer": {
+        "name": "outcast engineer",
+        "icon": "/images/bardin/bardin-outcast-engineer.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": ["", "", "", "", ""]
+      },
+      {
+        "name": "",
+        "changes": ["", "", "", "", ""]
+      },
+      {
+        "name": "",
+        "changes": ["", "", "", "", ""]
+      }
+    ]
+  },
+  "kerillian": {
+    "careers": {
+      "waystalker": {
+        "name": "waystalker",
+        "icon": "/images/kerillian/kerillian-waystalker.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "handmaiden": {
+        "name": "handmaiden",
+        "icon": "/images/kerillian/kerillian-handmaiden.webp",
+        "passives": [],
+        "talents": []
+      },
+      "shade": {
+        "name": "shade",
+        "icon": "/images/kerillian/kerillian-shade.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      },
+      "sister-of-the-thorn": {
+        "name": "sister of the thorn",
+        "icon": "/images/kerillian/kerillian-sister-of-the-thorn.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  },
+  "saltzpyre": {
+    "careers": {
+      "witch-hunter-captain": {
+        "name": "witch hunter captain",
+        "icon": "/images/saltzpyre/saltzpyre-witch-hunter-captain.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "bounty-hunter": {
+        "name": "bounty hunter",
+        "icon": "/images/saltzpyre/saltzpyre-bounty-hunter.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      },
+      "zealot": {
+        "name": "zealot",
+        "icon": "/images/saltzpyre/saltzpyre-zealot.webp",
+        "passives": [],
+        "talents": []
+      },
+      "warrior-priest": {
+        "name": "warrior priest",
+        "icon": "/images/saltzpyre/saltzpyre-warrior-priest.webp",
+        "passives": [],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 15,
+            "changes": [""]
+          }
+        ]
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  },
+  "sienna": {
+    "careers": {
+      "battle-wizard": {
+        "name": "battle wizard",
+        "icon": "/images/sienna/sienna-battle-wizard.webp",
+        "passives": [""],
+        "talents": [
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          },
+          {
+            "name": "",
+            "level": 10,
+            "changes": [""]
+          }
+        ]
+      },
+      "pyromancer": {
+        "name": "pyromancer",
+        "icon": "/images/sienna/sienna-pyromancer.webp",
+        "passives": [],
+        "talents": []
+      },
+      "unchained": {
+        "name": "unchained",
+        "icon": "/images/sienna/sienna-unchained.webp",
+        "passives": [],
+        "talents": []
+      },
+      "necromancer": {
+        "name": "necromancer",
+        "icon": "/images/sienna/sienna-necromancer.webp",
+        "passives": [],
+        "talents": []
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "changes": [""]
+      }
+    ]
+  }
+}

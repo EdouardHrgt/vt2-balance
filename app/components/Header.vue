@@ -41,6 +41,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  font-weight: 900;
   font-family: 'Quintessential', serif;
 }
 
