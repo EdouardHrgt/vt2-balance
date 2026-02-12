@@ -16,7 +16,7 @@
       <p class="err" v-if="errorMsg">... No Changelogs found for this Mod ...</p>
 
       <!-- WEAPONS -->
-      <WeaponsCarousel :weapons="modData.weapons" v-if="modData.weapons"/>
+      <WeaponsCarousel :weapons="modData.weapons" :mod="modName" v-if="modData.weapons" />
       <!-- CAREERS CHANGES -->
       <div class="articles-container" v-if="errorMsg == false">
         <article
@@ -289,6 +289,10 @@ li {
 }
 
 @media (max-width: 950px) {
+  h1,
+  .title-mod-name {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -313,16 +317,35 @@ li {
     text-align: center;
     margin-top: 1rem;
   }
-  h1 {
-    font-size: 36px;
-    padding-inline: 1rem;
-  }
   .title-mods,
   .articles-container {
     padding-inline: 1.2rem;
   }
+  .title-infos {
+    display: block;
+    margin-bottom: 1rem;
+    gap: 0;
+  }
+  .sub-h1 {
+    display: none;
+  }
+  h1 {
+    margin-block: 0;
+  }
 }
 
 @media (max-width: 550px) {
+  h1,
+  .title-mod-name {
+    font-size: 28px;
+    margin: 0;
+  }
+  .title-infos {
+    display: block;
+    margin-bottom: 0rem;
+  }
+  .title-mods-scrolled {
+    padding-block: 0.5rem;
+  }
 }
 </style>

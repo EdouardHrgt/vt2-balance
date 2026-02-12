@@ -20,10 +20,10 @@ defineProps({
 const emit = defineEmits(['modSelected'])
 
 const mods = {
-  tb: { label: 'tourney balance', id: 1 },
-  clb: { label: 'class balance', id: 2 },
-  cB: { label: 'core balance', id: 3 },
-  lb: { label: 'linesman balance', id: 4 },
+  tb: { label: 'tourney balance', id: 1, short: 'tb' },
+  clb: { label: 'class balance', id: 2, short: 'cb' },
+  cB: { label: 'core balance', id: 3, short: 'cbr' },
+  lb: { label: 'linesman balance', id: 4, short: 'lb' },
 }
 
 const selectMod = (mod) => {
@@ -77,6 +77,19 @@ p {
   section {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  p {
+    font-size: 15px;
+  }
+  div {
+    padding: 0 0.5rem;
+  }
+  section {
+    gap: 0.5rem;
+    margin-bottom: 0rem;
   }
 }
 </style>
