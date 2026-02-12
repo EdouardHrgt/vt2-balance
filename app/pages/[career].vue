@@ -189,9 +189,9 @@ article {
   align-items: start;
   gap: 2rem;
   position: relative;
-  max-width: 950px;
+  /* max-width: 950px;
   width: 100%;
-  margin-inline: auto;
+  margin-inline: auto; */
 }
 
 li {
