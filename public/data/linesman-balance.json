@@ -241,6 +241,7 @@
       "handmaiden": {
         "name": "handmaiden",
         "icon": "/images/kerillian/kerillian-handmaiden.webp",
+        "untouched": true,
         "passives": [],
         "talents": []
       },

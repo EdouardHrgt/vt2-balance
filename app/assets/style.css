@@ -88,6 +88,7 @@ li {
   --grey-400: #e6d4bf;
   --red-900: #c91e10;
   --yellow-900: #f1e500;
+  --yellow-400: rgb(255, 176, 72);
 
   /* SPACING */
   --p-block-spacing: 2rem;
@@ -104,8 +105,13 @@ li {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #920101 #2b2b2b;
+}
+
 @media (max-width: 750px) {
- .blur-box {
-  padding: 1rem;
-} 
+  .blur-box {
+    padding: 1rem;
+  }
 }

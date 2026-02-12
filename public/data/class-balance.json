@@ -360,73 +360,411 @@
       "ranger-veteran": {
         "name": "ranger veteran",
         "icon": "/images/bardin/bardin-ranger-veteran.webp",
-        "passives": [""],
+        "passives": [
+          "Survivalist: Added an 8 second cooldown to ammo drops, This cooldown can be bypassed by bursting down a specific number of specials within the 8 second window: 4 (Cata 3), 3 (Cata 1), and 2 below.",
+          "Added a blue buff icon that shows the cooldown window.",
+          "Increased the amount of ammo gained from Survivalist pouches to 15% (from 10%).",
+          "Can now equip the Trollhammer Torpedo and Dual Axes."
+        ],
         "talents": [
           {
-            "name": "",
+            "name": "Last Resort",
             "level": 10,
-            "changes": [""]
+            "changes": [
+              "Replaced with new talent Bombardment: Grants a free bomb throw every 120 seconds."
+            ]
           },
           {
-            "name": "",
+            "name": "Foe-Feller",
             "level": 10,
-            "changes": [""]
+            "changes": [
+              "Replaced with a new version of Ranger’s Parting Gift: Allows to use a healing item for free every 4 minutes, The free heal also heals nearby allies for 15% of their max health and clears wounds when Ranger Veteran heals himself."
+            ]
+          },
+          {
+            "name": "Drunken Brawler",
+            "level": 20,
+            "changes": [
+              "Ales grant 2.5% attack speed and 4% damage reduction for 4 minutes.",
+              "Can stack 5 times."
+            ]
+          },
+          {
+            "name": "Grungni’s Cunning",
+            "level": 20,
+            "changes": [
+              "Lowered the increasement to ammo gained from Survivalist pouches to 25% (down from 30%)."
+            ]
+          },
+          {
+            "name": "Scavenger",
+            "level": 20,
+            "changes": [
+              "Changed the proc condition: Now drops either a potion or a bomb after killing a specific amount of specials: 11 (Cata 3), 8 (Cata 1), and 6 below.",
+              "Chaos Wastes potions have been added to the drop pool with a lower chance."
+            ]
+          },
+          {
+            "name": "No Dawdling!",
+            "level": 25,
+            "changes": [
+              "Ranged headshots give Bardin 5 stacks.",
+              "ranged bodyshots remove 2 stacks.",
+              "missed shots do not consume stacks: Every stack increases ranged power by 1%, max 25 stacks.",
+              "Still increases movement speed by 10%."
+            ]
+          },
+          {
+            "name": "Exhilarating Vapours",
+            "level": 30,
+            "changes": [
+              "Replaced with new talent Neutralizing Vapours: Allies within Bardin’s smoke are immune to gas and gain 3 temp HP per second."
+            ]
+          },
+          {
+            "name": "Surprise Guest",
+            "level": 30,
+            "changes": [
+              "Replaced with new talent “Stimulating Vapours”.",
+              "Bardin’s smoke no longer conceals him from enemies, Bardin gains 25% cooldown reduction, 20% increased reload speed, and does not lose ammo when he hits an enemy with a ranged weapon."
+            ]
+          },
+          {
+            "name": "Ranger’s Parting Gift",
+            "level": 30,
+            "changes": [
+              "Replaced with new talent “Destructive Vapours”.",
+              "Bardin applies the effect of the potion he is carrying to his closest ally (needs to have a potion in his inventory).",
+              "Allies within Bardin’s smoke gain 1.5 temp HP per second."
+            ]
           }
         ]
       },
       "ironbreaker": {
         "name": "iron breaker",
         "icon": "/images/bardin/bardin-iron-breaker.webp",
-        "passives": [],
-        "talents": []
+        "passives": [
+          "New additional perk: Ironbreaker is no longer slowed from being overcharged.",
+          "Can now equip the Dual Axes."
+        ],
+        "talents": [
+          {
+            "name": "Under Pressure",
+            "level": 10,
+            "changes": ["Every nearby ally increases stagger power by 15%."]
+          },
+          {
+            "name": "Rune-Etched Shield",
+            "level": 10,
+            "changes": [
+              "Grants 10% attack speed, halves the effect of Dwarf-Forged.",
+              "Reduces max HP by 10%."
+            ]
+          },
+          {
+            "name": "Vengeance",
+            "level": 20,
+            "changes": [
+              "Now adds a Vengeance stack every 3 seconds (up to 8 stacks).",
+              "When proc’ed, grants 4% attack speed per stack for 10 seconds.",
+              "Ironbreaker is immune to friendly fire while Gromril Armour is active."
+            ]
+          },
+          {
+            "name": "Miner’s Rhythm",
+            "level": 25,
+            "changes": [
+              "Every 10 seconds, Ironbreaker’s next heavy attack will taunt enemies in close proximity for 4 seconds.",
+              "Does not proc when Impenetrable is active.",
+              "Can taunt bosses when Oi! Wazzok! is selected as well."
+            ]
+          },
+          {
+            "name": "Booming Taunt",
+            "level": 30,
+            "changes": ["Taunt duration reduced to 12.5 seconds (down from 15 seconds)."]
+          }
+        ]
       },
       "slayer": {
         "name": "slayer",
         "icon": "/images/bardin/bardin-slayer.webp",
-        "passives": [],
+        "passives": [
+          "Added Adrenalin Surge with reduced effectiveness to Trophy Hunter:",
+          "Ultimate cooldown rate is increased by 150% (down from 200%) when at max Trophy Hunter stacks.",
+          "Leap: Old Crunch! stagger level is baseline now for Slayer’s Leap.",
+          "Using the CB toggle keybind forces Slayer to always jump when activating Leap, no matter the distance."
+        ],
         "talents": [
           {
-            "name": "",
+            "name": "A Thousand Cuts",
             "level": 10,
-            "changes": [""]
+            "changes": [
+              "Merged with Skull-Splitter to create new talent “A Thousand-Spliter”:",
+              "Wielding two 1-handed weapons increases attack speed by 10%.",
+              "Wielding two 2-handed weapons increases power by 20% (up from 15%)."
+            ]
           },
           {
-            "name": "",
-            "level": 15,
-            "changes": [""]
+            "name": "Skull-Splitter",
+            "level": 10,
+            "changes": [
+              "Replaced with new talent “No Fear”:",
+              "Increases the power level against armored enemies and bosses by 25%."
+            ]
+          },
+          {
+            "name": "Hack and Slash",
+            "level": 10,
+            "changes": ["Decreases the mass of enemies by 50%."]
+          },
+          {
+            "name": "Adrenaline Surge",
+            "level": 20,
+            "changes": ["Trophy Hunter also increases attack speed by 2.5% per stack."]
+          },
+          {
+            "name": "Barge",
+            "level": 25,
+            "changes": ["Increases dodge distance by 20%."]
+          },
+          {
+            "name": "(Heavy) Crunch!",
+            "level": 30,
+            "changes": ["Now grants even more stagger power, within a decreased radius."]
+          },
+          {
+            "name": "Dawi-Drop",
+            "level": 30,
+            "changes": ["Now grants 75% weapon bonus damage for 3 seconds after ulting."]
           }
         ]
       },
       "outcast-engineer": {
         "name": "outcast engineer",
         "icon": "/images/bardin/bardin-outcast-engineer.webp",
-        "passives": [],
+        "passives": [
+          "Gunsmith: Added new mechanic: Killing a special or elite with the Crank Gun activates Innovative Recycling, which then allows Engi to regain 12.5% of his max ammo when landing at least 15 shots with the Crank Gun (10 for Gromril-Plated Shot), Has a cooldown of 15 seconds",
+          "New perk Added “old Bombardier”: Engi’s bombs get the effect of both regular and incendiary bombs.",
+          "Steam-Assisted Crank Gun: Increased Engi’s base ultimate cooldown to 75 seconds, Increased dodge count to 2."
+        ],
         "talents": [
           {
-            "name": "",
+            "name": "Ingenious Ordnance",
             "level": 10,
-            "changes": [""]
+            "changes": [
+              "Replaced with old talent Armour Piercing Slugs.",
+              "Non-explosive ranged attacks pierce 1 additional enemy."
+            ]
           },
           {
-            "name": "",
-            "level": 15,
-            "changes": [""]
+            "name": "Combined Arms",
+            "level": 10,
+            "changes": [
+              "Ranged kills increase weapon damage by 2% for 10 seconds.",
+              "Max 15 stacks."
+            ]
+          },
+          {
+            "name": "Full Head of Steam",
+            "level": 20,
+            "changes": ["Grants 15% power at 5 Pressure Stacks instead of attack speed."]
+          },
+          {
+            "name": "Perilous Overclock",
+            "level": 20,
+            "changes": [
+              "Killing a special or elite with a ranged weapon grants 10% ultimate cooldown reduction.",
+              "Can proc every second.",
+              "Pressure stacks are reduced to a maximum of 2."
+            ]
+          },
+          {
+            "name": "Superior Gaskets",
+            "level": 20,
+            "changes": [
+              "Pressure stacks last for 25 seconds, granting 2.5% attack speed each.",
+              "Pressure stacks are reduced to a maximum of 4."
+            ]
+          },
+          {
+            "name": "Bombardier",
+            "level": 25,
+            "changes": [
+              "Each Crank Gun hit reduces damage taken by 2% for 3 seconds.",
+              "Max 25 stacks."
+            ]
+          },
+          {
+            "name": "Piston Power",
+            "level": 25,
+            "changes": ["Increases movement speed by 10% and dodge distance by 20%."]
+          },
+          {
+            "name": "Gromril-Plated Shot",
+            "level": 30,
+            "changes": [
+              "More cleave and ability to attack through shields.",
+              "Increased damage to super-armored enemies and bosses.",
+              "Increased effective range.",
+              "Increased headshot multiplier.",
+              "Innovative Ammo Hoppers.",
+              "Reduced the bonus to Crank Gun ultimate cooldown to 25%."
+            ]
           }
         ]
       }
     },
     "weapons": [
       {
-        "name": "",
-        "changes": ["", "", "", "", ""]
+        "name": "Axe & Shield",
+        "changes": [
+          "Light 1: Now has the same damage profile as the Push Attack.",
+          "Light 2: Now has the same damage profile as the Push Attack.",
+          "Heavy 1: Can now reach a second charge state which has a lot more stagger power but leaves you somewhat open (charge up works similar to Rapier’s heavies).",
+          "Push attack: Now a move-tech."
+        ]
       },
       {
-        "name": "",
-        "changes": ["", "", "", "", ""]
+        "name": "Cog Hammer",
+        "changes": ["It is now possible to buffer heavy attacks."]
       },
       {
-        "name": "",
-        "changes": ["", "", "", "", ""]
+        "name": "Dual Axes",
+        "changes": [
+          "Push cost reduced from 2 stamina to 1 (half a shield).",
+          "Heavy 1: Chaining into Heavy 2 is now 0.15s faster.",
+          "Heavy 2: Attack Speed increase by 14%, Chaining into Heavy 3 is now 0.2s faster.",
+          "Heavy 3: Attack Speed increase by 14%."
+        ]
+      },
+      {
+        "name": "Dual Hammers",
+        "changes": [
+          "Light attacks: Reduced window to chain into light attacks by 0.2 seconds, from 0.4 to 0.2 seconds.",
+          "Light 4: Increased overall damage to 0.3 (from 0.25), Reduced the time to chain into heavy attacks from Light 4 from 1s to 0.8s.",
+          "Push attack: Increased headshot multiplier to 2.5 (from 2), Increased Infantry damage to 1.25 (from 1), Increased overall damage to 0.225 (from 0.2), Reduced time to chain into light attacks by 0.12s, from 0.45 to 0.33 seconds."
+        ]
+      },
+      {
+        "name": "Great Axe",
+        "changes": [
+          "Light attacks: Increased Armour damage by 0.06, from 0.8 to 0.86.",
+          "Light 2: Reduced chain timer by 0.05 seconds, 0.65 to 0.6 seconds.",
+          "Heavy attacks: Increased damage cleave and stagger cleave by 0.2, from 0.35 (10.45 in-game) to 0.54289(16.2 in-game), The 1st and 2nd enemy cleaved are dealt increased headshot damage by 0.25, from 0.75 to 1, Reduced stagger and damage cleave to 0.5428(16.2 in-game) from 0.9(26.86), Reduced the overall damage dealt to the 2nd enemy by 0.2, from 0.45 to 0.25, Reduced the overall damage dealt to the 3rd enemy by 0.3, from 0.45 to 0.15, Reduced the overall damage dealt to the 4rd enemy by 0.35, from 0.45 to 0.1.",
+          "Push attack: Increased attack speed by 10%, Reduced chain timer by 0.1 seconds, from 0.75 to 0.65 seconds, Increased Infantry damage by 0.2, from 1 to 1.2, Increased Armour damage by 0.8, from 0.3 to 1.1, Increased overall damage against the 2nd cleaved by 0.05, from 0.15 to 0., Increased overall stagger against the 2nd enemy cleaved by 0.05, from 0.125, to 0.175, Increased overall damage against the 3rd cleaved by 0.05, from 0.1 to 0.15, Increased overall stagger against the 3rd enemy cleaved by 0.05, from 0.1 to 0.15."
+        ]
+      },
+      {
+        "name": "Great Hammer",
+        "changes": [
+          "Light 3: Increased stagger significantly.",
+          "Heavy attacks: Increased damage cleave by 0.2, from 0.3(8.95 in-game) to 0.5(14.92 in-game), Increased overall damage against 1st enemy cleaved by 0.15, from 0.275 to 0.425, Reduced overall damage against the 2nd enemy cleaved by 0.05, from 0.35 to 3, Increased overall damage against 3rd enemy cleaved by 0.1, from 0.075 to 0.075, Increased Infantry Crit damage from 1 to 1.2, Decreased Armour damage by 0.135, from 0.5 to 0.365, Reduced Berserker/Monk damage by 0.25, from 0.75 to 0.5.",
+          "Push attack: Added 12.5% crit chance."
+        ]
+      },
+      {
+        "name": "Hammer & Shield",
+        "changes": [
+          "Weapon special (new):  Super shield bash with lots of stagger power, has a 4 second cooldown."
+        ]
+      },
+      {
+        "name": "One-handed Axe",
+        "changes": [
+          "Increased headshot multipliers for all attacks.",
+          "Light attacks: Increased attack speed by ~10%, Reduced range slightly, Increased armor damage, berserker damage slightly, Reduced super-armor damage.",
+          "Light 3: Increased cleave.",
+          "Heavy attacks: Increased super-armor damage, Increased headshot damage significantly, Reduced crit bonus damage.",
+          "Push: Increased cost from 1 to 2 stamina."
+        ]
+      },
+      {
+        "name": "1H Hammer",
+        "changes": [
+          "Reduced stamina count from 4.5 shields to 3.",
+          "Increased stagger for all attacks.",
+          "Heavy 1: Now chains into Light 4.",
+          "Heavy 2: Now a horizontal attack.",
+          "Push: Increased cost from 1 to 2 stamina.",
+          "Weapon special (new): Uppercut with lots of stagger power, Costs 2 stamina (1 shield), has a 2 second cooldown."
+        ]
+      },
+      {
+        "name": "War Pick",
+        "changes": [
+          "Light attacks: Now break shields.",
+          "Heavy attacks: When fully charged, now explode on hit (use Flaming Flail’s Heavy 1 explosion template).",
+          "Push attack: Something is fucked here. This needs checking…"
+        ]
+      },
+      {
+        "name": "Crossbow",
+        "changes": ["Weapon special (new): Enables a second zoom level when aiming down sights."]
+      },
+      {
+        "name": "Drakefire Pistols",
+        "changes": [
+          "Left click: Holding down left click fires the pistols as fast as quickly pressing left click does, Increased damage cleave from 0.15 (4.48 in-game) to 0.23 (6.86 in-game), Increased heat cost from 2.5 to 4.62.",
+          "Dual shot: Now breaks shields, Reduced infantry damage from 1 to 0.5, Increased heat cost from 4.62 to 12."
+        ]
+      },
+      {
+        "name": "Grudge-Raker",
+        "changes": [
+          "Increased base ammo capacity from 18 to 20.",
+          "Weapon special (new): Fires both barrels at once."
+        ]
+      },
+      {
+        "name": "Handgun",
+        "changes": [
+          "Clip size increased from 1 to 2.",
+          "Reduced reload time from 1.8s to 1.65s.",
+          "Added the ability to always cleave through one additional enemy.",
+          "Can no longer shoot through shields without aiming down sights."
+        ]
+      },
+      {
+        "name": "Masterwork Pistol",
+        "changes": [
+          "Increased base ammo capacity from 24 to 27.",
+          "Left click: Decreased weapon swap time from a total of 0.9s to 0.6s, Now twice as accurate, Increased Super-Armour damage at close range by 0.5, from 0 to 0.5, Increased Mauler headshot damage by 0.8, Increased Chaos Warrior headshot damage by 0.6.",
+          "Fast shot: Decreased fire rate by ~33%, Increased Monster damage by 0.4, from 2.1 to 2.5."
+        ]
+      },
+      {
+        "name": "Throwing Axes",
+        "changes": [
+          "The time required to begin recalling the axes has been halved. Reduced from 0.5 to 0.25 seconds.",
+          "Increased reload speed by 20%.",
+          "Swapping weapons after a normal and charged throw can now be done earlier.",
+          "Timers have been reduced from 0.6 to 0.4 seconds and from 0.5 to 0.35 seconds respectively.",
+          "Charged Throw: Increased headshot multiplier from 1 to 2."
+        ]
+      },
+      {
+        "name": "Trollhammer Torpedo",
+        "changes": [
+          "Now uses energy as a resource instead of regular ammo: Max energy pool is 30. ",
+          "Each shot drains 10 energy. Must have at least 10 energy to shoot.",
+          "Each shot incurs a 4 second delay before another shot can be fired.",
+          "The energy pool recharges at a rate of 0.5/s (i.e. 1 shot every 20s). ",
+          "You no longer have to reload actively.",
+          "Shifted the main damage from the explosion to the projectile.",
+          "Lowered the damage radius of the explosion.",
+          "Increased the projectile’s headshot multiplier.",
+          "Critical hits deal no bonus damage."
+        ]
+      },
+      {
+        "name": "Drakegun",
+        "changes": [
+          "Flame Burst Increased duration.",
+          "The increased duration means that the heat cost comes in two intervals, This can blow you up if you are already on high heat.",
+          "Charged Flame Stream: Now fires a slow, fireball-like projectile that staggers in a small AoE, The AoE also removes Infantry shields, On direct hit, the projectile destroys banners, any shield and staggers bosses.",
+          "Uninterruptible during charge up."
+        ]
       }
     ]
   },

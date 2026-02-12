@@ -1,12 +1,22 @@
 <template>
   <section>
-    <div v-for="mod in mods" :key="mod.id" @click="selectMod(mod)">
+    <div
+      v-for="mod in mods"
+      :key="mod.id"
+      @click="selectMod(mod)"
+      :class="{ 'mod-selected': selectedModId === mod.id }">
       <p>{{ mod.label }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+defineProps({
+  selectedModId: {
+    type: Number,
+    default: null,
+  },
+})
 const emit = defineEmits(['modSelected'])
 
 const mods = {
@@ -44,6 +54,13 @@ div {
 p {
   text-transform: capitalize;
   font-size: 20px;
+}
+
+.mod-selected {
+  background: linear-gradient(to right, rgba(253, 217, 12, 0.3), rgba(255, 94, 0, 0.4)) !important;
+  border: 2px solid #fdd90c;
+  transform: scale(1.05);
+  box-shadow: 0 6px 40px rgba(255, 145, 0, 0.4);
 }
 
 @media (hover: hover) {

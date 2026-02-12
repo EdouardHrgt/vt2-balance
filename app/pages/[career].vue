@@ -1,15 +1,23 @@
 <template>
   <main v-if="career">
     <section class="title-mods" :class="{ 'title-mods-scrolled': isSticky }" ref="stickySection">
-      <h1 v-if="modName">{{ career }} : {{ modName }}</h1>
+      <div class="title-infos" v-if="modName">
+        <h1>{{ career }} :</h1>
+        <p class="title-mod-name">{{ modName }}</p>
+      </div>
       <h1 v-else>
         {{ career }} :
         <span class="sub-h1">(Please select a Mod)</span>
       </h1>
-      <ModPicker @modSelected="handleModSelection" />
+      <ModPicker @modSelected="handleModSelection" :selectedModId="selectedModId" />
     </section>
+
     <div v-if="modName">
       <p class="err" v-if="errorMsg">... No Changelogs found for this Mod ...</p>
+
+      <!-- WEAPONS -->
+      <WeaponsCarousel :weapons="modData.weapons" v-if="modData.weapons"/>
+      <!-- CAREERS CHANGES -->
       <div class="articles-container" v-if="errorMsg == false">
         <article
           v-for="(cls, index) in modData.careers"
@@ -17,7 +25,6 @@
           :style="{ '--article-index': index }"
           class="blur-box article-animate">
           <img :src="cls.icon" :alt="'picture of ' + cls.name" />
-
           <div class="content">
             <h3 v-if="cls.untouched" class="untouched">/.\ No changes made /.\</h3>
             <div class="passives" v-if="cls.passives?.length">
@@ -48,14 +55,15 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue'
+
 const route = useRoute()
 const career = ref(route.params.career)
-
 const modData = ref(null)
 const modName = ref('')
 const errorMsg = ref(false)
 const isSticky = ref(false)
 const stickySection = ref(null)
+const selectedModId = ref(null)
 
 const modFiles = {
   1: 'tourney-balance.json',
@@ -66,6 +74,7 @@ const modFiles = {
 
 const handleModSelection = async (mod) => {
   modName.value = mod.label
+  selectedModId.value = mod.id
   try {
     const fileName = modFiles[mod.id]
     const response = await fetch(`/data/${fileName}`)
@@ -125,7 +134,15 @@ onUnmounted(() => {
   padding-block: 1rem;
 }
 
-h1 {
+.title-infos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+h1,
+.title-mod-name {
   font-size: 46px;
   text-align: center;
   margin-block: 1rem;
@@ -137,6 +154,13 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.title-mod-name {
+  background: linear-gradient(to right, #fdd90c, #ff5e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .sub-h1 {
@@ -153,12 +177,13 @@ h2 {
 }
 
 h4 {
-  color: rgb(255, 176, 72);
+  color: var(--yellow-400);
   margin-top: 0.7rem;
   font-size: 24px;
   list-style: none;
 }
 
+/* CAREERS CHANGES */
 .articles-container {
   display: flex;
   flex-direction: column;
@@ -189,9 +214,9 @@ article {
   align-items: start;
   gap: 2rem;
   position: relative;
-  /* max-width: 950px;
+  max-width: 1440px;
   width: 100%;
-  margin-inline: auto; */
+  margin-inline: auto;
 }
 
 li {
