@@ -23,6 +23,7 @@ const closePopup = () => {
   <main>
     <CareersList />
     <h1>Pick a career to see the <strong class="title-str">Changelogs</strong></h1>
+
     <Transition name="popup">
       <div v-if="showPopup" class="txt blur-box">
         <p>
@@ -36,15 +37,11 @@ const closePopup = () => {
         </p>
         <p>
           The goal is simple: <strong>give players fast access to key info</strong> without digging
-          through documents or reading walls of text.
+          through tons of documents.
         </p>
         <p>
           I worked on this project alone, and with so much text, there may be a <br />
           <strong>few mistakes</strong>. If you spot anything off, feel free to let me know.
-        </p>
-        <p>
-          I also had to standardize how details are shown across all mods, so specifically for
-          weapons with lots of changes, it might feel a bit heavy. Sorry about that 😉
         </p>
         <p>
           It's impossible for me to track every mod change alone, so <br />
@@ -87,6 +84,8 @@ h1 {
   width: fit-content;
   padding: 2rem;
   margin-top: 2rem;
+  z-index: 150;
+  position: relative;
 }
 
 p {

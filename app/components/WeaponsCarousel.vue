@@ -42,6 +42,7 @@ const closeModal = () => {
     <div class="weapons" ref="carouselRef">
       <article class="weapon" v-for="weapon in weapons" :key="weapon.name">
         <div class="weapon-header">
+          <img :src="weapon.icon" :alt="weapon.name" />
           <h2 class="weapon-h2">{{ weapon.name }}</h2>
         </div>
         <button class="see-more-btn" @click="openModal(weapon)">See Details</button>
@@ -126,6 +127,13 @@ const closeModal = () => {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.weapon-header img {
+  display: block;
+  margin-inline: auto;
+  aspect-ratio: 1/1;
+  width: 85px;
+}
+
 .weapon-header h2 {
   font-size: 28px;
   text-align: center;
@@ -138,7 +146,7 @@ const closeModal = () => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .see-more-btn {
@@ -445,6 +453,9 @@ const closeModal = () => {
   }
   .modal-close span {
     font-size: 20px;
+  }
+  .weapon-header img {
+    width: 75px;
   }
 }
 
