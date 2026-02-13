@@ -68,7 +68,7 @@ const closeModal = () => {
             <div v-if="selectedWeapon" class="modal-body">
               <div class="modal-header">
                 <h2 class="modal-title">{{ selectedWeapon.name }}</h2>
-                <strong>[ {{ mod }} ]</strong>
+                <strong>{{ mod }}</strong>
               </div>
               <ul class="modal-list">
                 <li v-for="change in selectedWeapon.changes" :key="change">
@@ -176,7 +176,7 @@ const closeModal = () => {
 
 .btns {
   position: absolute;
-  bottom: -35px;
+  bottom: -18px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -185,7 +185,7 @@ const closeModal = () => {
 
 .carousel-btn {
   background-color: var(--black-900);
-  border: 2px solid #e7c9a9;
+  border: 1px solid #e7c9a9;
   border-radius: 8px;
   cursor: pointer;
   z-index: 10;
@@ -197,14 +197,14 @@ const closeModal = () => {
 
 .carousel-btn p {
   color: var(--white-900);
-  font-size: 28px;
+  font-size: 20px;
   padding: 0.2rem 2rem;
 }
 
 @media (hover: hover) {
   .carousel-btn:hover {
     background-color: var(--white-900);
-    border: 2px solid var(--black-900);
+    border: 1px solid var(--black-900);
   }
   .carousel-btn:hover.carousel-btn p {
     color: var(--black-900);

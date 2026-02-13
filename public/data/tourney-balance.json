@@ -740,6 +740,7 @@
     "weapons": [
       {
         "name": "Axe & Falchion",
+        "icon": "/images/saltzpyre/weapons/axeandfalchion.webp",
         "changes": [
           "Lights 2 and 3 (Falchion): Linesman added.",
           "Push Attack: Linesman removed.",
@@ -748,16 +749,19 @@
       },
       {
         "name": "Billhook",
+        "icon": "/images/saltzpyre/weapons/billhook.webp",
         "changes": ["Special: THP gained per target while using Vanguard decreased by ~78%."]
       },
       {
         "name": "Falchion",
+        "icon": "/images/saltzpyre/weapons/falchion.webp",
         "changes": [
           "Lights and Push Attack: Lights and PA given the same damage profile and buffs as Kruber's/Sienna's 1H Sword, except when contradicted by the following: L1, L2, and PA Damage Cleave increased by 20%, L1, L2, and PA Non-Crit Armor Damage decreased by 20%, L1, L2, and PA Monster Crit Multiplier decreased by 20%."
         ]
       },
       {
         "name": "Flail",
+        "icon": "/images/saltzpyre/weapons/flail.webp",
         "changes": [
           "Lights 1 and 2: L1 Attack Speed increased by 25%, L2 Attack Speed increased by 35%, L1 and L2 Move Speed during animation increased by ~13%, Stagger Cleave increased by 100%.",
           "Push Attack: Attack Speed increased by ~18%, Stagger Cleave increased by 100%.",
@@ -767,6 +771,7 @@
       },
       {
         "name": "Greatsword",
+        "icon": "/images/saltzpyre/weapons/greatsword.webp",
         "changes": [
           "Lights: Finesse Coefficient increased by ~33, Damage Cleave increased by ~14%, Damage on 1st Target increased by 10%, Damage on 2nd Target decreased by 10%, Damage on 3rd Target increased by ~17%.",
           "Push Attack: Attack Speed increased by ~14%, Damage decreased by 50%, Stagger decreased by 20%, Non-Crit Infantry Damage increased by 25%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by 60%, Infantry Crit Multiplier increased by 25%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%.",
@@ -775,6 +780,7 @@
       },
       {
         "name": "Holy Greathammer",
+        "icon": "/images/saltzpyre/weapons/hollygreathammer.webp",
         "changes": [
           "Light 3: Damage on 2nd Target increased by 100%.",
           "Heavy 1: Damage on 2nd Target decreased by ~78%.",
@@ -784,6 +790,7 @@
       },
       {
         "name": "1H Axe",
+        "icon": "/images/saltzpyre/weapons/axe.webp",
         "changes": [
           "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
           "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
@@ -791,6 +798,7 @@
       },
       {
         "name": "1H Hammer",
+        "icon": "/images/saltzpyre/weapons/hammer.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
           "Lights 1 and 2: Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
@@ -800,11 +808,13 @@
       },
       {
         "name": "Brace of Pistols",
+        "icon": "/images/saltzpyre/weapons/bop.webp",
         "changes": ["Maximum ammo increased by ~67%.", "Reload time decreased by 20%."]
       },
 
       {
         "name": "Griffon foot",
+        "icon": "/images/saltzpyre/weapons/griffon.webp",
         "changes": [
           "Number of pellets decreased from 18 to 12.",
           "Cleave decreased by 50%.",
@@ -914,6 +924,7 @@
     "weapons": [
       {
         "name": "Crowbill",
+        "icon": "/images/sienna/weapons/crowbill.webp",
         "changes": [
           "Light 1: Damage on 1st target increased by 20%, Finesse Coefficient on 2nd target increased by 32%, Damage on 2nd target increased by 120%, Finesse Coefficient on 3rd target decreased by 23%, Damage on 3rd target decreased by 32%, Finesse, Coefficient on 4th target and above decreased by 33%, Damage on 4th target and above decreased by 57%, Non-Crit Infantry damage increased by 14%, Non-Crit Super Armor damage increased by 70%, Infantry Crit multiplier increased by 10%, Armor Crit multiplier decreased by 6%, Monster Crit multiplier decreased by 10%, Super Armor Crit multiplier decreased by 10%.",
           "Light 2: Damage on 1st target increased by 40%, Finesse Coefficient on 2nd target increased by 40%, Damage on 2nd target increased by 181%, Finesse Coefficient on 3rd target decreased by 13%, Damage on 3rd target increased by 1%, Finesse Coefficient on 4th target decreased by 20%, Damage on 4th target decreased by 18%, Finesse Coefficient on 5th target decreased by 27%, Damage on 5th target decreased by 38%, Finesse Coefficient on 6th target and above decreased by 33%, Damage on 6th target and above decreased by 57%, Non-Crit Infantry damage increased by 14%, Non-Crit Armor damage increased by 6%, Non-Crit Berserker damage increased by 5%, Non-Crit Super Armor damage increased by 70%, Armor Crit multiplier decreased by 6%, Berserker Crit multiplier decreased by 3%, Super Armor Crit multiplier decreased by 6%.",
@@ -927,6 +938,7 @@
       },
       {
         "name": "Flaming Flail",
+        "icon": "/images/sienna/weapons/flamingflail.webp",
         "changes": [
           "Lights 1 and 2: Tank added.",
           "Heavy 1: Attack Speed decreased by ~20%, Stagger on direct hit decreased by ~58%, Stagger on AoE decreased by ~29%."
@@ -934,6 +946,7 @@
       },
       {
         "name": "Sienna Mace",
+        "icon": "/images/sienna/weapons/mace.webp",
         "changes": [
           "Light 1: Non-Crit Infantry Damage increased by 20%, Non-Crit Armor Damage increased by ~69%, Non-Crit Zerker Damage increased by ~87%, Range increased by ~9%, Infantry Crit Multiplier decreased by 4%, Armor Crit Multiplier increased by 20%, Super Armor Crit Multiplier increased by 20%.",
           "Light 2: Range increased by 20%, Non-Crit Infantry Damage increased by 20%, Non-Crit Armor Damage increased by ~69%, Non-Crit Zerker Damage increased by ~87%, Infantry Crit Multiplier decreased by 4%, Armor Crit Multiplier increased by 20%, Super Armor Crit Multiplier increased by 20%.",
@@ -944,6 +957,7 @@
       },
       {
         "name": "Ensorcelled Reaper",
+        "icon": "/images/sienna/weapons/ensorcelledreaper.webp",
         "changes": [
           "Light 1: Damage profile changed to be shared with Bretonnian Longsword Light 3, Damage on 1st Target increased by ~23%, Stagger on 1st Target increased by 25%, Finesse Coefficient increased by 100%, Armor Crit Multiplier decreased by 20%, Super Armor Crit Multiplier decreased by 20%.",
           "Light 2 and Push Attack: Now has the same damage profile as Light 1, Finesse Coefficient increased by ~33%, Damage on 1st Target increased by 60%, Stagger on 1st Target increased by 25%, Non-Crit Armor Damage on 1st Target increased by 60%, Non-Crit Super Armor Damage on 1st Target increased by 60%, Non-Crit Monster Damage on 1st Target decreased by ~3%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%, Non-Crit Infantry Stagger on 1st Target increased by ~11%, Non-Crit Armor Stagger on 1st Target decreased by 20%, Non-Crit Super Armor Stagger on 1st Target decreased by 20%.",
@@ -955,6 +969,7 @@
       },
       {
         "name": "1H Sword",
+        "icon": "/images/sienna/weapons/sword.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
           "Light 1 and 2: Damage increased by ~14%, Headshot/Crit Curve changed from Linesman to Ninja.",
@@ -964,6 +979,7 @@
       },
       {
         "name": "Beam Staff",
+        "icon": "/images/sienna/weapons/beam.webp",
         "changes": [
           "Sniper Blast: Damage increased by ~21%, Recoil after shot decreased to make rapid firing more consistent.",
           "Alt-Fire: Non-Crit Zerker Damage decreased by 40%, Heat Cost decreased by ~29%, Zerker Crit Multiplier decreased by 30%, Super Armor Crit Multiplier decreased by 40%."
@@ -971,12 +987,14 @@
       },
       {
         "name": "Bolt Staff",
+        "icon": "/images/sienna/weapons/bolt.webp",
         "changes": [
           "Full Charge: Non-Crit Infantry Damage increased by 1%, Non-Crit Armor Damage increased by ~7%."
         ]
       },
       {
         "name": "Conflagration Staff",
+        "icon": "/images/sienna/weapons/conflag.webp",
         "changes": [
           "Primary Fire: Damage against near targets increased by ~25%, Damage against far targets increased by 100%.",
           "Alt Fire: Damage on full charge increased by ~67%, Ground-fire duration increased from 2s to 10s, Time between ticks increased from 1s to 2s (total ticks increased from 1 to 5, so still buffed)."
@@ -984,6 +1002,7 @@
       },
       {
         "name": "Coruscation Staff",
+        "icon": "/images/sienna/weapons/corusc.webp",
         "changes": [
           "Primary Fire: Effective Attack Speed increased by ~13% [Animation Time decreased by 35%, Heat Cost decreased by ~33%, Increased the number of pellets by ~67%, Damage decreased by ~15-25%, Chain Timing to swap weapons out of Coruscation increased by 25%",
           "Alt-Fire: Max number of DoT stacks increased from 5 to 15, Duration of geyser decreased from 6s to 3s, Heat Cost at minimum charge increased by ~11%, Heat Cost at maximum charge increased by ~27%, Time between applying DoT stacks increased from 0.5 to 1.5."
@@ -991,6 +1010,7 @@
       },
       {
         "name": "Fireball Staff",
+        "icon": "/images/sienna/weapons/fireball.webp",
         "changes": [
           "Primary Fire: Damage against near targets increased by ~25%, Damage against far targets increased by 100%.",
           "Alt Fire: Ignores Shields, Damage increased by 25%, Damage Cleave increased by 20%, Stagger Cleave increased by 20%, Non-Crit Zerker damage increased by 1200%.",
@@ -999,6 +1019,7 @@
       },
       {
         "name": "Flamestorm Staff",
+        "icon": "/images/sienna/weapons/flamestorm.webp",
         "changes": [
           "Alt Fire: Damage Interval increased by 20%, Does not affect DoT, Target cap decreased from 50 enemies to 19 enemies."
         ]

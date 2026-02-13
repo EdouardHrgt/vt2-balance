@@ -19,34 +19,11 @@
       <WeaponsCarousel :weapons="modData.weapons" :mod="modName" v-if="modData.weapons" />
       <!-- CAREERS CHANGES -->
       <div class="articles-container" v-if="errorMsg == false">
-        <article
+        <CareerArticle
           v-for="(cls, index) in modData.careers"
           :key="cls.name || index"
-          :style="{ '--article-index': index }"
-          class="blur-box article-animate">
-          <img :src="cls.icon" :alt="'picture of ' + cls.name" />
-          <div class="content">
-            <h3 v-if="cls.untouched" class="untouched">/.\ No changes made /.\</h3>
-            <div class="passives" v-if="cls.passives?.length">
-              <h2>Passives:</h2>
-              <ul class="passives-ul">
-                <li v-for="passive in cls.passives" :key="passive">{{ passive }}</li>
-              </ul>
-            </div>
-
-            <div class="talents" v-if="cls.talents?.length">
-              <h2>Talents:</h2>
-              <ul v-for="talent in cls.talents" :key="talent" class="talents-ul">
-                <li>
-                  <h4>Level:{{ talent.level }} : {{ talent.name }}</h4>
-                  <ul class="sub-talent-ul">
-                    <li v-for="change in talent.changes">{{ change }}</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+          :career="cls"
+          :index="index" />
         <button @click="scrollToTop" class="back-to-top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -192,77 +169,12 @@ h1,
   margin-left: 1rem;
 }
 
-h2 {
-  font-family: 'Quintessential', serif;
-  letter-spacing: 1px;
-  text-decoration: underline;
-  font-size: var(--fs-2);
-}
-
-h4 {
-  color: var(--yellow-400);
-  margin-top: 0.7rem;
-  font-size: var(--fs-3);
-  list-style: none;
-}
-
-/* CAREERS CHANGES */
 .articles-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding-inline: 2rem;
   margin-top: 5rem;
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.article-animate {
-  animation: slideInUp 1s ease-out forwards;
-  animation-delay: calc(var(--article-index) * 0.1s);
-  opacity: 0;
-}
-
-article {
-  display: flex;
-  align-items: start;
-  gap: 2rem;
-  position: relative;
-  max-width: 1440px;
-  width: 100%;
-  margin-inline: auto;
-}
-
-li {
-  overflow-wrap: break-word;
-  font-family: 'Lexend Deca', sans-serif;
-  font-size: var(--fs-body);
-}
-
-.passives li {
-  list-style: disc;
-  margin-left: 1.35rem;
-  color: var(--grey-400);
-  margin-bottom: 0.3rem;
-}
-
-.talents {
-  margin-top: 1.7rem;
-}
-
-.sub-talent-ul li {
-  color: var(--grey-400);
-  list-style: disc;
-  margin-left: 1.35rem;
 }
 
 @keyframes scaleup {
@@ -290,19 +202,6 @@ li {
   padding-block: 5rem;
   transform: translateY(-50%);
   animation: scaleup 0.3s ease-out forwards;
-}
-
-.untouched {
-  text-transform: uppercase;
-  font-family: 'Rubik Marker Hatch', system-ui;
-  letter-spacing: 1px;
-  display: block;
-  position: absolute;
-  top: 6rem;
-  background: linear-gradient(to left, #fdd90c, #ff5e00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .back-to-top {
@@ -365,27 +264,6 @@ li {
 }
 
 @media (max-width: 750px) {
-  article {
-    display: block;
-  }
-  article img {
-    width: 8rem;
-    margin-inline: auto;
-  }
-  .talents {
-    margin-top: 1rem;
-  }
-  .passives li,
-  .sub-talent-ul li {
-    margin-left: 1.5rem;
-  }
-  .untouched {
-    display: block;
-    position: relative;
-    top: auto;
-    text-align: center;
-    margin-top: 1rem;
-  }
   .title-mods,
   .articles-container {
     padding-inline: 1.2rem;

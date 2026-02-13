@@ -1681,6 +1681,7 @@
     "weapons": [
       {
         "name": "Axe & Falchion",
+        "icon": "/images/saltzpyre/weapons/axeandfalchion.webp",
         "changes": [
           "Light 1 Now chains into Heavy 2.",
           "Light 2 Added Linesman hit mass count.",
@@ -1692,6 +1693,7 @@
       },
       {
         "name": "Falchion",
+        "icon": "/images/saltzpyre/weapons/falchion.webp",
         "changes": [
           "Light 1 Added Heavy Linesman hit mass count.",
           "Light 2 Added Heavy Linesman hit mass count.",
@@ -1703,6 +1705,7 @@
       },
       {
         "name": "Flail",
+        "icon": "/images/saltzpyre/weapons/flail.webp",
         "changes": [
           "Heavy 1 Increased cleave, Reduced armor damage.",
           "Heavy 2 Increased cleave, Reduced armor damage.",
@@ -1711,6 +1714,7 @@
       },
       {
         "name": "Flail & Shield",
+        "icon": "/images/saltzpyre/weapons/flailshield.webp",
         "changes": [
           "Light 1 Increased bodyshot damage slightly, Increased headshot multiplier to 2, Increased infantry damage on headshot by ~30%, Doubled armor damage on headshot, Doubled berserker damage on headshot, Increased boss damage on headshot by ~5%, Nearly doubled super-armor damage on headshot.",
           "Light 2 Increased bodyshot damage slightly, Increased headshot multiplier to 2, Increased infantry damage on headshot by ~30%, Doubled armor damage on headshot, Doubled berserker damage on headshot, Increased boss damage on headshot by ~5%, Nearly doubled super-armor damage on headshot.",
@@ -1722,6 +1726,7 @@
       },
       {
         "name": "Greatsword",
+        "icon": "/images/saltzpyre/weapons/greatsword.webp",
         "changes": [
           "Added a new attack chain with two attacks two light overheads.",
           "The Push Attack can now chain into two additional light overhead attacks. ",
@@ -1734,6 +1739,7 @@
       },
       {
         "name": "Hammer & Tome",
+        "icon": "/images/saltzpyre/weapons/hammeranddome.webp",
         "changes": [
           "Added a new light attack horizontal swipe.",
           "Push-attacking is the only way of chaining into it.",
@@ -1746,6 +1752,7 @@
       },
       {
         "name": "Holy Great Hammer",
+        "icon": "/images/saltzpyre/weapons/hollygreathammer.webp",
         "changes": [
           "Light 2 Increased overall damage by 0.15, from 0.4 to 0.55, Increased Infantry damage by 0.15, from 1 to 1.15.",
           "Light 3 Reduced overall Stagger from 0.3(8.95 in-game) by 0.1 to 0.2(5.97 in-game), Increased overall damage against the 1st enemy cleaved by 0.1, from 0.1 to 0.2, Increased overall damage against the 2nd enemy cleaved by 0.075, from 0.1 to 0.175, Increased overall damage against the 3rd enemy cleaved by 0.05, from 0.1 to 0.15, Reduced movement speed penalty at the end of the attack.",
@@ -1758,6 +1765,7 @@
       },
       {
         "name": "1h Axe",
+        "icon": "/images/saltzpyre/weapons/axe.webp",
         "changes": [
           "Increased headshot multipliers for all attacks.",
           "Light attacks Increased attack speed by ~10%, Reduced range slightly, Increased armor damage, berserker damage slightly, Reduced super-armor damage.",
@@ -1768,6 +1776,7 @@
       },
       {
         "name": "1h Hammer",
+        "icon": "/images/saltzpyre/weapons/hammer.webp",
         "changes": [
           "Reduced stamina count from 4.5 shields to 3.",
           "Increased stagger for all attacks.",
@@ -1782,6 +1791,7 @@
       },
       {
         "name": "Rapier",
+        "icon": "/images/saltzpyre/weapons/rapier.webp",
         "changes": [
           "Partially charged heavy attacks now count as light attacks.",
           "Light attacks Homogenised the time to chain into Pistol Shot across all light attacks, and the push-attack, to an effective chain timer of 0.5 seconds.",
@@ -1793,6 +1803,7 @@
       },
       {
         "name": "Brace of Pistols",
+        "icon": "/images/saltzpyre/weapons/bop.webp",
         "changes": [
           "Increased base ammo capacity from 30 to 40.",
           "Increased clip size from 12 to 30.",
@@ -1802,10 +1813,12 @@
       },
       {
         "name": "Crossbow",
+        "icon": "/images/saltzpyre/weapons/crossbow.webp",
         "changes": ["Weapon special (new) Enables a second zoom level when aiming down sights."]
       },
       {
         "name": "Griffon-foot",
+        "icon": "/images/saltzpyre/weapons/griffon.webp",
         "changes": [
           "Weapon swapping and right-clicking in quick succession is less likely to result in a bash.",
           "Reduced bash weapon swap time from 0.4 to 0.3 seconds.",
@@ -1814,6 +1827,7 @@
       },
       {
         "name": "Repeater Pistol",
+        "icon": "/images/saltzpyre/weapons/repeater.webp",
         "changes": [
           "Changed damage drop off to be more punishing beyond close range.",
           "Increased close range armor damage and super-armor damage significantly."
@@ -1821,6 +1835,7 @@
       },
       {
         "name": "Volley Crossbow",
+        "icon": "/images/saltzpyre/weapons/volleybow.webp",
         "changes": [
           "Reduced the reload time by 1 second, from 4s to 3s.",
           "Volley shot Changed the spread pattern to a burst identical to the Elven Volley Crossbow, Reduced Friendly Fire damage by 0.1, from 1 to 0.9, Reduced Crit Friendly Fire damage by 0.1, from 1 to 0.9, Reduced spread by 0.03 from 0.045 to 0.0015."
