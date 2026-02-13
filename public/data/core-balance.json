@@ -167,6 +167,7 @@
     "weapons": [
       {
         "name": "1h Mace",
+        "icon": "/images/kruber/weapons/mace.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "Light 1,2 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Power increased against target 2 from 0.075 to 0.15, Now deals 35% damage to armour on the light.",
@@ -176,6 +177,7 @@
       },
       {
         "name": "1h Sword",
+        "icon": "/images/kruber/weapons/sword.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "light 1 and 2: Changed headshot curve from smiter to ninja. This increases the headshot damage and crit damage but the headshot + crit damage is the same as before. Increased base damage by ~20%.",
@@ -185,6 +187,7 @@
       },
       {
         "name": "2h Sword",
+        "icon": "/images/kruber/weapons/greatsword.webp",
         "changes": [
           "Lights: Increased headshot coefficient to 2 from 1.5, Increased stagger cleave by ~20%, Increased damage by 20%.",
           "Push attack: Sped up by 15%.",
@@ -193,6 +196,7 @@
       },
       {
         "name": "2h Hammer",
+        "icon": "/images/kruber/weapons/greathammer.webp",
         "changes": [
           "lights: Increased monster damage from 2.5 to 3.",
           "light 3: Sped up by a lot and gave 1h mace light 1 and 2 damage profile, added 10% crit chance.",
@@ -202,6 +206,7 @@
       },
       {
         "name": "Tuskgor Spear",
+        "icon": "/images/kruber/weapons/tuskgorspear.webp",
         "changes": [
           "Light 2 now chains into Heavy 1.",
           "light 1,3: Now have same HS multiplier as elf spear.",
@@ -212,6 +217,7 @@
       },
       {
         "name": "Halberd",
+        "icon": "/images/kruber/weapons/halberd.webp",
         "changes": [
           "light 1: Cleave increased by 45%, Infantry damage increased by 25%, Increased the damage the attack does to targets 2 and 3.",
           "light 2: Increased damage by ~20%, Increased armour damage by 300%, Crit damage on armour increased by 100%.",
@@ -222,6 +228,7 @@
       },
       {
         "name": "Mace and Sword",
+        "icon": "/images/kruber/weapons/maceandsword.webp",
         "changes": [
           "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light.",
           "Push attacks / heavies: Gave them a new profile that is worse please don't ask for details i don't know."
@@ -229,6 +236,7 @@
       },
       {
         "name": "Executioner Sword",
+        "icon": "/images/kruber/weapons/executionersword.webp",
         "changes": [
           "lights: Buffed attack speed by 10%, Buffed headshot coefficient on targets after 1 to the same value as target 1, Buffed cleave from ~7.5 to ~ 10.5.",
           "Heavy 1: Removed 20% crit chance."
@@ -236,6 +244,7 @@
       },
       {
         "name": "Spear and Shield",
+        "icon": "/images/kruber/weapons/spearandshield.webp",
         "changes": [
           "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light.",
           "Light 3 and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5).",
@@ -244,6 +253,7 @@
       },
       {
         "name": "Sword and Shield",
+        "icon": "/images/kruber/weapons/swordandshield.webp",
         "changes": [
           "lights: Lights now have the same profile as 1h sword.",
           "light 3 now has linesman.",
@@ -252,10 +262,44 @@
       },
       {
         "name": "Bret Sword and Shield",
+        "icon": "/images/kruber/weapons/bretonnianswordandshield.webp",
         "changes": [
           "light 1: Now has the same profile as 1h sword.",
           "light 2: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3.",
           "Heavy 3: Increased damage by ~10%."
+        ]
+      },
+      {
+        "name": "Blunderbuss",
+        "icon": "/images/kruber/weapons/blunderbuss.webp",
+        "changes": [
+          "Regular Shot: Removed Linesman and gave it a set cleave of ~21.",
+          "Added a weapon special: Single ap shot with very harsh damage dropoff. Uses Handgun damage profile",
+          "Ammo total increased to 24.",
+          "Lowered damage cleave from 0.7 to 0.3.",
+          "Increased stagger power from 0.3 to 1 at close range.",
+          "Increased stagger power from 0.15 to 0.6 at long range."
+        ]
+      },
+      {
+        "name": "Empire Longbow",
+        "icon": "/images/kruber/weapons/longbow.webp",
+        "changes": [
+          "Gave it manual zoom on the charged shot.",
+          "Tweaked the spread, timings, ironed out some of the jolty stiffness after firing.",
+          "Added quick arrow chained actions to partial/full charge.",
+          "Increased armour damage by 25%."
+        ]
+      },
+      {
+        "name": "Repeater Handgun",
+        "icon": "/images/kruber/weapons/repeaterhandgun.webp",
+        "changes": [
+          "Ammo total increased to 60.",
+          "Made crosshair tighter while moving. 1.5 -> 0.75.",
+          "Bullet Spray: Sped up by 30%, Doubled vertical recoil.",
+          "",
+          ""
         ]
       }
     ]
@@ -481,6 +525,7 @@
     "weapons": [
       {
         "name": "1h Hammer",
+        "icon": "/images/bardin/weapons/hammer.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "Light 1,2 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2,Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
@@ -490,6 +535,7 @@
       },
       {
         "name": "2h Hammer",
+        "icon": "/images/bardin/weapons/greathammer.webp",
         "changes": [
           "lights: Increased monster damage from 2.5 to 3",
           "light 3: Sped up by a lot and gave 1hhammer light 1 and 2 damage profile, added 10% crit chance",
@@ -499,6 +545,7 @@
       },
       {
         "name": "1h Axe",
+        "icon": "/images/bardin/weapons/axe.webp",
         "changes": [
           "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 3 by 20%",
           "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%"
@@ -506,6 +553,7 @@
       },
       {
         "name": "War Pick",
+        "icon": "/images/bardin/weapons/pickaxe.webp",
         "changes": [
           "lights: Now have the same damage profile as Bret sword 1, Increased attack speed by ~10%",
           "Heavy: Sped up by ~20%",
@@ -515,10 +563,12 @@
       },
       {
         "name": "Great Axe",
+        "icon": "/images/bardin/weapons/greataxe.webp",
         "changes": ["Heavies: Now have armour sliding and Heavy linesman (Instead of linesman)"]
       },
       {
         "name": "Cog Hammer",
+        "icon": "/images/bardin/weapons/coghammer.webp",
         "changes": [
           "light 1 and 2 slightly slower",
           "light 3 and 4 additional crit chance",
@@ -527,6 +577,7 @@
       },
       {
         "name": "Dual Axes:",
+        "icon": "/images/bardin/weapons/duelaxes.webp",
         "changes": [
           "Push: Is now a light push and costs 1 stamina instead of 2",
           "Heavies: Slowed down first heavy slightly, Sped up second heavy slightly, Gave heavy 3 20% crit chance"
@@ -534,6 +585,7 @@
       },
       {
         "name": "Hammer and Shield",
+        "icon": "/images/bardin/weapons/hammerandshield.webp",
         "changes": [
           "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light",
           "Light 3 and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
@@ -542,9 +594,59 @@
       },
       {
         "name": "Axe and Shield",
+        "icon": "/images/bardin/weapons/shieldandaxe.webp",
         "changes": [
           "lights and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
           "Heavy 3: Buffed damage by ~10% against the first target bigger buff against later targets"
+        ]
+      },
+      {
+        "name": "Drakefire Pistols",
+        "icon": "/images/bardin/weapons/drakefirepistols.webp",
+        "changes": [
+          "Lowered damage against infantry ~20% and increased damage against armour by (~60%).",
+          "Minimum venting time after casting increased from 0.2s to 0.6s.",
+          "Lights: Sped up, Heat cost reverted from 1.2 to 2.5.",
+          "Blast: Greatly increased stagger - now stronger than a shield bash and Lowered damage against monks from 1 to 0.7."
+        ]
+      },
+      {
+        "name": "Grudge Raker",
+        "icon": "/images/bardin/weapons/grudgeraker.webp",
+        "changes": [
+          "Ammo total increased to 24.",
+          "Lowered damage cleave from 0.7 to 0.3.",
+          "Increased stagger power from 0.3 to 1 at close range.",
+          "Increased stagger power from 0.15 to 0.6 at long range.",
+          "Added a weapon special: Single AP shot with very harsh damage dropoff. Uses Crossbow damage profile.",
+          "Regular Shot: Removed Linesman and gave it a set cleave of ~21, Increased spread slightly, Increased power distribution from 0.25 to 3."
+        ]
+      },
+      {
+        "name": "Masterwork Pistol",
+        "icon": "/images/bardin/weapons/masterworkpistol.webp",
+        "changes": [
+          "Reduced damage against armour.",
+          "Reduced damage against monsters.",
+          "Increased Infantry damage by a lot.",
+          "Made the damage dropoff kick in very early. Will have to give the enemies a kiss to get full damage.",
+          "Very slightly reduced cleave.",
+          "Left Click: Sped up charged left click by 10%.",
+          "Right Click: Made right click more accurate."
+        ]
+      },
+      {
+        "name": "Throwing Axes",
+        "icon": "/images/bardin/weapons/throwingaxes.webp",
+        "changes": ["Sped up first reload by a lot."]
+      },
+      {
+        "name": "Trollhammer Torpedo",
+        "icon": "/images/bardin/weapons/trollhammertorpedo.webp",
+        "changes": [
+          "Increased reload time from 3 seconds to 4.5.",
+          "Removed AoE damage, AoE stagger still remains. Increased direct damage and headshot multiplier to compensate for the loss of AoE damage. Should be roughly the same single target damage as before.",
+          "Conservative and Grenadier affect trollhammer."
         ]
       }
     ]
@@ -719,6 +821,7 @@
     "weapons": [
       {
         "name": "1h Axe",
+        "icon": "/images/kerillian/weapons/axe.webp",
         "changes": [
           "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
           "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%"
@@ -726,6 +829,7 @@
       },
       {
         "name": "Glaive",
+        "icon": "/images/kerillian/weapons/glaive.webp",
         "changes": [
           "lights and push attack: Increased the damage the attack does to targets 2 and 3",
           "Heavy 1: Added 100% crit chance",
@@ -734,6 +838,7 @@
       },
       {
         "name": "1h Sword",
+        "icon": "/images/kerillian/weapons/1hsword.webp",
         "changes": [
           "light 1,2: Buffed infantry damage by 20%",
           "light 3: Buffed damage by ~15%",
@@ -743,6 +848,7 @@
       },
       {
         "name": "Sword and Dagger",
+        "icon": "/images/kerillian/weapons/swordanddagger.webp",
         "changes": [
           "Heavy 1: Increased armour damage by ~10%, Increased damage by ~15% on all targets, Slowed down attack by ~15%",
           "Heavy 2: Removed 10% crit chance",
@@ -750,13 +856,15 @@
         ]
       },
       {
-        "name": "Dual Swords:",
+        "name": "Dual Swords",
+        "icon": "/images/kerillian/weapons/dualswords.webp",
         "changes": [
           "Heavies: Increased armour damage by ~10%, Increased damage by ~15% on all targets, Slowed down heavy 1 by ~10%, Sped up Heavy 2 by ~15%"
         ]
       },
       {
         "name": "2h Sword",
+        "icon": "/images/kerillian/weapons/greatsword.webp",
         "changes": [
           "Lights: Sped up by ~20%",
           "Push attack: Slowed down attack by ~25%",
@@ -765,7 +873,8 @@
         ]
       },
       {
-        "name": "Elf Spear:",
+        "name": "Elf Spear",
+        "icon": "/images/kerillian/weapons/spear.webp",
         "changes": [
           "Light 3 and push attack: Reduced crit/headshot damage drastically (40%)",
           "Heavy 1: Increased damage and made the damage spread more even"
@@ -773,7 +882,68 @@
       },
       {
         "name": "Spear and Shield",
+        "icon": "/images/kerillian/weapons/spearandshield.webp",
         "changes": ["Light 1 now chains into heavy 3", "Heavy 3: Increased damage by ~10%"]
+      },
+      {
+        "name": "Deepwood Staff",
+        "icon": "/images/kerillian/weapons/deepwoodstaff.webp",
+        "changes": [
+          "Minimum venting time after casting increased from 0.2s to 0.6s.",
+          "Lift: Duration decreased from 8s to 6s (CW 4s/4s lift/grounded reduced to 3s/3s)."
+        ]
+      },
+      {
+        "name": "Hagbane Shortbow",
+        "icon": "/images/kerillian/weapons/hagbane.webp",
+        "changes": [
+          "30% more infantry damage to DoT on hag AoE cloud.",
+          "Ammo total increased to 25."
+        ]
+      },
+      {
+        "name": "Javelin",
+        "icon": "/images/kerillian/weapons/javelin.webp",
+        "changes": [
+          "Increased boost curve coefficient headshot to 2.",
+          "Gave it ninja curve.",
+          "Lowered cleave to ~14.",
+          "Lowered stagger power from 0.85 to 0.5."
+        ]
+      },
+      {
+        "name": "Longbow",
+        "icon": "/images/kerillian/weapons/longbow.webp",
+        "changes": ["Ammo total increased to 30."]
+      },
+      {
+        "name": "Moonfire Bow",
+        "icon": "/images/kerillian/weapons/moonfirebow.webp",
+        "changes": [
+          "Energy recharge rate reduced from 1.5 to 0.4 energy/s (Note max energy is 25).",
+          "Increased headshot coefficient for more reliable breakpoints.",
+          "Left Click: Energy cost lowered from 5 to 3.",
+          "Charged Shot: Now has true flight properties, Given enough damage to 1 shot specials in the head with burn, Energy cost increased so you can only fire three times when at full",
+          ""
+        ]
+      },
+      {
+        "name": "Swift Bow",
+        "icon": "/images/kerillian/weapons/swiftbow.webp",
+        "changes": [
+          "Ammo total increased to 65.",
+          "Lights: Lights now have 10% crit, Doubled cleave on Lights.",
+          "Charged Shots: Charged shot now has 2 stages - the 1st stage is the normal charged shot as per official, and the 2nd stage fires 5 shots at the same time, Time to shoot full charged shots drastically increased, Lowered cleave on the charged shot to ~13, Lowered damage from 0.4 to 0.25 on near targets, Lowered damage from 0.3 to 0.175 on far targets, Lowered armoured damage from 0.5 to 0.3, Lowered zerker damage from 1 to 0.75."
+        ]
+      },
+      {
+        "name": "Volley Crossbow",
+        "icon": "/images/kerillian/weapons/volleycrossbow.webp",
+        "changes": [
+          "Damage increased slightly overall so it can 3SHS Blights/Leeches.",
+          "Armour damage increased so it can 3SBS Ratlings/Warps.",
+          "Ammo total increased to 60."
+        ]
       }
     ]
   },
@@ -974,6 +1144,7 @@
     "weapons": [
       {
         "name": "1h Hammer",
+        "icon": "/images/saltzpyre/weapons/hammer.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "Light 1,2 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
@@ -983,6 +1154,7 @@
       },
       {
         "name": "1h Axe",
+        "icon": "/images/saltzpyre/weapons/axe.webp",
         "changes": [
           "lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3,Sped up light 3 by 20%",
           "Heavies: Increased monster damage from 2.5 to 3, Increased range by 20%",
@@ -991,6 +1163,7 @@
       },
       {
         "name": "2h Sword",
+        "icon": "/images/saltzpyre/weapons/greatsword.webp",
         "changes": [
           "Lights: Increased headshot coefficient to 2 from 1.5, Increased stagger cleave by ~20%, Increased damage by 20%",
           "Push attack: Sped up by 15%",
@@ -1000,6 +1173,7 @@
       },
       {
         "name": "Flail",
+        "icon": "/images/saltzpyre/weapons/flail.webp",
         "changes": [
           "Light 1,2: Increased damage by ~20%",
           "Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.2, Damage multiplier against monsters improved from 2.5 to 3",
@@ -1009,6 +1183,7 @@
       },
       {
         "name": "Flail & Shield",
+        "icon": "/images/saltzpyre/weapons/flailshield.webp",
         "changes": [
           "Reduced dodge distance from 15% to 0",
           "light 1,2: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Removed Tank",
@@ -1016,7 +1191,8 @@
         ]
       },
       {
-        "name": "Falchion:",
+        "name": "Falchion",
+        "icon": "/images/saltzpyre/weapons/falchion.webp",
         "changes": [
           "light 1,2 and push attack: Increased headshot damage on lights, Increased damage by 20%",
           "light 3: Can now chain into light 3 from heavy 2",
@@ -1025,7 +1201,8 @@
         ]
       },
       {
-        "name": "Hammer and Tome:",
+        "name": "Hammer and Tome",
+        "icon": "/images/saltzpyre/weapons/hammerandtome.webp",
         "changes": [
           "Lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up by ~10%",
           "Push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour",
@@ -1035,7 +1212,8 @@
         ]
       },
       {
-        "name": "Axe and Falchion:",
+        "name": "Axe and Falchion",
+        "icon": "/images/saltzpyre/weapons/axeandfalchion.webp",
         "changes": [
           "Axe lights: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
           "Falchion Lights and push attack: Increased headshot damage on lights 2 and 3, Increased damage by 20%",
@@ -1044,6 +1222,7 @@
       },
       {
         "name": "Billhook:",
+        "icon": "/images/saltzpyre/weapons/billhook.webp",
         "changes": [
           "light 1 and 3: Increased damage by ~20%",
           "Light 2 and push attack: Reduced crit/headshot damage drastically (40%)"
@@ -1051,6 +1230,7 @@
       },
       {
         "name": "Hammer and Shield",
+        "icon": "/images/saltzpyre/weapons/hammershield.webp",
         "changes": [
           "Light 1,2: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light",
           "Light 3 and push attack: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)",
@@ -1059,11 +1239,35 @@
       },
       {
         "name": "Holy Great Hammer",
+        "icon": "/images/saltzpyre/weapons/hollygreathammer.webp",
         "changes": [
           "Light 1,2: Sped up animation by 10%",
           "Light 3: Now has Bret light 1 profile",
           "Heavy 1: Now has shield breaking"
         ]
+      },
+      {
+        "name": "Brace of Pistols",
+        "icon": "/images/saltzpyre/weapons/bop.webp",
+        "changes": [
+          "Increased headshot coefficient from 1 to 2.",
+          "Removed reload. Now always at full clip."
+        ]
+      },
+      {
+        "name": "Griffon Foot",
+        "icon": "/images/saltzpyre/weapons/griffon.webp",
+        "changes": ["Reduced pellets from 18 to 12.", "Made the spread tighter.", "Halved cleave."]
+      },
+      {
+        "name": "Repeater Pistol",
+        "icon": "/images/saltzpyre/weapons/repeater.webp",
+        "changes": ["Added shield break to shotgun blast."]
+      },
+      {
+        "name": "Volley Crossbow Saltz",
+        "icon": "/images/saltzpyre/weapons/volleyxbow.webp",
+        "changes": ["Increased cleave to ~9."]
       }
     ]
   },
@@ -1217,6 +1421,7 @@
     "weapons": [
       {
         "name": "1h Sword",
+        "icon": "/images/sienna/weapons/sword.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "light 1 and 2: Changed headshot curve from smiter to ninja. This increases the headshot damage and critdamage but the headshot + crit damage is the same as before. Increased base damage by ~20%",
@@ -1226,6 +1431,7 @@
       },
       {
         "name": "Mace",
+        "icon": "/images/sienna/weapons/mace.webp",
         "changes": [
           "Light 3,4 and push attack: Increased cleave slightly, Headshot coefficient improved from 1.5 to 2, Increased damage against the first target (0.175 -> 0.225), Now deals 35% damage to armour on the light, Sped up light 4 by ~20%,Sped up push attack by ~15%",
           "Light 1,2: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3, Sped up light 4 by 15% (1.35 -> 1.5)"
@@ -1233,10 +1439,12 @@
       },
       {
         "name": "Dagger",
+        "icon": "/images/sienna/weapons/dagger.webp",
         "changes": ["Push attack now chains into heavy 2"]
       },
       {
         "name": "Flaming Flail",
+        "icon": "/images/sienna/weapons/flamingflail.webp",
         "changes": [
           "Light 1,2: Increased damage by ~20%, Added Tank",
           "Light 3,4: Headshot coefficient improved from 1.5 to 2, Damage multiplier against zerkers improved from 0.75 to 1.25, Damage multiplier against monsters improved from 2.5 to 3",
@@ -1245,6 +1453,7 @@
       },
       {
         "name": "Crowbill",
+        "icon": "/images/sienna/weapons/crowbill.webp",
         "changes": [
           "lights and push attack: Buffed overall damage by ~30%, Buffed damage against infantry by ~60%, Doubled monster damage on light 4",
           "Heavies: Buffed damage by ~15%, Added 10% crit chance"
@@ -1252,6 +1461,7 @@
       },
       {
         "name": "Fire Sword",
+        "icon": "/images/sienna/weapons/firesword.webp",
         "changes": [
           "Gave it a dodge count of 4",
           "Reduced amount of burn ticks on heavy aoe from ~3 to ~1. Now same as dagger bash (Bit rng how many ticks)",
@@ -1261,6 +1471,55 @@
           "Heavy 2 damage buffed significantly especially against armour",
           "light 1 and 2 now have the same damage profile as 1h sword (Still lack linesman)",
           "Sped up lights by 10%"
+        ]
+      },
+      {
+        "name": "Beam Staff",
+        "icon": "/images/sienna/weapons/beam.webp",
+        "changes": [
+          "Removed zoom on lazer and made it a toggle with weapon special instead.",
+          "Increased damage of the beam sniper blast by roughly 20%.",
+          "Beam shotgun rebalanced to do more damage against infantry and less heat.",
+          "Beam recoil after beam sniper shot lowered. Should make rapid firing more consistent."
+        ]
+      },
+      {
+        "name": "Bolt Staff",
+        "icon": "/images/sienna/weapons/bolt.webp",
+        "changes": ["Added a zoom toggle to the charged shot on weapon special."]
+      },
+      {
+        "name": "Coruscation Staff",
+        "icon": "/images/sienna/weapons/corusc.webp",
+        "changes": [
+          "Shotgun: Increased the soonest moment you can qq cancel from 0.4 sec to 0.6 sec, Sped up attack from 1 sec to 0.65 sec, Lowered the damage on the shotgun by roughly half, Increased pellets from 12 to 15, Lowered heat cost to 4.",
+          "Geiser: Lowered heat cost to 10, Duration of the patch is now 3, Damage interval (How often a dot gets applied to enemies standing inside the patch / on the patch) is now 1 up from 0.5, Increased the max amounts of dots that can be applied to 1 target to 15 from 6, The dot now ticks once per 1.5 seconds instead of once per 0.75 seconds, All these changes mean that applying multiple patches is much more effective and make the singular patches less worthwhile, Now has a much higher possible max size."
+        ]
+      },
+      {
+        "name": "Fireball Staff",
+        "icon": "/images/sienna/weapons/fireball.webp",
+        "changes": [
+          "Now the left click is 0.6 sec instead of 1 sec just like conflag. Does not affect qq.",
+          "Removed FF on the explosion.",
+          "Increased radius on full charge to 5 from 3.",
+          "Increased max_damage_radius_max to 3 from 2.",
+          "Increased attacker_power_level_offset to 0.3 from 0.25.",
+          "Increased the radius of the explosion.",
+          "Lowered the damage on the outer edge of the explosion.",
+          "Increased the max damage on the direct charged hit.",
+          "(There is a min and max range on the charged shot. The longer you charge the closer to the max you get)."
+        ]
+      },
+      {
+        "name": "Conflagration Staff",
+        "icon": "/images/sienna/weapons/conflag.webp",
+        "changes": [
+          "Increased max damage by ~35%.",
+          "Increased minimum stagger from 0.35 to 0.7.",
+          "Conflag deals damage/stagger based on how far along the charge you are between a max and min value.",
+          "Increased max damage power modifier from 0.5 to 0.6.",
+          "Firepatch reverted to official balance."
         ]
       }
     ]

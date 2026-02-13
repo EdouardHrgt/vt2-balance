@@ -1,17 +1,18 @@
 <template>
   <main v-if="career">
-    <section class="title-mods" :class="{ 'title-mods-scrolled': isSticky }" ref="stickySection">
-      <div class="title-infos" v-if="modName">
-        <h1>{{ career }} :</h1>
-        <p class="title-mod-name">{{ modName }}</p>
-      </div>
-      <h1 v-else>
-        {{ career }} :
-        <span class="sub-h1">(Please select a Mod)</span>
-      </h1>
-      <ModPicker @modSelected="handleModSelection" :selectedModId="selectedModId" />
-    </section>
-
+    <ClientOnly>
+      <section class="title-mods" :class="{ 'title-mods-scrolled': isSticky }" ref="stickySection">
+        <div class="title-infos" v-if="modName">
+          <h1>{{ career }} :</h1>
+          <p class="title-mod-name">{{ modName }}</p>
+        </div>
+        <h1 v-else>
+          {{ career }} :
+          <span class="sub-h1">(Please select a Mod)</span>
+        </h1>
+        <ModPicker @modSelected="handleModSelection" :selectedModId="selectedModId" />
+      </section>
+    </ClientOnly>
     <div v-if="modName">
       <p class="err" v-if="errorMsg">... No Changelogs found for this Mod ...</p>
 
@@ -46,7 +47,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const route = useRoute()
 const career = ref(route.params.career)
@@ -56,6 +57,9 @@ const errorMsg = ref(false)
 const isSticky = ref(false)
 const stickySection = ref(null)
 const selectedModId = ref(null)
+
+// Déclarer observer en dehors de onMounted
+let observer = null
 
 const modFiles = {
   1: 'tourney-balance.json',
@@ -87,24 +91,32 @@ const handleModSelection = async (mod) => {
   }
 }
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      isSticky.value = entry.intersectionRatio < 1
-    },
-    {
-      threshold: [1],
-      rootMargin: '-1px 0px 0px 0px',
-    },
-  )
-  if (stickySection.value) {
-    observer.observe(stickySection.value)
-  }
+onMounted(async () => {
+  // Attendre que le DOM soit complètement hydraté
+  await nextTick()
+
+  // Petit délai pour s'assurer que tout est bien rendu
+  setTimeout(() => {
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        isSticky.value = entry.intersectionRatio < 1
+      },
+      {
+        threshold: [1],
+        rootMargin: '-1px 0px 0px 0px',
+      },
+    )
+
+    if (stickySection.value) {
+      observer.observe(stickySection.value)
+    }
+  }, 100)
 })
 
 onUnmounted(() => {
-  if (stickySection.value) {
+  if (observer && stickySection.value) {
     observer.unobserve(stickySection.value)
+    observer.disconnect()
   }
 })
 
