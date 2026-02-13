@@ -214,7 +214,135 @@
     ]
   ],
   "saltzpyre": [
-    "génère moi les chemins d'accès a ses images (.webp) pour mon projet Nuxt. Les dossiers sont dans : /images/HERO/weapons/"
+    {
+      "name": "Griffon",
+      "icon": "/images/saltzpyre/weapons/griffon.webp"
+    },
+    {
+      "name": "Crossbow",
+      "icon": "/images/saltzpyre/weapons/crossbow.webp"
+    },
+    {
+      "name": "Repeater",
+      "icon": "/images/saltzpyre/weapons/repeater.webp"
+    },
+    {
+      "name": "Volleybow",
+      "icon": "/images/saltzpyre/weapons/volleybow.webp"
+    },
+    {
+      "name": "Bop",
+      "icon": "/images/saltzpyre/weapons/bop.webp"
+    },
+    {
+      "name": "Hammer",
+      "icon": "/images/saltzpyre/weapons/hammer.webp"
+    },
+    {
+      "name": "Hammer & Shield",
+      "icon": "/images/saltzpyre/weapons/hammershield.webp"
+    },
+    {
+      "name": "Hammer and Dome",
+      "icon": "/images/saltzpyre/weapons/hammeranddome.webp"
+    },
+    {
+      "name": "Dual Hammers",
+      "icon": "/images/saltzpyre/weapons/dualhammers.webp"
+    },
+    {
+      "name": "Holy Great Hammer",
+      "icon": "/images/saltzpyre/weapons/hollygreathammer.webp"
+    },
+    {
+      "name": "Flail & Shield",
+      "icon": "/images/saltzpyre/weapons/flailshield.webp"
+    },
+    {
+      "name": "Billhook",
+      "icon": "/images/saltzpyre/weapons/billhook.webp"
+    },
+    {
+      "name": "Axe & Falchion",
+      "icon": "/images/saltzpyre/weapons/axeandfalchion.webp"
+    },
+    {
+      "name": "Flail",
+      "icon": "/images/saltzpyre/weapons/flail.webp"
+    },
+    {
+      "name": "Greatsword",
+      "icon": "/images/saltzpyre/weapons/greatsword.webp"
+    },
+    {
+      "name": "Axe",
+      "icon": "/images/saltzpyre/weapons/axe.webp"
+    },
+    {
+      "name": "Falchion",
+      "icon": "/images/saltzpyre/weapons/falchion.webp"
+    },
+    {
+      "name": "Rapier",
+      "icon": "/images/saltzpyre/weapons/rapier.webp"
+    }
   ],
-  "sienna": []
+  "sienna": [
+    {
+      "name": "Soulstealer",
+      "icon": "/images/sienna/weapons/soulstealer.webp"
+    },
+    {
+      "name": "Corusc",
+      "icon": "/images/sienna/weapons/corusc.webp"
+    },
+    {
+      "name": "Conflag",
+      "icon": "/images/sienna/weapons/conflag.webp"
+    },
+    {
+      "name": "Beam",
+      "icon": "/images/sienna/weapons/beam.webp"
+    },
+    {
+      "name": "Bolt",
+      "icon": "/images/sienna/weapons/bolt.webp"
+    },
+    {
+      "name": "Flamestorm",
+      "icon": "/images/sienna/weapons/flamestorm.webp"
+    },
+    {
+      "name": "Fireball",
+      "icon": "/images/sienna/weapons/fireball.webp"
+    },
+    {
+      "name": "Ensorcelled Reaper",
+      "icon": "/images/sienna/weapons/ensorcelledreaper.webp"
+    },
+    {
+      "name": "Flaming Flail",
+      "icon": "/images/sienna/weapons/flamingflail.webp"
+    },
+    {
+      "name": "Crowbill",
+      "icon": "/images/sienna/weapons/crowbill.webp"
+    },
+    {
+      "name": "Dagger",
+      "icon": "/images/sienna/weapons/dagger.webp"
+    },
+    {
+      "name": "Fire Sword",
+      "icon": "/images/sienna/weapons/firesword.webp"
+    },
+    {
+      "name": "Mace",
+      "icon": "/images/sienna/weapons/mace.webp"
+    },
+    {
+      "name": "Sword",
+      "icon": "/images/sienna/weapons/sword.webp"
+    }
+  ]
 }
