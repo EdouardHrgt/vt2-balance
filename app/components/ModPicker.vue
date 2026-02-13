@@ -53,7 +53,7 @@ div {
 
 p {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: var(--fs-body);
 }
 
 .mod-selected {
@@ -81,9 +81,6 @@ p {
 }
 
 @media (max-width: 550px) {
-  p {
-    font-size: 15px;
-  }
   div {
     padding: 0 0.5rem;
   }

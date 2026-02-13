@@ -42,7 +42,7 @@ const closeModal = () => {
     <div class="weapons" ref="carouselRef">
       <article class="weapon" v-for="weapon in weapons" :key="weapon.name">
         <div class="weapon-header">
-          <img :src="weapon.icon" :alt="weapon.name" />
+          <img :src="weapon.icon" :alt="weapon.name" v-if="weapon.icon" />
           <h2 class="weapon-h2">{{ weapon.name }}</h2>
         </div>
         <button class="see-more-btn" @click="openModal(weapon)">See Details</button>
@@ -135,7 +135,7 @@ const closeModal = () => {
 }
 
 .weapon-header h2 {
-  font-size: 28px;
+  font-size: var(--fs-2);
   text-align: center;
   text-transform: uppercase;
   font-family: 'Rubik Marker Hatch', system-ui;
@@ -157,7 +157,7 @@ const closeModal = () => {
   border: none;
   border-radius: 6px;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-4);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -286,7 +286,7 @@ const closeModal = () => {
 }
 
 .modal-header strong {
-  font-size: 20px;
+  font-size: var(--fs-body);
   text-transform: uppercase;
   font-family: 'Rubik Marker Hatch', system-ui;
   font-weight: 400;
@@ -300,7 +300,7 @@ const closeModal = () => {
 
 .modal-title {
   font-family: 'Quintessential', serif;
-  font-size: 36px;
+  font-size: var(--fs-1);
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--white-900);
@@ -319,7 +319,7 @@ const closeModal = () => {
   margin-bottom: 1.5rem;
   line-height: 1.8;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 18px;
+  font-size: var(--fs-body);
   overflow-wrap: break-word;
 }
 
@@ -407,17 +407,12 @@ const closeModal = () => {
 }
 
 @media (max-width: 768px) {
+  .weapon-header h2 {
+    font-size: var(--fs-body);
+  }
   .modal-content {
     padding: 2rem 1.5rem;
     margin: 1rem;
-  }
-
-  .modal-title {
-    font-size: 28px;
-  }
-
-  .modal-list li {
-    font-size: 16px;
   }
 
   .carousel {
@@ -432,12 +427,7 @@ const closeModal = () => {
     padding-block: 1rem;
   }
 
-  .weapon-header h2 {
-    font-size: 20px;
-  }
-
   .see-more-btn {
-    font-size: 16px;
     width: 11rem;
   }
 
@@ -465,11 +455,11 @@ const closeModal = () => {
   }
   .modal-title,
   .modal-header strong {
-    font-size: 16px;
+    font-size: 15px;
   }
   .modal-list li {
     padding-left: 1.3rem;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 </style>

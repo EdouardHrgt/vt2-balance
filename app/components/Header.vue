@@ -51,6 +51,7 @@ p {
   }
   p {
     position: relative;
+    bottom: 32px;
   }
 }
 </style>

@@ -166,9 +166,9 @@ const scrollToTop = () => {
 
 h1,
 .title-mod-name {
-  font-size: 46px;
+  font-size: var(--fs-mega);
   text-align: center;
-  margin-block: 1rem;
+  margin-block: 0.5rem;
   text-transform: uppercase;
   font-family: 'Rubik Marker Hatch', system-ui;
   font-weight: 400;
@@ -187,7 +187,7 @@ h1,
 }
 
 .sub-h1 {
-  font-size: 32px;
+  font-size: var(--fs-1);
   color: var(--grey-400);
   margin-left: 1rem;
 }
@@ -196,13 +196,13 @@ h2 {
   font-family: 'Quintessential', serif;
   letter-spacing: 1px;
   text-decoration: underline;
-  font-size: 28px;
+  font-size: var(--fs-2);
 }
 
 h4 {
   color: var(--yellow-400);
   margin-top: 0.7rem;
-  font-size: 24px;
+  font-size: var(--fs-3);
   list-style: none;
 }
 
@@ -245,7 +245,7 @@ article {
 li {
   overflow-wrap: break-word;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 20px;
+  font-size: var(--fs-body);
 }
 
 .passives li {
@@ -279,7 +279,7 @@ li {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: 38px;
+  font-size: var(--fs-1);
   background: linear-gradient(to top, rgba(253, 217, 12, 0.3), rgba(255, 94, 0, 0.4));
   margin-inline: auto;
   display: block;
@@ -315,7 +315,7 @@ li {
   margin-inline: auto;
   width: 14rem;
   padding: 1rem 2rem;
-  font-size: 18px;
+  font-size: var(--fs-3);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   color: var(--black-400);
@@ -354,7 +354,6 @@ li {
 
 @media (max-width: 750px) {
   .back-to-top {
-    font-size: 16px;
     padding: 0.8rem 1.5rem;
   }
 }
@@ -362,13 +361,6 @@ li {
 @media (max-width: 1130px) {
   .title-mods {
     padding-inline: 2rem;
-  }
-}
-
-@media (max-width: 950px) {
-  h1,
-  .title-mod-name {
-    font-size: 36px;
   }
 }
 
@@ -414,7 +406,6 @@ li {
 @media (max-width: 550px) {
   h1,
   .title-mod-name {
-    font-size: 28px;
     margin: 0;
   }
   .title-infos {

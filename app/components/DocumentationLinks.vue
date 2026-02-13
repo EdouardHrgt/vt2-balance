@@ -9,11 +9,13 @@ const mods = [
     link: 'https://docs.google.com/document/d/1f86vISpIZu7y_Zr3-hJxQKkOWd7Q7YwcUWL4wT59W8E/edit?tab=t.0',
   },
   {
-    label: 'Core Big Rebalance (talents)',
+    label: 'Core Big Rebalance ',
+    extra: '(talents)',
     link: 'https://docs.google.com/document/d/1_X8E9Kz1He26HeJ5SFHQKF1caUTvFOcXVTCNann_k14/edit?tab=t.0#heading=h.x9a19rz0176u',
   },
   {
-    label: 'Core Big Rebalance (weapons)',
+    label: 'Core Big Rebalance ',
+    extra: '(weapons)',
     link: 'https://docs.google.com/document/d/1NTgcDVgWbCkofuKzJGdsbauyUDt_cVKds2bzNdY7HHY/edit?tab=t.0#heading=h.siw0ntbhc1es',
   },
   {
@@ -28,7 +30,9 @@ const mods = [
     <h2>Official Documentation</h2>
     <ul>
       <li v-for="mod in mods" :key="mod.label">
-        <a :href="mod.link" target="_blank" rel="noopener noreferrer">{{ mod.label }}</a>
+        <a :href="mod.link" target="_blank" rel="noopener noreferrer">
+          {{ mod.label }} <span v-if="mod.extra" class="extra">{{ mod.extra }}</span>
+        </a>
       </li>
     </ul>
   </footer>
@@ -73,7 +77,7 @@ li:last-child {
 
 h2 {
   color: var(--grey-400);
-  font-size: 22px;
+  font-size: var(--fs-3);
   text-transform: uppercase;
   font-family: 'Quintessential', serif;
   font-weight: 900;
@@ -89,8 +93,15 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--fs-body);
   transition: all 0.4s ease;
+}
+
+.extra {
+  background: none;
+  color: var(--grey-400);
+  -webkit-text-fill-color: var(--grey-400);
+  font-size: 12px;
 }
 
 @media (hover: hover) {

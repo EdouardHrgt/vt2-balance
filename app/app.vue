@@ -26,6 +26,7 @@ onMounted(() => {
 .page {
   width: 100%;
   min-height: 100vh;
+  background-color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

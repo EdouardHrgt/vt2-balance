@@ -20,12 +20,7 @@ ul {
   align-items: center;
   gap: 3rem;
   justify-content: center;
-  margin-top: 7rem;
-}
-
-li {
-  cursor: pointer;
-  text-align: center;
+  margin-top: 2rem;
 }
 
 li img {
@@ -51,12 +46,6 @@ li img {
   transition: opacity 0.3s;
 }
 
-p {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 18px;
-}
-
 @media (hover: hover) {
   li:hover img {
     filter: grayscale(100%);
@@ -73,8 +62,6 @@ p {
     gap: 0;
     margin-top: 2rem;
     justify-content: space-evenly;
-  }
-  li img {
   }
 }
 

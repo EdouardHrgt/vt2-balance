@@ -213,7 +213,7 @@
       },
       {
         "name": "Bretonnian Sword & Shield",
-        "icon": "/images/kruber/weapons/bretonnianswrdandshield.webp",
+        "icon": "/images/kruber/weapons/bretonnianswordandshield.webp",
         "changes": [
           "All attacks except the shield bashes (Light 3, Heavy 2) now have 10% crit chance.",
           "Light 1: Changed to be an overhead.",

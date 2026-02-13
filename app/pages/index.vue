@@ -62,7 +62,7 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: var(--fs-1);
   margin-block: 2rem;
   text-transform: uppercase;
   font-family: 'Rubik Marker Hatch', system-ui;
@@ -80,16 +80,15 @@ h1 {
 }
 
 .txt {
-  margin-left: 2rem;
-  width: fit-content;
-  padding: 2rem;
-  margin-top: 2rem;
+  margin-left: 1rem;
+  max-width: 550px;
+  padding: 1rem;
   z-index: 150;
   position: relative;
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--fs-body);
   margin-bottom: 1rem;
   max-width: 700px;
   color: var(--grey-400);
@@ -104,7 +103,7 @@ button {
   background: transparent;
   border: none;
   display: block;
-  font-size: 20px;
+  font-size: var(--fs-body);
   background-color: var(--black-900);
   text-transform: uppercase;
   padding: 0.3rem 1rem;
@@ -178,7 +177,6 @@ span {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 26px;
     margin-block: 1rem;
   }
 }
