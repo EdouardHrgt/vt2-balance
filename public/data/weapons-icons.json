@@ -1,0 +1,220 @@
+{
+  "kruber": [
+    {
+      "name": "Blunderbuss",
+      "icon": "/images/kruber/weapons/blunderbuss.webp"
+    },
+    {
+      "name": "Bretonnian Longsword",
+      "icon": "/images/kruber/weapons/bretonnianlongsword.webp"
+    },
+    {
+      "name": "Bretonnian Sword and Shield",
+      "icon": "/images/kruber/weapons/bretonnianswrdandshield.webp"
+    },
+    {
+      "name": "Executioner Sword",
+      "icon": "/images/kruber/weapons/executionersword.webp"
+    },
+    {
+      "name": "Great Hammer",
+      "icon": "/images/kruber/weapons/greathammer.webp"
+    },
+    {
+      "name": "Greatsword",
+      "icon": "/images/kruber/weapons/greatsword.webp"
+    },
+    {
+      "name": "Halberd",
+      "icon": "/images/kruber/weapons/halberd.webp"
+    },
+    {
+      "name": "Handgun",
+      "icon": "/images/kruber/weapons/handgun.webp"
+    },
+    {
+      "name": "Longbow",
+      "icon": "/images/kruber/weapons/longbow.webp"
+    },
+    {
+      "name": "Mace",
+      "icon": "/images/kruber/weapons/mace.webp"
+    },
+    {
+      "name": "Mace and Shield",
+      "icon": "/images/kruber/weapons/maceandshield.webp"
+    },
+    {
+      "name": "Mace and Sword",
+      "icon": "/images/kruber/weapons/maceandsword.webp"
+    },
+    {
+      "name": "Repeater Handgun",
+      "icon": "/images/kruber/weapons/repeaterhandgun.webp"
+    },
+    {
+      "name": "Spear and Shield",
+      "icon": "/images/kruber/weapons/spearandshield.webp"
+    },
+    {
+      "name": "Sword",
+      "icon": "/images/kruber/weapons/sword.webp"
+    },
+    {
+      "name": "Sword and Shield",
+      "icon": "/images/kruber/weapons/swordandshield.webp"
+    },
+    {
+      "name": "Tuskgor Spear",
+      "icon": "/images/kruber/weapons/tuskgorspear.webp"
+    }
+  ],
+  "bardin": [
+    [
+      {
+        "name": "Axe",
+        "icon": "/images/bardin/weapons/axe.webp"
+      },
+      {
+        "name": "Cog Hammer",
+        "icon": "/images/bardin/weapons/coghammer.webp"
+      },
+      {
+        "name": "Crossbow",
+        "icon": "/images/bardin/weapons/crossbow.webp"
+      },
+      {
+        "name": "Drakefire Pistols",
+        "icon": "/images/bardin/weapons/drakefirepistols.webp"
+      },
+      {
+        "name": "Drakegun",
+        "icon": "/images/bardin/weapons/drakegun.webp"
+      },
+      {
+        "name": "Dual Hammers",
+        "icon": "/images/bardin/weapons/dualhammers.webp"
+      },
+      {
+        "name": "Dual Axes",
+        "icon": "/images/bardin/weapons/duelaxes.webp"
+      },
+      {
+        "name": "Great Axe",
+        "icon": "/images/bardin/weapons/greataxe.webp"
+      },
+      {
+        "name": "Great Hammer",
+        "icon": "/images/bardin/weapons/greathammer.webp"
+      },
+      {
+        "name": "Grudgeraker",
+        "icon": "/images/bardin/weapons/grudgeraker.webp"
+      },
+      {
+        "name": "Hammer",
+        "icon": "/images/bardin/weapons/hammer.webp"
+      },
+      {
+        "name": "Hammer and Shield",
+        "icon": "/images/bardin/weapons/hammerandshield.webp"
+      },
+      {
+        "name": "Handgun",
+        "icon": "/images/bardin/weapons/handgun.webp"
+      },
+      {
+        "name": "Masterwork Pistol",
+        "icon": "/images/bardin/weapons/masterworkpistol.webp"
+      },
+      {
+        "name": "Pickaxe",
+        "icon": "/images/bardin/weapons/pickaxe.webp"
+      },
+      {
+        "name": "Shield and Axe",
+        "icon": "/images/bardin/weapons/shieldandaxe.webp"
+      },
+      {
+        "name": "Throwing Axes",
+        "icon": "/images/bardin/weapons/throwingaxes.webp"
+      },
+      {
+        "name": "Trollhammer Torpedo",
+        "icon": "/images/bardin/weapons/trollhammertorpedo.webp"
+      }
+    ]
+  ],
+  "kerillian": [
+    [
+      {
+        "name": "Deepwood Staff",
+        "icon": "/images/kerillian/weapons/deepwoodstaff.webp"
+      },
+      {
+        "name": "Javelin",
+        "icon": "/images/kerillian/weapons/javelin.webp"
+      },
+      {
+        "name": "Moonfire Bow",
+        "icon": "/images/kerillian/weapons/moonfirebow.webp"
+      },
+      {
+        "name": "Volley Crossbow",
+        "icon": "/images/kerillian/weapons/volleycrossbow.webp"
+      },
+      {
+        "name": "Hagbane",
+        "icon": "/images/kerillian/weapons/hagbane.webp"
+      },
+      {
+        "name": "Longbow",
+        "icon": "/images/kerillian/weapons/longbow.webp"
+      },
+      {
+        "name": "Swift Bow",
+        "icon": "/images/kerillian/weapons/swiftbow.webp"
+      },
+      {
+        "name": "Spear and Shield",
+        "icon": "/images/kerillian/weapons/spearandshield.webp"
+      },
+      {
+        "name": "Axe",
+        "icon": "/images/kerillian/weapons/axe.webp"
+      },
+      {
+        "name": "Spear",
+        "icon": "/images/kerillian/weapons/spear.webp"
+      },
+      {
+        "name": "Greatsword",
+        "icon": "/images/kerillian/weapons/greatsword.webp"
+      },
+      {
+        "name": "Glaive",
+        "icon": "/images/kerillian/weapons/glaive.webp"
+      },
+      {
+        "name": "Sword and Dagger",
+        "icon": "/images/kerillian/weapons/swordanddagger.webp"
+      },
+      {
+        "name": "Dual Swords",
+        "icon": "/images/kerillian/weapons/dualswords.webp"
+      },
+      {
+        "name": "Dagger",
+        "icon": "/images/kerillian/weapons/dagger.webp"
+      },
+      {
+        "name": "1H Sword",
+        "icon": "/images/kerillian/weapons/1hsword.webp"
+      }
+    ]
+  ],
+  "saltzpyre": [
+    "génère moi les chemins d'accès a ses images (.webp) pour mon projet Nuxt. Les dossiers sont dans : /images/HERO/weapons/"
+  ],
+  "sienna": []
+}

@@ -203,6 +203,7 @@
     "weapons": [
       {
         "name": "Bretonnian longsword",
+        "icon": "/images/kruber/weapons/bretonnianlongsword.webp",
         "changes": [
           "Swapped the damage profiles of Light 1 and Light 2 to address L1-block cancel shenanigans.",
           "Light 2: Increased headshot multiplier from 1.5 to 2.",
@@ -212,6 +213,7 @@
       },
       {
         "name": "Bretonnian Sword & Shield",
+        "icon": "/images/kruber/weapons/bretonnianswrdandshield.webp",
         "changes": [
           "All attacks except the shield bashes (Light 3, Heavy 2) now have 10% crit chance.",
           "Light 1: Changed to be an overhead.",
@@ -226,6 +228,7 @@
       },
       {
         "name": "Executioner Sword",
+        "icon": "/images/kruber/weapons/executionersword.webp",
         "changes": [
           "Chaining from Heavy 1 into Heavy 2 is now faster.",
           "Reduced dodge count from 3 to 2.",
@@ -234,6 +237,7 @@
       },
       {
         "name": "Greatsword",
+        "icon": "/images/kruber/weapons/greatsword.webp",
         "changes": [
           "Added a new attack chain with two attacks: two light overheads.",
           "The Push Attack can now chain into two additional light overhead attacks.",
@@ -246,6 +250,7 @@
       },
       {
         "name": "Great Hammer",
+        "icon": "/images/kruber/weapons/greathammer.webp",
         "changes": [
           "Light 3: Increased stagger significantly.",
           "Heavy attacks: Increased damage cleave by 0.2, from 0.3(8.95 in-game) to 0.5(14.92 in-game), Increased overall damage against 1st enemy cleaved by 0.15, from 0.275 to 0.425, Reduced overall damage against the 2nd enemy cleaved by 0.05, from 0.35 to 3, Increased overall damage against 3rd enemy cleaved by 0.1, from 0.075 to 0.075, Increased infantry crit damage from 1 to 1.2, Decreased Armour damage by 0.135, from 0.5 to 0.365, Reduced Berserker/Monk damage by 0.25, from 0.75 to 0.5.",
@@ -254,6 +259,7 @@
       },
       {
         "name": "Halberd",
+        "icon": "/images/kruber/weapons/halberd.webp",
         "changes": [
           "Increased dodge distance from 0% to 7.5%.",
           "Light 2: Increased Berserker/Monk damage by 27%.",
@@ -265,6 +271,7 @@
       },
       {
         "name": "Mace",
+        "icon": "/images/kruber/weapons/mace.webp",
         "changes": [
           "Reduced stamina count from 4.5 shields to 3.",
           "Increased stagger for all attacks.",
@@ -279,12 +286,14 @@
       },
       {
         "name": "Mace & Shield",
+        "icon": "/images/kruber/weapons/maceandshield.webp",
         "changes": [
           "Weapon special (new): Super shield bash with lots of stagger power, has a 4 second cooldown."
         ]
       },
       {
         "name": "Mace & Sword",
+        "icon": "/images/kruber/weapons/maceandsword.webp",
         "changes": [
           "Heavy 1: Removed Linesman hit mass count.",
           "Heavy 2: Removed Linesman hit mass count."
@@ -292,6 +301,7 @@
       },
       {
         "name": "1H Sword",
+        "icon": "/images/kruber/weapons/sword.webp",
         "changes": [
           "Light 1: Increased overall damage against the 2nd enemy cleaved by 0.015, from 0.21 to 0.225, Reduced overall damage against the 3rd enemy cleaved by 0.01, from 0.185 to 0.175, Increased Armour damage by 0.3, from 0 to 0.3.",
           "Light 2: Increased overall damage against the 2nd enemy cleaved by 0.015, from 0.21 to 0.225, Reduced overall damage against the 3rd enemy cleaved by 0.01, from 0.185 to 0.175.",
@@ -305,6 +315,7 @@
       },
       {
         "name": "Spear & Shield",
+        "icon": "/images/kruber/weapons/spearandshield.webp",
         "changes": [
           "Can now chain earlier into either Light or Heavy attacks after any of the weapon special attacks.",
           "Light 2: Added Tank hit mass count.",
@@ -314,12 +325,14 @@
       },
       {
         "name": "Sword & Shield",
+        "icon": "/images/kruber/weapons/swordandshield.webp",
         "changes": [
           "Heavy 1: Can now reach a second charge state which has a lot more stagger power but leaves you somewhat open (charge up works similar to Rapier’s heavies)."
         ]
       },
       {
         "name": "Tuskgor Spear",
+        "icon": "/images/kruber/weapons/tuskgorspear.webp",
         "changes": [
           "Light 1: Increased cleave by 500%, Now breaks shields.",
           "Light 2: Increased attack speed by 25%, Increased armour damage by 15%, Increased cleave by 500%, Now breaks shields, Now chains into Heavy 1.",
@@ -329,12 +342,14 @@
       },
       {
         "name": "Blunderbuss",
+        "icon": "/images/kruber/weapons/blunderbuss.webp",
         "changes": [
           "Weapon special (new): Fires an armor penetrating bullet that deals heavy single target damage, Little to no cleave and very wide spread to incentivize close range use."
         ]
       },
       {
         "name": "Empire Longbow",
+        "icon": "/images/kruber/weapons/longbow.webp",
         "changes": [
           "Reload time reduced to 0.1, and made the weapon overall faster to use, Increased close range infantry bodyshot damage to kill Assassins with one bodyshot when fully charged or with two bodyshots when partially charged (at 20% Skaven/Chaos, 20% Infantry), Reduced its damage dropoff range (Kruber’s fast sniper for close/mid range).",
           "Weapon special: Enables a second zoom level when aiming down sights."
@@ -342,6 +357,7 @@
       },
       {
         "name": "Handgun",
+        "icon": "/images/kruber/weapons/handgun.webp",
         "changes": [
           "Removed damage drop off.",
           "Increased cleave and added the ability to always cleave through one additional enemy.",
@@ -618,6 +634,7 @@
     "weapons": [
       {
         "name": "Axe & Shield",
+        "icon": "/images/bardin/weapons/shieldandaxe.webp",
         "changes": [
           "Light 1: Now has the same damage profile as the Push Attack.",
           "Light 2: Now has the same damage profile as the Push Attack.",
@@ -627,10 +644,12 @@
       },
       {
         "name": "Cog Hammer",
+        "icon": "/images/bardin/weapons/coghammer.webp",
         "changes": ["It is now possible to buffer heavy attacks."]
       },
       {
         "name": "Dual Axes",
+        "icon": "/images/bardin/weapons/duelaxes.webp",
         "changes": [
           "Push cost reduced from 2 stamina to 1 (half a shield).",
           "Heavy 1: Chaining into Heavy 2 is now 0.15s faster.",
@@ -640,6 +659,7 @@
       },
       {
         "name": "Dual Hammers",
+        "icon": "/images/bardin/weapons/dualhammers.webp",
         "changes": [
           "Light attacks: Reduced window to chain into light attacks by 0.2 seconds, from 0.4 to 0.2 seconds.",
           "Light 4: Increased overall damage to 0.3 (from 0.25), Reduced the time to chain into heavy attacks from Light 4 from 1s to 0.8s.",
@@ -648,6 +668,7 @@
       },
       {
         "name": "Great Axe",
+        "icon": "/images/bardin/weapons/greataxe.webp",
         "changes": [
           "Light attacks: Increased Armour damage by 0.06, from 0.8 to 0.86.",
           "Light 2: Reduced chain timer by 0.05 seconds, 0.65 to 0.6 seconds.",
@@ -657,6 +678,7 @@
       },
       {
         "name": "Great Hammer",
+        "icon": "/images/bardin/weapons/greathammer.webp",
         "changes": [
           "Light 3: Increased stagger significantly.",
           "Heavy attacks: Increased damage cleave by 0.2, from 0.3(8.95 in-game) to 0.5(14.92 in-game), Increased overall damage against 1st enemy cleaved by 0.15, from 0.275 to 0.425, Reduced overall damage against the 2nd enemy cleaved by 0.05, from 0.35 to 3, Increased overall damage against 3rd enemy cleaved by 0.1, from 0.075 to 0.075, Increased Infantry Crit damage from 1 to 1.2, Decreased Armour damage by 0.135, from 0.5 to 0.365, Reduced Berserker/Monk damage by 0.25, from 0.75 to 0.5.",
@@ -665,12 +687,14 @@
       },
       {
         "name": "Hammer & Shield",
+        "icon": "/images/bardin/weapons/hammerandshield.webp",
         "changes": [
           "Weapon special (new):  Super shield bash with lots of stagger power, has a 4 second cooldown."
         ]
       },
       {
-        "name": "One-handed Axe",
+        "name": "1h Axe",
+        "icon": "/images/bardin/weapons/axe.webp",
         "changes": [
           "Increased headshot multipliers for all attacks.",
           "Light attacks: Increased attack speed by ~10%, Reduced range slightly, Increased armor damage, berserker damage slightly, Reduced super-armor damage.",
@@ -681,6 +705,7 @@
       },
       {
         "name": "1H Hammer",
+        "icon": "/images/bardin/weapons/hammer.webp",
         "changes": [
           "Reduced stamina count from 4.5 shields to 3.",
           "Increased stagger for all attacks.",
@@ -692,6 +717,7 @@
       },
       {
         "name": "War Pick",
+        "icon": "/images/bardin/weapons/pickaxe.webp",
         "changes": [
           "Light attacks: Now break shields.",
           "Heavy attacks: When fully charged, now explode on hit (use Flaming Flail’s Heavy 1 explosion template).",
@@ -700,10 +726,12 @@
       },
       {
         "name": "Crossbow",
+        "icon": "/images/bardin/weapons/crossbow.webp",
         "changes": ["Weapon special (new): Enables a second zoom level when aiming down sights."]
       },
       {
         "name": "Drakefire Pistols",
+        "icon": "/images/bardin/weapons/drakefirepistols.webp",
         "changes": [
           "Left click: Holding down left click fires the pistols as fast as quickly pressing left click does, Increased damage cleave from 0.15 (4.48 in-game) to 0.23 (6.86 in-game), Increased heat cost from 2.5 to 4.62.",
           "Dual shot: Now breaks shields, Reduced infantry damage from 1 to 0.5, Increased heat cost from 4.62 to 12."
@@ -711,6 +739,7 @@
       },
       {
         "name": "Grudge-Raker",
+        "icon": "/images/bardin/weapons/grudgeraker.webp",
         "changes": [
           "Increased base ammo capacity from 18 to 20.",
           "Weapon special (new): Fires both barrels at once."
@@ -718,6 +747,7 @@
       },
       {
         "name": "Handgun",
+        "icon": "/images/bardin/weapons/handgun.webp",
         "changes": [
           "Clip size increased from 1 to 2.",
           "Reduced reload time from 1.8s to 1.65s.",
@@ -727,6 +757,7 @@
       },
       {
         "name": "Masterwork Pistol",
+        "icon": "/images/bardin/weapons/masterworkpistol.webp",
         "changes": [
           "Increased base ammo capacity from 24 to 27.",
           "Left click: Decreased weapon swap time from a total of 0.9s to 0.6s, Now twice as accurate, Increased Super-Armour damage at close range by 0.5, from 0 to 0.5, Increased Mauler headshot damage by 0.8, Increased Chaos Warrior headshot damage by 0.6.",
@@ -735,6 +766,7 @@
       },
       {
         "name": "Throwing Axes",
+        "icon": "/images/bardin/weapons/throwingaxes.webp",
         "changes": [
           "The time required to begin recalling the axes has been halved. Reduced from 0.5 to 0.25 seconds.",
           "Increased reload speed by 20%.",
@@ -745,6 +777,7 @@
       },
       {
         "name": "Trollhammer Torpedo",
+        "icon": "/images/bardin/weapons/trollhammertorpedo.webp",
         "changes": [
           "Now uses energy as a resource instead of regular ammo: Max energy pool is 30. ",
           "Each shot drains 10 energy. Must have at least 10 energy to shoot.",
@@ -759,6 +792,7 @@
       },
       {
         "name": "Drakegun",
+        "icon": "/images/bardin/weapons/drakegun.webp",
         "changes": [
           "Flame Burst Increased duration.",
           "The increased duration means that the heat cost comes in two intervals, This can blow you up if you are already on high heat.",
@@ -1136,6 +1170,7 @@
     "weapons": [
       {
         "name": "Dual Daggers",
+        "icon": "/images/kerillian/weapons/dagger.webp",
         "changes": [
           "Reduced dodge distance from 35% to 20%.",
           "Light 4 The time to chain back into Light 1 has been reduced by 0.3 seconds, from 0.67 to 0.37 seconds.",
@@ -1146,6 +1181,7 @@
       },
       {
         "name": "Dual Swords",
+        "icon": "/images/kerillian/weapons/dualswords.webp",
         "changes": [
           "Light attacks: Attack speed and damage progressively increase from Lights 1 to 4, Now all apply bleed.",
           "Light 2: Added 10% Crit chance.",
@@ -1156,6 +1192,7 @@
       },
       {
         "name": "Elven Axe",
+        "icon": "/images/kerillian/weapons/axe.webp",
         "changes": [
           "Light 1: Increased Attack speed by 10%, Reduced Armour damage by 0.25, from 0.65 to 0.4, Reduced Monster damage by 1, from 2.5 to 1.5, Increased Super-Armour damage by 0.05, from 0.75 to 0.8, Reduced Berserker damage by 0.4, from 0.6 to 0.2, Reduced Crit Armour damage by 0.15, from 0.75 to 0.6, Reduced Crit Monster damage by 1, from 2.75 to 1.75, Reduced Crit Berserker/Monk damage by 0.6, from 1 to 0.4, Increased Cleave from 0.075(2.24 in-game) by 0.155 to 0.23(6.86 in-game), Increased Stagger from 0.075(2.24 in-game) by 0.105 to 0.18(6.86 in-game), Reduced headshot multiplier against the 1st enemy hit by 0.1, from 1.5 to 1.4, Increased overall damage against the 2nd enemy hit by 0.125, from 0.075 to 0.2, Increased overall stagger against the 2nd enemy hit by 0.075, from 0.075 to 0.15.",
           "Light 2: Increased Attack speed by 10%, Reduced Armour damage by 0.25, from 0.65 to 0.4, Reduced Monster damage by 1, from 2.5 to 1.5, Increased Super-Armour damage by 0.05, from 0.75 to 0.8, Reduced Berserker/Monk damage by 0.4, from 0.6 to 0.2, Reduced Crit Armour damage by 0.15, from 0.75 to 0.6, Reduced Crit Monster damage by 1, from 2.75 to 1.75, Reduced Crit Berserker damage by 0.6, from 1 to 0.4, Increased Cleave from 0.075(2.24 in-game) by 0.155 to 0.23(6.86 in-game), Increased Stagger from 0.075(2.24 in-game) by 0.105 to 0.18(6.86 in-game), Increased headshot multiplier against the 1st enemy hit by 0.4, from 1 to 1.4, Reduced the overall damage against the 1st enemy hit by 0.03, from 0.25 to 0.22, Increased overall damage against the 2nd enemy hit by 0.125, from 0.075 to 0.2, Increased overall stagger against the 2nd enemy hit by 0.075, from 0.075 to 0.15.",
@@ -1167,6 +1204,7 @@
       },
       {
         "name": "Elven Spear",
+        "icon": "/images/kerillian/weapons/spear.webp",
         "changes": [
           "Reduced effective block angle from 180 to 120.",
           "Attacks which chain into Heavy 1 are now 0.1 seconds faster.",
@@ -1183,6 +1221,7 @@
       },
       {
         "name": "Glaive",
+        "icon": "/images/kerillian/weapons/glaive.webp",
         "changes": [
           "Light attacks Now break shields.",
           "Heavy 1 Increased attack speed by 41%.",
@@ -1192,6 +1231,7 @@
       },
       {
         "name": "1h Sword",
+        "icon": "/images/kerillian/weapons/1hsword.webp",
         "changes": [
           "Added a new light attack horizontal swipe, Push-attacking is the only way of chaining into it.",
           "All attacks now have reduced movement speed penalty during attacks.",
@@ -1205,10 +1245,12 @@
       },
       {
         "name": "Sword & Dagger",
+        "icon": "/images/kerillian/weapons/swordanddagger.webp",
         "changes": ["Reduced dodge distance from 25% to 10%."]
       },
       {
         "name": "Two-handed Sword",
+        "icon": "/images/kerillian/weapons/greatsword.webp",
         "changes": [
           "Reduced dodge distance from 10% to 0%.",
           "Light attacks Increased damage, damage cleave, stagger cleave.",
@@ -1219,6 +1261,7 @@
       },
       {
         "name": "Briar Javelin ",
+        "icon": "/images/kerillian/weapons/javelin.webp",
         "changes": [
           "Increased base ammo capacity from 3 to 4.",
           "Reduced reload speed when you have 1 or more Javelins left by 0.2 seconds, from 1 to 0.8 seconds.",
@@ -1230,6 +1273,7 @@
       },
       {
         "name": "Deepwood Staff",
+        "icon": "/images/kerillian/weapons/deepwoodstaff.webp",
         "changes": [
           "Reduced vortex cast range. Now lines up with left click’s effective range.",
           "Increased vortex cast cost from 10 to 15.",
@@ -1239,10 +1283,12 @@
       },
       {
         "name": "Hagbane Shortbow",
+        "icon": "/images/kerillian/weapons/hagbane.webp",
         "changes": ["Charged Shot Decreased weapon swap time from 0.66 to 0.5 seconds."]
       },
       {
         "name": "Longbow",
+        "icon": "/images/kerillian/weapons/longbow.webp",
         "changes": [
           "Left click A quick shot after a charged shot is pushed past the timing of a weapon swap to make sure these two do not overlap.",
           "Charged Shot Can now swap weapons earlier after a charged shot.",
@@ -1251,6 +1297,7 @@
       },
       {
         "name": "Moonfire Bow",
+        "icon": "/images/kerillian/weapons/moonfirebow.webp",
         "changes": [
           "Moonfire Bow is now a railgun. (!highly experimental!)",
           "Left click Reduced damage and cleave significantly, Uncharged shots create an explosion which applies a DoT, Increased fire rate.",

@@ -123,6 +123,7 @@
     "weapons": [
       {
         "name": "Bretonnian Longsword",
+        "icon": "/images/kruber/weapons/bretonnianlongsword.webp",
         "changes": [
           "Light 2: Damage on 2nd Target increased by 60%, Damage on 3rd Target increased by 50%.",
           "Heavies 1 and 2: Damage Cleave increased by 30%, Stagger Cleave increased by 30%."
@@ -130,6 +131,7 @@
       },
       {
         "name": "Great Hammer",
+        "icon": "/images/kruber/weapons/greathammer.webp",
         "changes": [
           "Push Attack: Non-Crit Infantry Damage increased by 50%.",
           "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
@@ -137,6 +139,7 @@
       },
       {
         "name": "Greatsword",
+        "icon": "/images/kruber/weapons/greatsword.webp",
         "changes": [
           "Lights: Finesse Coefficient increased by ~33%, Damage Cleave increased by ~14%, Damage on 1st Target increased by 10%, Damage on 2nd Target decreased by 10%, Damage on 3rd Target increased by ~17%.",
           "Push Attack: Attack Speed increased by ~14%, Damage decreased by 50%, Stagger decreased by 20%,  Non-Crit Infantry Damage increased by 25%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by 60%, Infantry Crit Multiplier increased by 25%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%, Heavies Damage on 1st Target decreased by 10%, Damage on 2nd Target increased by ~14%, Damage on 4th Target decreased by ~17%, Damage on 5th Target and above increased by 40%, Non-Crit Armor Damage on 1st Target decreased by ~17%, Non-Crit Armor Damage on 2nd Target decreased by ~33%, Non-Crit Zerker Damage decreased by ~40%."
@@ -144,6 +147,7 @@
       },
       {
         "name": "Halberd",
+        "icon": "/images/kruber/weapons/halberd.webp",
         "changes": [
           "Overall, damage is increased and spread more evenly across attacks.",
           "Light 1: Damage Cleave increased by ~45%, Non-Crit Infantry Damage increased by 25%, Damage on 2nd Target increased by 50%, Damage on 3rd Target increased by 50%.",
@@ -155,6 +159,7 @@
       },
       {
         "name": "Mace & Sword",
+        "icon": "/images/kruber/weapons/maceandsword.webp",
         "changes": [
           "Light 1 and 2 (Mace): Damage profile changed to be similar to L1/L2 of Kruber 1H Mace,  Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Tank added, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
           "Light 3 and 4 (Sword): Damage profile changed to be similar to L1/L2 of Kruber 1H Sword, Damage increased by ~20%, Finesse Coefficient increased by ~33%, Headshot/Crit Curve changed from Linesman to Ninja (higher headshot or crit damage, but the same headshot crit damage).",
@@ -164,6 +169,7 @@
       },
       {
         "name": "Spear and Shield",
+        "icon": "/images/kruber/weapons/spearandshield.webp",
         "changes": [
           "Light 2: Tank added.",
           "Heavy 2: Finesse Coefficient increased by ~167%, Damage on 1st Target decreased by ~16%, Stagger on 1st Target increased by 35%, Damage on 2nd Target increased by 170%, Stagger on 2nd Target increased by ~237%, Non-Crit Armor Damage increased by 60%, Non-Crit Super Armor Damage increased by 60%, Non-Crit Monster Damage increased by ~23%, Non-Crit Armor Stagger decreased by 40%, Non-Crit Super Armor Stagger decreased by 40%, Armor Crit Multiplier increased by 60%, Super Armor Crit Multiplier increased by 60%, Monster Crit Multiplier increased by 60%, Stagger Armor Crit Multiplier decreased by 20%, Stagger Super Armor Crit Multiplier decreased by 50%."
@@ -171,6 +177,7 @@
       },
       {
         "name": "1H Mace",
+        "icon": "/images/kruber/weapons/mace.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
           "Lights 1 and 2: Finesse Coefficient increased by ~33%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
@@ -180,6 +187,7 @@
       },
       {
         "name": "1H Sword",
+        "icon": "/images/kruber/weapons/sword.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
           "Light 1 and 2: Damage on 1st Target decreased by ~5%, Damage on 2nd Target decreased by ~19%, Damage on 3rd Target and above increased by ~67%, Headshot/Crit Curve changed from Linesman to Ninja.",
@@ -189,6 +197,7 @@
       },
       {
         "name": "Empire Longbow",
+        "icon": "/images/kruber/weapons/longbow.webp",
         "changes": [
           "Zoom on charged shot changed from automatic to manual trigger (via weapon special).",
           "Spread, timings, and other stuff tweaked to decrease the 'jolty stiffness' after shooting.",
@@ -199,6 +208,7 @@
       },
       {
         "name": "Handgun",
+        "icon": "/images/kruber/weapons/handgun.webp",
         "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
       }
     ]
@@ -300,6 +310,7 @@
     "weapons": [
       {
         "name": "Dual Axes",
+        "icon": "/images/bardin/weapons/duelaxes.webp",
         "changes": [
           "Push:  Push changed from regular push to light push, stamina cost decreased from 2 to 1, weaker stagger",
           "Heavies: H1 Attack Speed decreased by ~11%, H2 Attack Speed increased by ~6%, Bonus Crit Chance of 20% added to H3."
@@ -307,6 +318,7 @@
       },
       {
         "name": "Greataxe",
+        "icon": "/images/bardin/weapons/duelaxes.webp",
         "changes": [
           "Light 3: Attack speed increased by ~10%.",
           "Push Attack: Stagger Cleave increased by ~140%, Bonus Crit Chance of 10% added.",
@@ -315,6 +327,7 @@
       },
       {
         "name": "Great Hammer",
+        "icon": "/images/bardin/weapons/greathammer.webp",
         "changes": [
           "Push Attack: Non-Crit Infantry Damage increased by 50%.",
           "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
@@ -322,6 +335,7 @@
       },
       {
         "name": "1H Axe",
+        "icon": "/images/bardin/weapons/axe.webp",
         "changes": [
           "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
           "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
@@ -329,6 +343,7 @@
       },
       {
         "name": "1H Hammer",
+        "icon": "/images/bardin/weapons/hammer.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
           "Lights 1 and 2: Finesse Coefficient increased by ~33.3%, Damage on 1st Target increased by ~30%, Damage Cleave increased by 15%, Non-Crit Armor Damage added, Non-Crit Super Armor Damage added, Non-Crit Zerker Damage decreased by 25%, Armor Crit Multiplier increased by 100%, Zerker Crit Multiplier decreased by 25%.",
@@ -338,6 +353,7 @@
       },
       {
         "name": "War Pick",
+        "icon": "/images/bardin/weapons/pickaxe.webp",
         "changes": [
           "Dodge count increased from 2 to 3.",
           "Lights: Finesse Coefficient increased by 50%, headshot/Crit Curve changed from Tank to Linesman, Damage Cleave increased by ~33%, Stagger Cleave decreased by 50% (from 0.8 to 0.4). Damage against 1st Target increased by 12.5%, Damage against 2nd Target increased by 110%, Damage against 3rd Target increased by ~87%, Damage against 4th Target and above increased by 50%, Non-Crit Infantry Damage on 1st Target increased by 25%, Non-Crit Armor Damage on 1st Target increased by 50%, Non-Crit Monster Damage on 1st Target increased by 50%, Non-Crit Infantry Damage on 2nd Target and above decreased by 10%, Non-Crit Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Super Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Monster Damage on 2nd Target and above increased by 50%, Monster Crit Multiplier increased by 50%,  Attack Speed increased by ~31%.",
@@ -346,16 +362,19 @@
       },
       {
         "name": "Drakegun",
+        "icon": "/images/bardin/weapons/drakegun.webp",
         "changes": [
           "Alt Fire: Damage Interval increased by 20%, Does not affect DoT, Target cap decreased from 50 enemies to 19 enemies."
         ]
       },
       {
         "name": "Handgun",
+        "icon": "/images/bardin/weapons/handgun.webp",
         "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
       },
       {
         "name": "Trollhammer Torpedo",
+        "icon": "/images/bardin/weapons/trollhammertorpedo.webp",
         "changes": [
           "Reload Duration increased from 3s to 4s.",
           "AoE damage against Armor and Super Armor decreased by 50%.",
@@ -534,6 +553,7 @@
     "weapons": [
       {
         "name": "Dual Daggers",
+        "icon": "/images/kerillian/weapons/dagger.webp",
         "changes": [
           "Stamina increased from 4 to 6.",
           "Light 1 and 2: Bonus Crit Chance of 10% added.",
@@ -542,6 +562,7 @@
       },
       {
         "name": "Dual Swords",
+        "icon": "/images/kerillian/weapons/dualswords.webp",
         "changes": [
           "Light 1 and 2: Damage Cleave increased by 20%, Damage on 1st Target increased by ~48%, Finesse Coefficient on 1st Target increased by ~33%,  Strength Coefficient on 1st Target increased by 100%, Damage on 2nd Target increased by  ~67%, Finesse Coefficient on 2nd Target increased by 100%, Headshot/Crit Curve on 2nd Target changed from Linesman to Ninja, Damage on 3rd Target and on increased by ~67%, Armor Crit Multiplier increased by ~67%, Non-Crit Infantry Damage lowered by 32%, Infantry Crit Multiplier decreased by 40%, Monster Crit Multiplier decreased by 40%.",
           "Heavies: Damage Cleave increased by 80%, Stagger Cleave increased by 100%, Damage on 1st Target increased by 100%, Strength Coefficient on 1st Target increased by 100%, Finesse Coefficient on 1st Target decreased by 100%, Headshot/Crit Curve on 1st Target changed from Ninja to Linesman, Non-Crit Armor Damage on 1st Target decreased by 37.5%, Damage on 2nd Target increased by 60%, Non-Crit Armor Damage on 2nd Target decreased by 20%, Damage on 3rd Target increased by ~67%, Damage on 5th Target and on decreased by ~7%, Finesse Coefficient on 5th Target and on decreased by 75%.",
@@ -551,6 +572,7 @@
       },
       {
         "name": "Elf Greatsword",
+        "icon": "/images/kerillian/weapons/greatsword.webp",
         "changes": [
           "Lights: Attack Speed increased by ~10%.",
           "Push Attack: Attack Speed decreased by ~30%.",
@@ -560,6 +582,7 @@
       },
       {
         "name": "Elf 1H Sword",
+        "icon": "/images/kerillian/weapons/1hsword.webp",
         "changes": [
           "Dodge count decreased from 100 to 4.",
           "Lights: L2 range increased by ~8%, L3 range increased by ~17%, L1 Attack Speed decreased by ~11%, L2 Attack Speed decreased by ~14%, PA Attack Speed decreased by ~17%, L3 Attack Speed decreased by ~33%, Chain timing decreased by ~23% to compensate."
@@ -567,12 +590,14 @@
       },
       {
         "name": "Elf Spear",
+        "icon": "/images/kerillian/weapons/spear.webp",
         "changes": [
           "Various hitbox windows extended so that hitboxes better reflect animation and feel more accurate."
         ]
       },
       {
         "name": "Glaive",
+        "icon": "/images/kerillian/weapons/glaive.webp",
         "changes": [
           "Lights and Push Attack: L2 Attack Speed increased by 15%, L3 Attack Speed increased by 12%, PA Attack Speed increased by ~4%, Linesman added to PA, Damage Cleave increased by ~30%, Stagger Cleave increased by 44%.",
           "Heavy 1:Now shares a damage profile with Heavy 2, Linesman removed."
@@ -580,28 +605,33 @@
       },
       {
         "name": "Deepwood Staff",
+        "icon": "/images/kerillian/weapons/deepwoodstaff.webp",
         "changes": [
           "Alt-Fire (Lift): Duration of Lift decreased from 8s to 5s (0.5x multiplier unchanged for Chaos Warriors, so 2.5s/2.5s lift/prone for Chaos Warriors)."
         ]
       },
       {
         "name": "Javelin",
+        "icon": "/images/kerillian/weapons/javelin.webp",
         "changes": [
           "Thrown: Damage Cleave increased by ~433%, Stagger Cleave increased by ~433%, Finesse Coefficient increased by ~7%, Damage on all near targets increased by ~5%, Damage on all far targets increased by ~45%, Dropoff ranges increased, Non-crit Armor Damage increased by ~11%, Non-crit Super Armor Damage increased by 25%."
         ]
       },
       {
         "name": "Hagbane Shortbow",
+        "icon": "/images/kerillian/weapons/hagbane.webp",
         "changes": ["AoE Cloud:Infantry Damage of DoT increased by 28%."]
       },
       {
         "name": "Moonfire Bow",
+        "icon": "/images/kerillian/weapons/moonfirebow.webp",
         "changes": [
           "Full Charged Arrow: Damage increased by ~83%, Finesse Coefficient increased by ~133%, Non-Crit Infantry Damage increased by 100%, Non-Crit Armor Damage increased by 100%, Non-Crit Monster Damage increased by 100%, Non-Crit Berserker Damage increased by 100%, Damage of DoT lowered by ~83%."
         ]
       },
       {
         "name": "Swift Bow",
+        "icon": "/images/kerillian/weapons/swiftbow.webp",
         "changes": [
           "Quick Shot: Damage at near range increased by 20%, Damage at far range increased by 100%, Headshot/Crit Curve changed from Ninja to Linesman, Strength Coefficient lowered by 20%, Damage Cleave increased by ~66%, Stagger Cleave increased by ~66%, Friendly Fire decreased by 85%, Non-Crit Armor Damage added, Non-crit Berserker Damage decreased by 50%.",
           "Charged Shot: Damage at near range increased by 10%, Damage at near range increased by ~17%, Damage Cleave increased by ~66%, Stagger Cleave increased by ~66%."
