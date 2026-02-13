@@ -227,7 +227,7 @@ li {
 
 .passives li {
   list-style: disc;
-  margin-left: 1rem;
+  margin-left: 1.35rem;
   color: var(--grey-400);
   margin-bottom: 0.3rem;
 }
@@ -239,7 +239,7 @@ li {
 .sub-talent-ul li {
   color: var(--grey-400);
   list-style: disc;
-  margin-left: 1rem;
+  margin-left: 1.35rem;
 }
 
 @keyframes scaleup {

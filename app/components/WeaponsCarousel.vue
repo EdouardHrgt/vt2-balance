@@ -177,7 +177,7 @@ const closeModal = () => {
 
 .carousel-btn {
   background-color: var(--black-900);
-  border: 2px solid rgb(133, 115, 96);
+  border: 2px solid #e7c9a9;
   border-radius: 8px;
   cursor: pointer;
   z-index: 10;

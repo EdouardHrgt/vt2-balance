@@ -176,4 +176,11 @@ span {
     margin-inline: auto;
   }
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+    margin-block: 1rem;
+  }
+}
 </style>

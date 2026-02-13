@@ -87,7 +87,7 @@ p {
 @media (max-width: 550px) {
   ul {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.75rem;
   }
   li img {
     width: 4rem;
