@@ -110,7 +110,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   color: var(--grey-400);
-  border: 2px solid var(--grey-400);
+  border: 1px solid var(--grey-400);
   transition: all 0.4s ease;
   margin-left: auto;
 }
@@ -123,8 +123,7 @@ span {
   button:hover {
     background-color: var(--grey-400);
     color: var(--red-900);
-    border: 2px solid var(--red-900);
-    opacity: 1;
+    border: 1px solid var(--red-900);
   }
 }
 
@@ -164,6 +163,8 @@ span {
     margin-top: 2rem;
     margin-inline: auto;
     max-width: 90%;
+    max-height: 400px;
+    overflow-y: scroll;
   }
   p {
     max-width: 100%;

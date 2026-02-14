@@ -15,11 +15,11 @@
     </ClientOnly>
     <div v-if="modName">
       <p class="err" v-if="errorMsg">... No Changelogs found for this Mod ...</p>
-
       <!-- WEAPONS -->
       <WeaponsCarousel :weapons="modData.weapons" :mod="modName" v-if="modData.weapons" />
       <!-- CAREERS CHANGES -->
       <div class="articles-container" v-if="errorMsg == false">
+        <GlobalChanges :modLabel="modName" />
         <CareerArticle
           v-for="(cls, index) in modData.careers"
           :key="cls.name || index"
@@ -58,9 +58,6 @@ const isSticky = ref(false)
 const stickySection = ref(null)
 const selectedModId = ref(null)
 
-// Déclarer observer en dehors de onMounted
-let observer = null
-
 const modFiles = {
   1: 'tourney-balance.json',
   2: 'class-balance.json',
@@ -81,7 +78,6 @@ const handleModSelection = async (mod) => {
     }
 
     const jsonData = await response.json()
-
     modData.value = jsonData[career.value] || null
     errorMsg.value = false
   } catch (error) {
@@ -91,32 +87,26 @@ const handleModSelection = async (mod) => {
   }
 }
 
+const handleScroll = () => {
+  if (!stickySection.value) return
+
+  const rect = stickySection.value.getBoundingClientRect()
+  isSticky.value = rect.top <= 0
+}
+
 onMounted(async () => {
-  // Attendre que le DOM soit complètement hydraté
+  if (typeof window === 'undefined') return
+
   await nextTick()
 
-  // Petit délai pour s'assurer que tout est bien rendu
-  setTimeout(() => {
-    observer = new IntersectionObserver(
-      ([entry]) => {
-        isSticky.value = entry.intersectionRatio < 1
-      },
-      {
-        threshold: [1],
-        rootMargin: '-1px 0px 0px 0px',
-      },
-    )
+  handleScroll()
 
-    if (stickySection.value) {
-      observer.observe(stickySection.value)
-    }
-  }, 100)
+  window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
-  if (observer && stickySection.value) {
-    observer.unobserve(stickySection.value)
-    observer.disconnect()
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('scroll', handleScroll)
   }
 })
 
@@ -132,6 +122,7 @@ const scrollToTop = () => {
 .title-mods {
   position: sticky;
   top: 0;
+  background-color: none;
   z-index: 10;
   transition:
     background-color 0.5s ease,
@@ -186,7 +177,7 @@ h1,
   flex-direction: column;
   gap: 2rem;
   padding-inline: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 @keyframes scaleup {

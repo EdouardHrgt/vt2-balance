@@ -40,7 +40,12 @@ const mods = [
 
 <style scoped>
 footer {
-  background-color: var(--black-400);
+  background: #000000;
+  background: linear-gradient(
+    180deg,
+    rgb(22, 22, 22) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   padding-block: 1.2rem;
   padding-inline: 2rem;
   width: 100%;
