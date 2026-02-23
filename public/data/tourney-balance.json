@@ -318,7 +318,7 @@
       },
       {
         "name": "Greataxe",
-        "icon": "/images/bardin/weapons/duelaxes.webp",
+        "icon": "/images/bardin/weapons/greataxe.webp",
         "changes": [
           "Light 3: Attack speed increased by ~10%.",
           "Push Attack: Stagger Cleave increased by ~140%, Bonus Crit Chance of 10% added.",
@@ -428,7 +428,7 @@
         "name": "handmaiden",
         "icon": "/images/kerillian/kerillian-handmaiden.webp",
         "passives": [
-          "NEW 'Bendy': Gives 30% DR.",
+          "NEW 'Bendy': Increases healing received by 40% ",
           "Renewal: Range (radius) of Aura increased from 5 to 20."
         ],
         "talents": [
