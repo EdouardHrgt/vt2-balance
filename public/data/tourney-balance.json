@@ -4,17 +4,26 @@
       "mercenary": {
         "name": "mercenary",
         "icon": "/images/kruber/kruber-mercenary.webp",
-        "passives": [],
+        "passives": [
+          "Paced Strikes: The Attack Speed bonus Mercenary receives is now also granted to his allies."
+        ],
         "talents": [
           {
             "name": "Helborg’s Tutelage",
             "level": 10,
-            "changes": ["No longer prevents random crits from occurring."]
+            "changes": [
+              "Now properly gives random crits. Additionally, the guaranteed critical hit is no longer consumed if the player misses the attack."
+            ]
           },
           {
             "name": "Enhanced Training",
             "level": 20,
             "changes": ["Target requirement decreased from 4 to 3."]
+          },
+          {
+            "name": "Strike Together",
+            "level": 20,
+            "changes": ["Proccing Paced Strikes now requires hitting only one enemy."]
           }
         ]
       },
@@ -101,7 +110,14 @@
           {
             "name": "Virtue of the Penitent",
             "level": 20,
-            "changes": ["Now requires 500 kills per strength potion on Cata 3."]
+            "changes": [
+              "values have been adjusted to scale in instances of 50 kills instead of 25. (Results in Cataclysm 1 = 350 Kills, Cataclysm 3 = 500 Kills)"
+            ]
+          },
+          {
+            "name": "Virtue of Stoicism",
+            "level": 25,
+            "changes": ["Thps regeneration reduced from 50% to 25%."]
           },
           {
             "name": "Virtue of the Impetuous Knight",
@@ -122,11 +138,24 @@
     },
     "weapons": [
       {
+        "name": "Tuskgor Spear",
+        "icon": "/images/kruber/weapons/tuskgorspear.webp",
+        "changes": [
+          "Light 1: Non-crit Armor damage increased by 40%, Crit Armor Multiplier increased by 17.5%.",
+          "Light 2: Non-crit Monster damage increased by 22.2%, Crit Monster Multiplier increased by 10%.",
+          "Light 3: Non-crit Super Armor damage added, Crit Super Armour Multiplier increased by 20%.",
+          "Light 4: Non-crit Super Armor damage increased by 20%, Crit Super Armour Multiplier increased by 50%.",
+          "Heavy 1: Non-crit Infantry damage increased by 20.8%, Crit Infantry Multiplier increased by 13%, Non-crit Armor damage increased by 124%, Crit Armor Multiplier increased by 94%, Non-crit Super Armor damage increased by 124%, Crit Super Armor Multiplier increased by 94%."
+        ]
+      },
+      {
         "name": "Bretonnian Longsword",
         "icon": "/images/kruber/weapons/bretonnianlongsword.webp",
         "changes": [
+          "Push-Attack: Power Distribution increased to give 23% more damage.",
           "Light 2: Damage on 2nd Target increased by 60%, Damage on 3rd Target increased by 50%.",
-          "Heavies 1 and 2: Damage Cleave increased by 30%, Stagger Cleave increased by 30%."
+          "Heavies 1 & 2: Damage Cleave increased by 30%, Stagger Cleave increased by 30%.",
+          "Heavy 3: Non-critarmor damage increased by 3%."
         ]
       },
       {
@@ -210,6 +239,11 @@
         "name": "Handgun",
         "icon": "/images/kruber/weapons/handgun.webp",
         "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
+      },
+      {
+        "name": "Blunderbuss",
+        "icon": "/images/kruber/weapons/blunderbuss.webp",
+        "changes": ["Bash: Radius reduced by 64%."]
       }
     ]
   },
@@ -250,7 +284,10 @@
           {
             "name": "Parting Gift",
             "level": 30,
-            "changes": ["Bomb-dupe buff now has a finite duration of 10s"]
+            "changes": [
+              "Bomb-dupe buff now has a finite duration of 10s",
+              "Fire Bomb DoT Damage now decreased by 52% while the Parting Gift Buff is active."
+            ]
           },
           {
             "name": "Surprise Guest",
@@ -263,7 +300,27 @@
         "name": "iron breaker",
         "icon": "/images/bardin/bardin-iron-breaker.webp",
         "passives": ["CDR from Damage Taken: Decreased from 0.5 to 0.4."],
-        "talents": []
+        "talents": [
+          {
+            "name": "Under Pressure",
+            "level": 10,
+            "changes": [
+              "no longer increases power, but rather it now increases damage.",
+              "Initial damage buffed from -80% to -20%.",
+              "Final attack speed buffed from -50% to 50%"
+            ]
+          },
+          {
+            "name": "Vengeance",
+            "level": 20,
+            "changes": [
+              "Now stacks faster.",
+              "Time between attacks changed from 7 seconds to 3 seconds.",
+              "Attack speed per stack reduced from 8% per stack to 6% per stack.",
+              "Duration of the buff increased from 10 seconds to 12 seconds."
+            ]
+          }
+        ]
       },
       "slayer": {
         "name": "slayer",
@@ -368,9 +425,19 @@
         ]
       },
       {
+        "name": "Masterwork Pistol",
+        "icon": "/images/bardin/weapons/masterworkpistol.webp",
+        "changes": ["Infantry damage nerfed by 9%."]
+      },
+      {
         "name": "Handgun",
         "icon": "/images/bardin/weapons/handgun.webp",
         "changes": ["Dropoff start range increased by 60% and dropoff end range increased by 100%."]
+      },
+      {
+        "name": "Grudge-Raker",
+        "icon": "/images/bardin/weapons/grudgeraker.webp",
+        "changes": ["Bash: Radius reduced by 64%."]
       },
       {
         "name": "Trollhammer Torpedo",
@@ -390,7 +457,7 @@
         "name": "waystalker",
         "icon": "/images/kerillian/kerillian-waystalker.webp",
         "passives": [
-          "Amaranthe: <50% HP threshold removed; now regen heals at any % HP.",
+          "Amaranthe: Now regen heals when below 66.6% HP.",
           "If there is THP, Regen does not replace THP with Green HP, and instead heals on top of that THP.",
           "Ultimate (Trueshot Volley) (Non-Piercing Version): CD decreased from 80s to 65s, Non-Crit Infantry Damage increased by 50% (from 1 to 1.5) and Non-Crit Bodyshot Super Armor Damage increased by 140% (from 0.25 to 0.6) (3 arrows should 1-shot headshot C3 Maulers), Cleave increased by 50% (from 0.25 to 0.375), FF decreased to 0."
         ],
@@ -457,7 +524,7 @@
           },
           {
             "name": "Dance of Blades",
-            "level": 25,
+            "level": 20,
             "changes": [
               "Bonus Power increased from 10% to 15%.",
               "Duration increased from 2s to 3.5s."
@@ -592,7 +659,16 @@
         "name": "Elf Spear",
         "icon": "/images/kerillian/weapons/spear.webp",
         "changes": [
-          "Various hitbox windows extended so that hitboxes better reflect animation and feel more accurate."
+          "Shortened damage windows for all Light pokes bar Light 4.",
+          "Cut approximately 40% of the back end of the light poke hitbox, reducing the hitbox duration.",
+          "Light pokes increased non-crit infantry damage by 22%.",
+          "Light pokes increased non-crit armor damage by 40%",
+          "Light pokes increased non-crit super armor damage by 80%",
+          "Increased crit infantry damage by 22%",
+          "Increased crit armor damage by 25%",
+          "Increased crit super armor damage by 25%",
+          "Heavy 2 increased non crit super armor damage by 33%",
+          "Increased crit super armor damage by 20%"
         ]
       },
       {
@@ -644,7 +720,8 @@
       "witch-hunter-captain": {
         "name": "witch hunter captain",
         "icon": "/images/saltzpyre/saltzpyre-witch-hunter-captain.webp",
-        "passives": [""],
+        "untouched": true,
+        "passives": [],
         "talents": []
       },
       "bounty-hunter": {
@@ -673,6 +750,11 @@
             "name": "Job Well Done",
             "level": 25,
             "changes": ["Maximum amount of DR decreased from 30% to 20%."]
+          },
+          {
+            "name": "Salvage Ammunition",
+            "level": 25,
+            "changes": ["Also procs on Specials now."]
           },
           {
             "name": "Double-Shotted",
@@ -782,6 +864,7 @@
         "name": "Holy Greathammer",
         "icon": "/images/saltzpyre/weapons/hollygreathammer.webp",
         "changes": [
+          "Light 2: Non-crit Infantry damage increased by 50%, Crit Infantry damage increased by 36%, Non-crit Berserker damage increased by 48%.",
           "Light 3: Damage on 2nd Target increased by 100%.",
           "Heavy 1: Damage on 2nd Target decreased by ~78%.",
           "Heavy 2: Damage Cleave increased by ~33%, Damage on 1st Target increased by ~81%, Damage on 2nd Target increased by ~33%.",
@@ -811,14 +894,22 @@
         "icon": "/images/saltzpyre/weapons/bop.webp",
         "changes": ["Maximum ammo increased by ~67%.", "Reload time decreased by 20%."]
       },
-
       {
         "name": "Griffon foot",
         "icon": "/images/saltzpyre/weapons/griffon.webp",
         "changes": [
           "Number of pellets decreased from 18 to 12.",
           "Cleave decreased by 50%.",
-          "Spread tightened."
+          "Spread tightened.",
+          "Bash: Radius reduced by 64%."
+        ]
+      },
+      {
+        "name": "Hammer & Tome",
+        "icon": "/images/saltzpyre/weapons/hammerandtome.webp",
+        "changes": [
+          "Charged Heavy 1: Overall damage reduced by 11%, Overall stagger reduced by 18.6%, Non-crit Armor damage increased by 75%, Crit Armor damage increased by 50%, Non-crit Super Armor damage increased by 58.75%, Crit Super Armor damage increased by 35%.",
+          "Charged Heavy 2: Overall damage increased by 12.5%, Non-crit Infantry damage increased by 111.2%, Crit Infantry damage increased by 60%, Non-crit Berserker damage increased by 92%, Crit Berserker damage increased by 28.3%."
         ]
       }
     ]
@@ -881,6 +972,13 @@
             "name": "Martial Study",
             "level": 10,
             "changes": ["Bonus attack speed increased from 5% to 10%."]
+          },
+          {
+            "name": "Spirit Casting",
+            "level": 10,
+            "changes": [
+              "now gives 5% crit while above 65% health and 10% crit while above 80% health."
+            ]
           }
         ]
       },
@@ -975,6 +1073,17 @@
           "Light 1 and 2: Damage increased by ~14%, Headshot/Crit Curve changed from Linesman to Ninja.",
           "Light 3: Range increased by 20%, Shield Break added.",
           "Heavies: Damage Cleave decreased by ~33%, Stagger Cleave decreased by 25%, Damage on 1st Target increased by ~17%, Damage on 2nd Target increased by 75%, Non-Crit Armor Damage on 1st Target increased by 30%, Non-Crit Super Armor Damage on 1st Target increased by 30%, Non-Crit Monster Damage on 1st Target increased by 100%, Armor Crit Multiplier increased by 30%, Super Armor Crit Multiplier increased by 30%, Monster Crit Multiplier increased by 150%, Range increased by ~15%, Headshot/Crit Curve changed from Tank to Ninja, Finesse Coefficient decreased by 25%."
+        ]
+      },
+      {
+        "name": "Dagger",
+        "icon": "/images/sienna/weapons/dagger.webp",
+        "changes": [
+          "Light 1: Damage against 2nd target increased 67%, non-crit Infantry damage increased by 14%.",
+          "Light 2: Damage against 2nd target increased 67%, non-crit Infantry damage increased by 21%.",
+          "Light 3: Finesse Coefficient increased by 20%, non-crit Infantry damage increased by 25%.",
+          "Light 4: Damage against 2nd target increased 67%, non-crit Infantry damage increased by 50%.",
+          "Push Attack: Changed Bleed to Burn. Same damage profile."
         ]
       },
       {

@@ -1,5 +1,6 @@
 <template>
   <header>
+  <Difficulties class="diff"/>
     <NuxtLink to="/">
       <img src="/images/logo.webp" alt="logo Vermintide 2" />
       <p>Balance Mods Changelogs</p>
@@ -14,6 +15,12 @@ header {
   display: flex;
   align-items: center;
   padding-top: 1rem;
+  position: relative;
+}
+
+.diff {
+  position: absolute;
+  left: 2rem;
 }
 
 a {
@@ -46,6 +53,10 @@ p {
 }
 
 @media (max-width: 1024px) {
+  header {
+    flex-direction: column-reverse;
+
+  }
   img {
     width: 13rem;
   }
@@ -53,5 +64,11 @@ p {
     position: relative;
     bottom: 32px;
   }
+  .diff {
+  position: relative;
+  left: auto;
+  margin-top: -1rem;
+}
+
 }
 </style>

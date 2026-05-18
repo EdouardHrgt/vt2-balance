@@ -17,7 +17,7 @@
         <h2>Talents:</h2>
         <ul v-for="talent in career.talents" :key="talent" class="talents-ul">
           <li>
-            <h4>Level:{{ talent.level }} : {{ talent.name }}</h4>
+            <h4>Level {{ talent.level }}: {{ talent.name }}</h4>
             <ul class="sub-talent-ul">
               <li v-for="change in talent.changes" :key="change">{{ change }}</li>
             </ul>

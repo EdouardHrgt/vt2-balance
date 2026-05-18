@@ -18,6 +18,10 @@ time {
   all: unset;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;

@@ -1,0 +1,47 @@
+{
+  "c3": {
+    "name": "CATACLYSM 3",
+    "details": [
+      "Increases mass and health of regular enemies, specials and elites (between 37% and 67% more HP), including lords and monsters (60% more HP)",
+      "Increases the maximum amount of specials to 6 (max of same: 3)",
+      "Increases the damage of certain specials: Leech damage while grabbed, Assassin stabs while downed, Flamer warpfire, ground fire, and explosion",
+      "Increases damage of Chaos Spawn attacks: Bites and slams while grabbed"
+    ]
+  },
+  "dw": {
+    "name": "DEATHWISH",
+    "details": [
+      "Increases enemy stagger resistances: Values individually determined to make staggering enemies with weapons, bombs, and ultimates more difficult",
+      "Reduces the stagger bonus coefficient of Cata 3 (0.5) down to that of Cata 1 (0.2). This reduces melee damage output but mostly affects the breakpoints of ranged weapons that all have a built-in Smiter coefficient",
+      "Scales Burblepse’s and Rasknitt’s magic attack damage, and Globadier’s gas cloud and suicide explosion damage (up to Cata 3)"
+    ]
+  },
+  "ons": {
+    "name": "ONSLAUGHT",
+    "details": [
+      "Specials: max of 5 (Cata 1) or 6 (Cata 3); spawn in 30–70s intervals",
+      "Hordes: slightly more elites; approx. 60s intervals",
+      "Enemies: slightly increased ambient enemy density"
+    ]
+  },
+  "ons+": {
+    "name": "ONSLAUGHT PLUS",
+    "details": [
+      "Specials: max of 6 (max of same: 3); spawn in 30–70s intervals",
+      "Hordes: moderately more elites, including CWs; approx. 50s intervals",
+      "Enemies: chance to spawn two monsters (with 50% health each) in map triggers; massively increased patrol size; more varied in compositions; moderately increased ambient enemy density",
+      "Events: adds (multiple) monsters to several map events"
+    ]
+  },
+  "dutch": {
+    "name": "DUTCH SPICE",
+    "details": [
+      "Specials: max of 8 (max of same: 4), 25-50s intervals; buffs to Flamers (hits debuff attack speed, almost unstaggerable), Globadiers (throw twice as fast), Gunners (double fire rate, almost unstaggerable), and Leeches (almost unstaggerable, faster suck damage, lower teleport cooldown)",
+      "Hordes: 30-45s intervals; considerably more elites, including CWs",
+      "Enemies: adds super-armored Stormvermin variants, armored Savage-Marauders, and high-health enemy variants for Chaos/Beastmen factions; considerably increased ambient enemy density",
+      "Beastmen: roster expanded with specific non-Beastmen units; banners no longer grant more max health and health regen, more damage instead",
+      "Triggers: slightly changed patrol compositions; adds shield patrols",
+      "Events: adds specific grudge-marked monsters and aura-enhanced enemies to map events (auras only active with TB or CBR enabled)"
+    ]
+  }
+}

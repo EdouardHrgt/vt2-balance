@@ -23,7 +23,6 @@ const closePopup = () => {
   <main>
     <CareersList />
     <h1>Pick a career to see the <strong class="title-str">Changelogs</strong></h1>
-
     <Transition name="popup">
       <div v-if="showPopup" class="txt blur-box">
         <p>
