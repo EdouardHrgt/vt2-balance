@@ -142,9 +142,9 @@
         "icon": "/images/kruber/weapons/tuskgorspear.webp",
         "changes": [
           "Light 1: Non-crit Armor damage increased by 40%, Crit Armor Multiplier increased by 17.5%.",
-          "Light 2: Non-crit Monster damage increased by 22.2%, Crit Monster Multiplier increased by 10%.",
-          "Light 3: Non-crit Super Armor damage added, Crit Super Armour Multiplier increased by 20%.",
-          "Light 4: Non-crit Super Armor damage increased by 20%, Crit Super Armour Multiplier increased by 50%.",
+          "Light 2: Non-crit Infantry damage increased by 33.5%, Non-crit Armor damage increased by 80%, Crit Armor Multiplier increased by 12.5%, Non-crit Monster damage increased by 22.2%, Crit Monster Multiplier increased by 10%.",
+          "Light 3: Non-crit Berserker damage increased by 16%, Non-crit Super Armor damage added, Crit Super Armour Multiplier increased by 20%.",
+          "Light 4: Finesses Coefficient reduced by 53.4%, Non-crit Infantry damage increased by 100%, Non-crit Armor damage increased by 260%, Crit Infantry Multiplier increased by 80%, Crit Armor Multiplier increased by 100%, Non-crit Berserker damage increased by 120%, Non-crit Super Armor damage increased by 20%, Crit Super Armour Multiplier increased by 50%.",
           "Heavy 1: Non-crit Infantry damage increased by 20.8%, Crit Infantry Multiplier increased by 13%, Non-crit Armor damage increased by 124%, Crit Armor Multiplier increased by 94%, Non-crit Super Armor damage increased by 124%, Crit Super Armor Multiplier increased by 94%."
         ]
       },
@@ -414,7 +414,9 @@
         "changes": [
           "Dodge count increased from 2 to 3.",
           "Lights: Finesse Coefficient increased by 50%, headshot/Crit Curve changed from Tank to Linesman, Damage Cleave increased by ~33%, Stagger Cleave decreased by 50% (from 0.8 to 0.4). Damage against 1st Target increased by 12.5%, Damage against 2nd Target increased by 110%, Damage against 3rd Target increased by ~87%, Damage against 4th Target and above increased by 50%, Non-Crit Infantry Damage on 1st Target increased by 25%, Non-Crit Armor Damage on 1st Target increased by 50%, Non-Crit Monster Damage on 1st Target increased by 50%, Non-Crit Infantry Damage on 2nd Target and above decreased by 10%, Non-Crit Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Super Armor Damage on 2nd Target and above decreased by 100%, Non-Crit Monster Damage on 2nd Target and above increased by 50%, Monster Crit Multiplier increased by 50%,  Attack Speed increased by ~31%.",
-          "Heavies: Non-Crit Monster Damage increased by 50%."
+          "Heavies: Non-Crit Monster Damage increased by 50%.",
+          "Uncharged Heavies: Crit Armor Multiplier increased by 94%, Crit Super Armor Multiplier increased by 94.",
+          "Charged Heavies: Crit Armor Multiplier increased by 57%, Crit Super Armor Multiplier increased by 57%."
         ]
       },
       {
@@ -696,13 +698,17 @@
       {
         "name": "Hagbane Shortbow",
         "icon": "/images/kerillian/weapons/hagbane.webp",
-        "changes": ["AoE Cloud:Infantry Damage of DoT increased by 28%."]
+        "changes": [
+          "AoE Cloud:Infantry Damage of DoT increased by 28%.",
+          "Charged Shot: Reduced Non-crit Armour damage on the explosion by 100%."
+        ]
       },
       {
         "name": "Moonfire Bow",
         "icon": "/images/kerillian/weapons/moonfirebow.webp",
         "changes": [
-          "Full Charged Arrow: Damage increased by ~83%, Finesse Coefficient increased by ~133%, Non-Crit Infantry Damage increased by 100%, Non-Crit Armor Damage increased by 100%, Non-Crit Monster Damage increased by 100%, Non-Crit Berserker Damage increased by 100%, Damage of DoT lowered by ~83%."
+          "Full Charged Arrow: Damage increased by ~83%, Finesse Coefficient increased by ~133%, Non-Crit Infantry Damage increased by 100%, Non-Crit Armor Damage increased by 100%, Non-Crit Monster Damage increased by 100%, Non-Crit Berserker Damage increased by 100%, Damage of DoT lowered by ~83%.",
+          "Recharge rate: 1.5 ⇒ 1."
         ]
       },
       {
@@ -755,6 +761,13 @@
             "name": "Salvage Ammunition",
             "level": 25,
             "changes": ["Also procs on Specials now."]
+          },
+          {
+            "name": "Just Reward",
+            "level": 30,
+            "changes": [
+              "20% Ult Cooldown gained on Ranged Crit: Once every 10 seconds ⇒ 4.5 seconds."
+            ]
           },
           {
             "name": "Double-Shotted",
@@ -935,7 +948,7 @@
           {
             "name": "Lingering Flames",
             "level": 10,
-            "changes": ["Additional tick rate removed."]
+            "changes": ["Additional tick rate removed.", "DoT damage reduced: 50% ⇒ 67%."]
           },
           {
             "name": "Soot Shield",
@@ -950,6 +963,14 @@
             "name": "Fires From Ash",
             "level": 25,
             "changes": ["CDR per burning enemy killed decreased from 3% to 2%."]
+          },
+          {
+            "name": "Immersive Immolation",
+            "level": 25,
+            "changes": [
+              "Stat change: Attack Speed ⇒ Melee Attack Speed.",
+              "Hit Requirement: 4 ⇒ 1."
+            ]
           },
           {
             "name": "Kaboom",
@@ -1092,6 +1113,15 @@
         "changes": [
           "Sniper Blast: Damage increased by ~21%, Recoil after shot decreased to make rapid firing more consistent.",
           "Alt-Fire: Non-Crit Zerker Damage decreased by 40%, Heat Cost decreased by ~29%, Zerker Crit Multiplier decreased by 30%, Super Armor Crit Multiplier decreased by 40%."
+        ]
+      },
+      {
+        "name": "Soulstealer Staff",
+        "icon": "/images/sienna/weapons/soulstealer.webp",
+        "changes": [
+          "Left-Click: Reduced Non-Crit Armour damage by 6.25%, Reduced Crit-Armour damage by 63%, Reduced Crit-Berserker damage by 36%",
+          "Right-Click: Targeting Change: Changed targeting to prioritise specials over elites.",
+          "Breakpoints w/ Chaos, Skaven, 2xInfantry + EP: Blightstormer, Leech, Assassin & Hookrat ⇒ 1x Suck, Mauler ⇒ 2x Left-Click (bodyshot) + Suck, Flamer/Gunner ⇒ 3x Stack (Ascendant) / WHC Tag / Necro Passive (20% extra damage against burning stuff) + 1x Suck."
         ]
       },
       {
