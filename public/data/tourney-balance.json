@@ -254,7 +254,8 @@
         "icon": "/images/bardin/bardin-ranger-veteran.webp",
         "passives": [
           "Fast Hands: In addition Ranged Power increased by 10%.",
-          "Effective range for Ranged weapons increased by 100%."
+          "Effective range for Ranged weapons increased by 100%.",
+          "Additionally, there is a 5% chance to drop a bomb, once per game."
         ],
         "talents": [
           {
@@ -313,12 +314,7 @@
           {
             "name": "Vengeance",
             "level": 20,
-            "changes": [
-              "Now stacks faster.",
-              "Time between attacks changed from 7 seconds to 3 seconds.",
-              "Attack speed per stack reduced from 8% per stack to 6% per stack.",
-              "Duration of the buff increased from 10 seconds to 12 seconds."
-            ]
+            "changes": ["When Gromril is lost, gain 15% attack speed for 20 seconds."]
           }
         ]
       },
@@ -459,9 +455,9 @@
         "name": "waystalker",
         "icon": "/images/kerillian/kerillian-waystalker.webp",
         "passives": [
-          "Amaranthe: Now regen heals when below 66.6% HP.",
+          "Amaranthe: Now regen heals when below 50% HP and added regen 1 ammo every tick.",
           "If there is THP, Regen does not replace THP with Green HP, and instead heals on top of that THP.",
-          "Ultimate (Trueshot Volley) (Non-Piercing Version): CD decreased from 80s to 65s, Non-Crit Infantry Damage increased by 50% (from 1 to 1.5) and Non-Crit Bodyshot Super Armor Damage increased by 140% (from 0.25 to 0.6) (3 arrows should 1-shot headshot C3 Maulers), Cleave increased by 50% (from 0.25 to 0.375), FF decreased to 0."
+          "Ultimate (Trueshot Volley) (Non-Piercing Version): Non-Crit Infantry Damage increased by 50% (from 1 to 1.5) and Non-Crit Bodyshot Super Armor Damage increased by 140% (from 0.25 to 0.6) (3 arrows should 1-shot headshot C3 Maulers), Cleave increased by 50% (from 0.25 to 0.375), FF decreased to 0."
         ],
         "talents": [
           {
@@ -480,16 +476,32 @@
           {
             "name": "Spirit Arrows",
             "level": 20,
-            "changes": [
-              "Replaced.",
-              "Amaranthe gives 5% of max ammo to Waystalker per tick.",
-              "Does not remove the regen of Amaranthe."
-            ]
+            "changes": ["Additional 1 ammo regen per tick."]
+          },
+          {
+            "name": "Fervent Huntress",
+            "level": 25,
+            "changes": ["Added noclip."]
+          },
+          {
+            "name": "Ricochet",
+            "level": 25,
+            "changes": ["While below 10 ammo ricochet hits refund 1 ammo.."]
+          },
+          {
+            "name": "Kurnous Reward",
+            "level": 30,
+            "changes": ["30% ➔ 20% ammo refill."]
           },
           {
             "name": "Piercing Shot",
             "level": 30,
             "changes": ["FF decreased by 75%."]
+          },
+          {
+            "name": "Loaded Bow",
+            "level": 30,
+            "changes": ["Additional arrows 1 ➔ 2."]
           }
         ]
       },
@@ -593,18 +605,19 @@
         "icon": "/images/kerillian/kerillian-sister-of-the-thorn.webp",
         "passives": [
           "A Sustenance of Leechlings: THP leech decreased from 100% to 10%.",
-          "Ultimate (Thornwake): CD increased from 40s to 60s."
+          "Ultimate (Thornwake): CD increased from 40s ➔ 70s.",
+          "Passive Ult CD: 60s ➔ 70s"
         ],
         "talents": [
           {
-            "name": "Bonded Spirit",
-            "level": 20,
-            "changes": ["Radiance CDR bonus decreased from 50% to 25%."]
+            "name": "Briar's Malice",
+            "level": 10,
+            "changes": ["Crit stacks only consumed on hit.."]
           },
           {
             "name": "Radiant Inheritance",
             "level": 20,
-            "changes": ["Duration increased by 100% (from 10 to 20 seconds)."]
+            "changes": ["Activates on regular ult.", "Duration can stack 2 times and refresh."]
           },
           {
             "name": "Ironbark Thicket",
@@ -612,9 +625,9 @@
             "changes": ["Increased duration removed (decreased from 10s to default 6s)."]
           },
           {
-            "name": "Blackvenom Thicket (Bush)",
+            "name": "Blackvenom Thicket",
             "level": 30,
-            "changes": ["In addition: 30% CDR added."]
+            "changes": ["CDR 30% ➔ 40%."]
           }
         ]
       }
@@ -633,10 +646,12 @@
         "name": "Dual Swords",
         "icon": "/images/kerillian/weapons/dualswords.webp",
         "changes": [
-          "Light 1 and 2: Damage Cleave increased by 20%, Damage on 1st Target increased by ~48%, Finesse Coefficient on 1st Target increased by ~33%,  Strength Coefficient on 1st Target increased by 100%, Damage on 2nd Target increased by  ~67%, Finesse Coefficient on 2nd Target increased by 100%, Headshot/Crit Curve on 2nd Target changed from Linesman to Ninja, Damage on 3rd Target and on increased by ~67%, Armor Crit Multiplier increased by ~67%, Non-Crit Infantry Damage lowered by 32%, Infantry Crit Multiplier decreased by 40%, Monster Crit Multiplier decreased by 40%.",
-          "Heavies: Damage Cleave increased by 80%, Stagger Cleave increased by 100%, Damage on 1st Target increased by 100%, Strength Coefficient on 1st Target increased by 100%, Finesse Coefficient on 1st Target decreased by 100%, Headshot/Crit Curve on 1st Target changed from Ninja to Linesman, Non-Crit Armor Damage on 1st Target decreased by 37.5%, Damage on 2nd Target increased by 60%, Non-Crit Armor Damage on 2nd Target decreased by 20%, Damage on 3rd Target increased by ~67%, Damage on 5th Target and on decreased by ~7%, Finesse Coefficient on 5th Target and on decreased by 75%.",
-          "Heavy 1: Non-Crit Infantry damage decreased by 25%, Non-Crit Berserker damage decreased by 50%",
-          "Heavy 2: Non-Crit Berserker damage decreased 40%."
+          "Light 1: Buffs ➔ Non-crit Infantry damage, Non-crit Berserker damage, Crit Infantry damage, Damage on 2nd Target, Stagger on 2nd Target, Damage on 3rd Target, Stagger on 3rd Target. Nerfs ➔ Non-crit Armour stagger, Crit Monster damage, Crit Berserker damage, Crit Armour stagger, Finesse coefficient on 1st Target, Strength Coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Damage on 4th Target and Beyond.",
+          "Light 2: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Berserker damage, Crit Infantry damage, Crit Berserker damage, Damage on 2nd Target, Stagger on 2nd Target, Stagger on 3rd Target, Stagger on 4th Target. Nerfs ➔ Non-crit Armour stagger, Crit Monster damage, Crit Armour stagger, Finesse coefficient on 1st Target, Strength Coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Damage on 4th Target, Damage on 5th Target and Beyond.",
+          "Light 3: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Monster damage, Non-crit Berserker damage, Crit Berserker damage, Damage on 1st Target, Stagger on 1st Target, Damage on 2nd Target, Stagger on 2nd Target, Damage on 3rd Target, Stagger on 3rd Target, Damage on 4th Target, Stagger on 4th Target, Damage on 5th Target, Stagger on 5th Target, Damage on 6th Target and Beyond. Nerfs ➔ Crit Infantry damage, Crit Monster damage, Finesse coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Finesse coefficient on 5th Target.",
+          "Light 4: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Monster damage, Non-crit Berserker damage, Crit Infantry damage, Crit Berserker damage, Damage on 1st Target, Stagger on 1st Target, Damage on 2nd Target, Stagger on 2nd Target, Damage on 3rd Target, Stagger on 3rd Target, Damage on 4th Target, Stagger on 4th Target, Damage on 5th Target, Stagger on 5th Target, Damage on 6th Target and Beyond. Nerfs ➔ Finesse coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Finesse coefficient on 5th Target.",
+          "Heavy 1: Buffs ➔ Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Damage Cleave, Stagger Cleave, Finesse coefficient on 1st Target, Non-crit Infantry damage, Non-crit Armour damage, Non-crit Berserker damage.",
+          "Heavy 2: Buffs ➔ Non-crit Infantry damage, Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Damage Cleave, Stagger Cleave, Non-crit Armour damage."
         ]
       },
       {
@@ -726,9 +741,39 @@
       "witch-hunter-captain": {
         "name": "witch hunter captain",
         "icon": "/images/saltzpyre/saltzpyre-witch-hunter-captain.webp",
-        "untouched": true,
         "passives": [],
-        "talents": []
+        "talents": [
+          {
+            "name": "Riposte",
+            "level": 10,
+            "changes": ["Corrected description: Crits apply to ranged as well.."]
+          },
+          {
+            "name": "Templar's Knowledge",
+            "level": 20,
+            "changes": [
+              "Duration 5s ➔ 15s.",
+              "Additionally Victor deals 25% more direct damage to enemies affected by Witch Hunt (excluding Lords and Bosses)"
+            ]
+          },
+          {
+            "name": "I Shall Judge You All ",
+            "level": 30,
+            "changes": [
+              "Headshotting enemies affected by Witch Hunt extends the duration of Animosity by 2 seconds.",
+              "Animosity's critical strike chance bonus decays by 1% per second after the first 6 seconds.",
+              "Ping all specials permanently (temporary)."
+            ]
+          },
+          {
+            "name": "Fervency ",
+            "level": 30,
+            "changes": [
+              "Increased duration to 10s.",
+              "Additionally Victors next 20 melee hits are guaranteed critical strikes."
+            ]
+          }
+        ]
       },
       "bounty-hunter": {
         "name": "bounty hunter",
@@ -827,7 +872,7 @@
           {
             "name": "Unyielding Blessing",
             "level": 30,
-            "changes": ["Duration reduced by 30% (from 10 to 3 seconds)."]
+            "changes": ["Duration reduced by 30% (from 10 to 7 seconds)."]
           }
         ]
       }
@@ -851,7 +896,8 @@
         "name": "Falchion",
         "icon": "/images/saltzpyre/weapons/falchion.webp",
         "changes": [
-          "Lights and Push Attack: Lights and PA given the same damage profile and buffs as Kruber's/Sienna's 1H Sword, except when contradicted by the following: L1, L2, and PA Damage Cleave increased by 20%, L1, L2, and PA Non-Crit Armor Damage decreased by 20%, L1, L2, and PA Monster Crit Multiplier decreased by 20%."
+          "Lights and Push Attack: Lights and PA given the same damage profile and buffs as Kruber's/Sienna's 1H Sword, except when contradicted by the following: L1, L2, and PA Damage Cleave increased by 20%, L1, L2, and PA Non-Crit Armor Damage decreased by 20%, L1, L2, and PA Monster Crit Multiplier decreased by 20%.",
+          "Shield Break on L3: Reverted damage profile to official L3"
         ]
       },
       {
@@ -888,7 +934,7 @@
         "name": "1H Axe",
         "icon": "/images/saltzpyre/weapons/axe.webp",
         "changes": [
-          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
+          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%, Cleave increased on all lights.",
           "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
         ]
       },
@@ -986,7 +1032,8 @@
           "Ultimate (The Burning Head):",
           "Non-Crit Infantry Damage and Non-Crit Zerker Damage increased by 50%.",
           "Cleave increased by 25%.",
-          "FF decreased to 0."
+          "FF decreased to 0.",
+          "Faster weapon swap after casting Burning Head."
         ],
         "talents": [
           {
@@ -1128,6 +1175,7 @@
         "name": "Bolt Staff",
         "icon": "/images/sienna/weapons/bolt.webp",
         "changes": [
+          "Zoom on Weapon Special",
           "Full Charge: Non-Crit Infantry Damage increased by 1%, Non-Crit Armor Damage increased by ~7%."
         ]
       },

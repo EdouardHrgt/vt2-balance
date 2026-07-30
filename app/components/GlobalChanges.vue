@@ -50,6 +50,7 @@ const balanceData = {
     content: {
       'Generic Changes': [
         'Removed CDR from explosion attacks (e.g. Flaming Flail Heavy 1).',
+        'Stam Tech has 120s internal cooldown.',
         'Fire bomb Super Armor Damage decreased by 50% (from 0.5 to 0.25) to be the same as the Armor Damage.',
         'All shields have had their Push strength on the inner hitbox lowered to be the same as the outer hitbox (Lower armor, super armor, and berserker modifier).',
         'All shields now gain ~67% less THP on a heavy bash.',
@@ -57,6 +58,7 @@ const balanceData = {
         'Weapon Swap Fixes for: Moonfire Bow; Coruscation Staff; Masterwork Pistol; Javelin; Coghammer',
         'Visuals changed on Fireball charged shots for QoL.',
         'Clarified several poorly written descriptions.',
+        'Added max stamina of 6 to Blunderbuss, Grudge Raker, Griffon-Foot and Bash requires and consumes 2 stamina.',
       ],
       'THP Talent Changes': [
         'Healshare Talent removed (all careers have 3 THP talents) and replaces Hand of Shallya as a trait.',
@@ -65,6 +67,8 @@ const balanceData = {
         'In short, every career has 3 of the aforementioned 4 THP talents.',
         'THP from Bloodlust (Kill) gives more from the smaller rats whilst Monsters and Chaos Warriors give notably less.',
         'THP from Regrowth (Headshot/Crit) increased on headshot (from 1 to 3.5), crit (from 1 to 1.5), and headshot crit (from 2 to 4.5).',
+        'Mainstay: Melee hits against the first 5 enemies add another count of stagger for 2s, Deal 20% more damage to staggered enemies, increased to 40% against enemies afflicted by more than one stagger effect.',
+        'Bulwark: Increases stagger power by 10%, Increases damage from all sources by 10% for 10s after staggering with any attack.',
       ],
     },
   },
