@@ -390,7 +390,7 @@
         "name": "1H Axe",
         "icon": "/images/bardin/weapons/axe.webp",
         "changes": [
-          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
+          "Lights: Cleave Buffed, Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%.",
           "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
         ]
       },
@@ -934,7 +934,7 @@
         "name": "1H Axe",
         "icon": "/images/saltzpyre/weapons/axe.webp",
         "changes": [
-          "Lights: Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%, Cleave increased on all lights.",
+          "Lights: Cleave Buffed, Finesse Coefficient increased by 100%, Non-Crit Armor and Super Armor Damage decreased by ~31%, Armor and Super Armor Crit Multiplier decreased by 40%, Non-Crit Monster Damage decreased by ~16%, Non-Crit Zerker Damage increased by ~33%, L3 Attack Speed increased by ~26%, Cleave increased on all lights.",
           "Heavies: Range increased by 20%, Non-Crit Super Armor Damage increased by 30%."
         ]
       },
@@ -1069,6 +1069,11 @@
             "name": "Reaping",
             "level": 10,
             "changes": ["No longer grants any additional power to critical strikes."]
+          },
+          {
+            "name": "Dissipate",
+            "level": 20,
+            "changes": ["Adjustment: Reduced the heat cost of blocking attacks by 80%."]
           },
           {
             "name": "Cursed Blood",

@@ -59,6 +59,7 @@ const balanceData = {
         'Visuals changed on Fireball charged shots for QoL.',
         'Clarified several poorly written descriptions.',
         'Added max stamina of 6 to Blunderbuss, Grudge Raker, Griffon-Foot and Bash requires and consumes 2 stamina.',
+        'Boon of Shallya: 30% -> 40%.',
       ],
       'THP Talent Changes': [
         'Healshare Talent removed (all careers have 3 THP talents) and replaces Hand of Shallya as a trait.',
