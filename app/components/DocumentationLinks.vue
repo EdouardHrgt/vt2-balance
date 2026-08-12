@@ -2,7 +2,7 @@
 const mods = [
   {
     label: 'Tourney Balance',
-    link: 'https://docs.google.com/document/d/1AKHfd_0QGPtYnNOiO7IuOf5NSEqDbwN2755Ogowu364/edit?tab=t.0#heading=h.xkssf5sn3qck',
+    link: 'https://vt2-tourney-balance.github.io/Tourney-Balance-Open-Beta/',
   },
   {
     label: 'Class Balance',

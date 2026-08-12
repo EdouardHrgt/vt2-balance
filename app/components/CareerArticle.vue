@@ -1,11 +1,12 @@
 <template>
-  <article
-    :style="{ '--article-index': index }"
-    class="blur-box article-animate">
-    <img :src="career.icon" :alt="'picture of ' + career.name" />
+  <article :style="{ '--article-index': index }" class="blur-box article-animate">
+    <div class="article-img-wrapper">
+      <img :src="career.icon" :alt="'picture of ' + career.name" />
+      <button v-if="modName === 'tourney balance'">See Meta Build</button>
+    </div>
     <div class="content">
       <h3 v-if="career.untouched" class="untouched">/.\ No changes made /.\</h3>
-      
+
       <div class="passives" v-if="career.passives?.length">
         <h2>Passives:</h2>
         <ul class="passives-ul">
@@ -32,12 +33,16 @@
 defineProps({
   career: {
     type: Object,
-    required: true
+    required: true,
   },
   index: {
     type: Number,
-    required: true
-  }
+    required: true,
+  },
+  modName: {
+    type: String,
+    required: false,
+  },
 })
 </script>
 
@@ -67,6 +72,24 @@ article {
   max-width: 1440px;
   width: 100%;
   margin-inline: auto;
+}
+
+.article-img-wrapper button {
+  padding: 0.55rem;
+  background-color: var(--grey-400);
+  color: var(--black-900);
+  border: none;
+  border-radius: 6px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: var(--fs-5);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-inline: auto;
+  display: block;
+  margin-top: 1rem;
 }
 
 h2 {

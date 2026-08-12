@@ -21,6 +21,7 @@
       <div class="articles-container" v-if="errorMsg == false">
         <GlobalChanges :modLabel="modName" />
         <CareerArticle
+          :mod-name="modName"
           v-for="(cls, index) in modData.careers"
           :key="cls.name || index"
           :career="cls"

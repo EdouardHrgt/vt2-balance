@@ -55,6 +55,10 @@ const difficulties = {
       'Beastmen: roster expanded with specific non-Beastmen units; banners no longer grant more max health and health regen, more damage instead',
       'Triggers: slightly changed patrol compositions; adds shield patrols',
       'Events: adds specific grudge-marked monsters and aura-enhanced enemies to map events (auras only active with TB or CBR enabled)',
+      'Nurgle Aura: Reduces players Movement Speed by 50%. Increases enemy Mass by 100%',
+      'Khorne Aura: Increases players Melee Damage by 15%. Reduces players Ranged Damage by 50%. Increases enemy damage by 50%',
+      'Slaanesh Aura: Reduces players BCR by 100%. Increases enemy Stagger Resistance by 100%',
+      'Tzeentch Aura: Reduces players Crit Chance by 15%. The enemy carries the Tzeentch aura takes NO Ranged Damage',
     ],
   },
   man: {
