@@ -2,7 +2,7 @@
   <article :style="{ '--article-index': index }" class="blur-box article-animate">
     <div class="article-img-wrapper">
       <img :src="career.icon" :alt="'picture of ' + career.name" />
-      <button v-if="modName === 'tourney balance'">See Meta Build</button>
+      <!-- <button v-if="modName === 'tourney balance'" @click="openModal">See Meta Build</button> -->
     </div>
     <div class="content">
       <h3 v-if="career.untouched" class="untouched">/.\ No changes made /.\</h3>
@@ -26,11 +26,36 @@
         </ul>
       </div>
     </div>
+
+    <!-- Modal Meta Build -->
+    <!-- <Teleport to="body">
+      <Transition name="modal">
+        <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+          <div class="modal-content" @click.stop>
+            <button class="modal-close" @click="closeModal">
+              <span>&times;</span>
+            </button>
+            <div v-if="metaBuild" class="modal-body">
+              <div class="modal-header">
+                <h2 class="modal-title">{{ career.name }}</h2>
+                <strong>{{ metaBuild.title || modName }}</strong>
+              </div>
+            </div>
+            <div v-else class="modal-body">
+              <p class="modal-empty">Aucun build meta trouvé pour cette carrière.</p>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </Teleport> -->
   </article>
 </template>
 
 <script setup>
-defineProps({
+import { ref, computed } from 'vue'
+// import metaBuilds from '~/assets/data/metaBuilds.json'
+
+const props = defineProps({
   career: {
     type: Object,
     required: true,
@@ -44,6 +69,22 @@ defineProps({
     required: false,
   },
 })
+
+// const isModalOpen = ref(false)
+
+// const metaBuild = computed(() => {
+//   return metaBuilds?.[props.modName]?.[props.career.name] ?? null
+// })
+
+// const openModal = () => {
+//   isModalOpen.value = true
+//   document.body.style.overflow = 'hidden'
+// }
+
+// const closeModal = () => {
+//   isModalOpen.value = false
+//   document.body.style.overflow = ''
+// }
 </script>
 
 <style scoped>
@@ -142,6 +183,187 @@ li {
   background-clip: text;
 }
 
+/* --- Modal Styles (repris de WeaponsCarousel) --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-content {
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.modal-close span {
+  color: var(--white-100);
+  font-size: 32px;
+  line-height: 1;
+}
+
+@media (hover: hover) {
+  .modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-header {
+  border-bottom: 2px solid var(--yellow-400);
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.modal-header strong {
+  font-size: var(--fs-body);
+  text-transform: uppercase;
+  font-family: 'Rubik Marker Hatch', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #fdd90c, #ff5e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal-title {
+  font-family: 'Quintessential', serif;
+  font-size: var(--fs-1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white-900);
+  margin: 0;
+}
+
+.modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: var(--fs-body);
+  overflow-wrap: break-word;
+}
+
+.modal-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
+.modal-list li:nth-child(odd) {
+  color: var(--grey-400);
+}
+
+.modal-list li:nth-child(odd)::before {
+  color: var(--grey-400);
+}
+
+.modal-list li:nth-child(even) {
+  color: var(--yellow-400);
+}
+
+.modal-list li:nth-child(even)::before {
+  color: var(--yellow-400);
+}
+
+.modal-empty {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--grey-400);
+  text-align: center;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active .modal-content,
+.modal-leave-active .modal-content {
+  transition: transform 0.3s ease;
+}
+
+.modal-enter-from .modal-content,
+.modal-leave-to .modal-content {
+  transform: scale(0.9);
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+@media (hover: hover) {
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (max-width: 750px) {
   article {
     display: block;
@@ -163,6 +385,36 @@ li {
     top: auto;
     text-align: center;
     margin-top: 1rem;
+  }
+  .modal-content {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  .modal-header {
+    display: block;
+  }
+  .modal-close {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 25px;
+    height: 25px;
+  }
+  .modal-close span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-content {
+    padding: 2rem 0.5rem;
+  }
+  .modal-title,
+  .modal-header strong {
+    font-size: 15px;
+  }
+  .modal-list li {
+    padding-left: 1.3rem;
+    font-size: 14px;
   }
 }
 </style>

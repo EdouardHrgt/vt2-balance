@@ -21,11 +21,11 @@
       <div class="articles-container" v-if="errorMsg == false">
         <GlobalChanges :modLabel="modName" />
         <CareerArticle
-          :mod-name="modName"
-          v-for="(cls, index) in modData.careers"
+          v-for="(cls, index) in careersList"
           :key="cls.name || index"
           :career="cls"
-          :index="index" />
+          :index="index"
+          :mod-name="modName" />
         <button @click="scrollToTop" class="back-to-top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +117,12 @@ const scrollToTop = () => {
     behavior: 'smooth',
   })
 }
+
+const careersList = computed(() => {
+  const careers = modData.value?.careers
+  if (!careers) return []
+  return Array.isArray(careers) ? careers : Object.values(careers)
+})
 </script>
 
 <style scoped>

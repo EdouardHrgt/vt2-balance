@@ -243,7 +243,7 @@
       {
         "name": "Blunderbuss",
         "icon": "/images/kruber/weapons/blunderbuss.webp",
-        "changes": ["Bash: Radius reduced by 64%."]
+        "changes": ["Added max stamina of 6.", "Bash requires and consumes 2 stamina."]
       }
     ]
   },
@@ -300,7 +300,10 @@
       "ironbreaker": {
         "name": "iron breaker",
         "icon": "/images/bardin/bardin-iron-breaker.webp",
-        "passives": ["CDR from Damage Taken: Decreased from 0.5 to 0.4."],
+        "passives": [
+          "CDR from Damage Taken: Decreased from 0.5 to 0.4.",
+          "Reduced damage reduction during ult to 28.5% (from 50%)."
+        ],
         "talents": [
           {
             "name": "Under Pressure",
@@ -435,7 +438,7 @@
       {
         "name": "Grudge-Raker",
         "icon": "/images/bardin/weapons/grudgeraker.webp",
-        "changes": ["Bash: Radius reduced by 64%."]
+        "changes": ["Added max stamina of 6.", "Bash requires and consumes 2 stamina."]
       },
       {
         "name": "Trollhammer Torpedo",
@@ -960,7 +963,8 @@
           "Number of pellets decreased from 18 to 12.",
           "Cleave decreased by 50%.",
           "Spread tightened.",
-          "Bash: Radius reduced by 64%."
+          "Added max stamina of 6.",
+          "Bash requires and consumes 2 stamina."
         ]
       },
       {
