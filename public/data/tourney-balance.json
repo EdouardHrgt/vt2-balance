@@ -252,11 +252,20 @@
         ]
       },
       {
+        "name": "Bretonnian Sword and Shield",
+        "icon": "/images/kruber/weapons/bretonnianswordandshield.webp",
+        "changes": [
+          "Charging heavy Overhead and Poke put you blocking state like Flail and Shield heavies.",
+          "Heavy Overhead and Poke can be charged indefinitely."
+        ]
+      },
+      {
         "name": "Great Hammer",
         "icon": "/images/kruber/weapons/greathammer.webp",
         "changes": [
           "Push Attack: Non-Crit Infantry Damage increased by 50%.",
-          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
+          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%.",
+          "Mass modifier on heavies changed to Heavy Linesman (from Tank)"
         ]
       },
       {
@@ -523,7 +532,8 @@
         "icon": "/images/bardin/weapons/greathammer.webp",
         "changes": [
           "Push Attack: Non-Crit Infantry Damage increased by 50%.",
-          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%."
+          "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%.",
+          "Mass modifier on heavies changed to Heavy Linesman (from Tank)"
         ]
       },
       {
@@ -887,8 +897,8 @@
         "changes": [
           "Lights: Attack Speed increased by ~10%.",
           "Push Attack: Attack Speed decreased by ~30%.",
-          "Heavy 1: Attack Speed increased by ~19%, Finesse Coefficient increased by ~33%, Non-Crit Armor Damage increased by ~38%, Move Speed bonus when holding heavy decreased by ~15% during the first half of the attack, but increased by 100% at the end, total movespeed overall decreased.",
-          "Heavy 2: Attack Speed increased by ~48%, Damage on 1st Target increased by ~19%, Damage on 2nd Target increased by 25%."
+          "Heavy 1: Attack Speed increased by 20%, Finesse Coefficient increased by ~33%, Non-Crit Armor Damage increased by ~38%, Move Speed bonus when holding heavy decreased by ~15% during the first half of the attack, but increased by 100% at the end, total movespeed overall decreased.",
+          "Heavy 2: Attack Speed increased by 25%, Damage on 1st Target increased by ~19%, Damage on 2nd Target increased by 25%."
         ]
       },
       {
@@ -1416,7 +1426,7 @@
         "icon": "/images/sienna/weapons/flamingflail.webp",
         "changes": [
           "Lights 1 and 2: Tank added.",
-          "Heavy 1: Attack Speed decreased by ~20%, Stagger on direct hit decreased by ~58%, Stagger on AoE decreased by ~29%."
+          "Heavy 1: Stagger on direct hit decreased by ~58%, Stagger on AoE decreased by ~29%."
         ]
       },
       {
