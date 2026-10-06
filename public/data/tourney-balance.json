@@ -1024,7 +1024,8 @@
         "icon": "/images/saltzpyre/saltzpyre-bounty-hunter.webp",
         "passives": [
           "Blessed Shots: Part of Blessed Combat added.",
-          "Blessed Shot cooldown resets when Bounty Hunter kills a creature with a melee attack."
+          "Blessed Shot cooldown resets when Bounty Hunter kills a creature with a melee attack.",
+          "Blessed Kill: Added Melee Kills reload weapon from Salvaged Ammunition."
         ],
         "talents": [
           {
