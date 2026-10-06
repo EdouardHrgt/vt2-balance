@@ -76,7 +76,7 @@ const difficulties = {
   dense: {
     name: 'DENSE',
     details: [
-      'Dense Onslaught includes three difficulties Dense 1, 2, and 3.',
+      'Dense Onslaught includes 4 difficulties Dense 0, 1, 2, and 3.',
       'Wave compositions have been largely reworked to include a higher ratio of elites to trash enemies.',
       'Dense has 7 special slots, with minimum and maximum timers of 24 and 60 seconds',
       'New patrols unseen in any other mods. All patrols are the same length which should prevent them being unavoidable on some maps or getting stuck.',

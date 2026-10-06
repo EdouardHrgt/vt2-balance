@@ -5,7 +5,8 @@
         "name": "mercenary",
         "icon": "/images/kruber/kruber-mercenary.webp",
         "passives": [
-          "Paced Strikes: The Attack Speed bonus Mercenary receives is now also granted to his allies."
+          "Paced Strikes: The Attack Speed bonus Mercenary receives is now also granted to his allies.",
+          "Paced Strikes: Also grants Kruber 10% Damage Reduction"
         ],
         "talents": [
           {
@@ -24,6 +25,16 @@
             "name": "Strike Together",
             "level": 20,
             "changes": ["Proccing Paced Strikes now requires hitting only one enemy."]
+          },
+          {
+            "name": "Blade Barrier",
+            "level": 25,
+            "changes": ["Reduced Damage Reduction to 15% (from 25%)."]
+          },
+          {
+            "name": "On Yer Feet Mates",
+            "level": 30,
+            "changes": ["Additionally, cooldown resets when allies are knocked down."]
           }
         ]
       },
@@ -57,14 +68,19 @@
         "icon": "/images/kruber/kruber-foot-knight.webp",
         "passives": [
           "CDR from Damage Taken: Decreased from 0.5 to 0.35.",
-          "Protective Presence: Aura DR decreased from 15% to 10%, Range (radius) of Aura increased from 5 to 20.",
-          "Ultimate: CD increased from 30s to 40s, Cleave of baseline ult (not battering ram) increased by 100% (from 2 to 4), Ending explosion radius of baseline ult (not battering ram) increased by ~33%."
+          "Protective Presence: Aura DR increased from 10% to 15%, Range (radius) of Aura increased from 5 to 20.",
+          "Valiant Charge (Career Ability): CD decreased from 40s to 30s, Cleave of baseline ult (not battering ram) increased by 100% (from 2 to 4), Ending explosion radius of baseline ult (not battering ram) increased by ~33%.",
+          "Valiant Charge (Career Ability): Increased interrupt blast radius to 5 (form 3)."
         ],
         "talents": [
           {
             "name": "Have at Thee!",
             "level": 10,
-            "changes": ["Duration increased from 10s to 15s."]
+            "changes": [
+              "Duration increased from 10s to 15s.",
+              "Procs on applying mainstay stagger count.",
+              "Reverted duration to 10s (from 15s)."
+            ]
           },
           {
             "name": "Crowd Clearer",
@@ -77,11 +93,35 @@
             "changes": ["Additional Stagger Power decreased from 35% to 20%."]
           },
           {
+            "name": "Rock of Reikland",
+            "level": 20,
+            "changes": [
+              "Global passive for the team.",
+              "Block Cost Reduction increased to 30% (from 20%).",
+              "Added 30% Stammina Recovery."
+            ]
+          },
+          {
+            "name": "That's Bloody Teamwork",
+            "level": 20,
+            "changes": [
+              "Decreased damage reduction per nearby ally to 3.33% (from 5%) (to 10% from 15% at max stacks)."
+            ]
+          },
+          {
+            "name": "Comrades in Arms",
+            "level": 20,
+            "changes": [
+              "Closest player mode (green outline buff icon).",
+              "Press weapon inspect while blocking to guard specific team mate (red outline buff icon)."
+            ]
+          },
+          {
             "name": "It's Hero Time",
             "level": 25,
             "changes": [
-              "CDR decreased from 100% to 70%.",
-              "If someone is already incapacitated, the default talent does not trigger if a 2nd person becomes incapacitated; it now does so."
+              "If someone is already incapacitated, the default talent does not trigger if a 2nd person becomes incapacitated; it now does so.",
+              "15 seconds cooldown (only goes on cooldown if Valiant Charge is not ready)."
             ]
           },
           {
@@ -89,22 +129,57 @@
             "level": 25,
             "changes": [
               "Only affects FK, not allies.",
-              "Duration increased from 0.5s to 1.5s.",
-              "Bonus cooldown regeneration increased from 100% to 200%."
+              "Lowered cooldown regen to 100% for 0.5s (from 200% for 1.5s) (real stagger on elites).",
+              "Mainstay stagger (on elites) grants 50% cooldown regen for 0.5s."
             ]
+          },
+          {
+            "name": "Numb to Pain",
+            "level": 30,
+            "changes": ["Invulnerability duration increased to 5s (from 3s)."]
+          },
+          {
+            "name": "Battering Ram",
+            "level": 30,
+            "changes": [
+              "Increased charge stagger radius on stop to 4 units (from 3).",
+              "Reduced charge width to 4 units (from 5)."
+            ]
+          },
+          {
+            "name": "Bull of Ostland",
+            "level": 30,
+            "changes": ["Increased duration to 15 seconds (from 10s)."]
           }
         ]
       },
       "grail-knight": {
         "name": "grail knight",
         "icon": "/images/kruber/kruber-grail-knight.webp",
-        "passives": [],
+        "passives": [
+          "Quest Health Regen: Generate 3000 health.",
+          "Quest Damage Reduction: Hit 500 headshots.",
+          "Quest Cooldown Regen: Use 30 Career Abilities. Adjusted values of regular/improved quest to 20%/30% (from 10%/15%)."
+        ],
         "talents": [
           {
             "name": "Virtue of Knightly Temper",
             "level": 10,
             "changes": [
               "Required HP threshold to crit insta kill changed from 4x damage dealt to 3x damage dealt (i.e. must deal more damage to trigger)."
+            ]
+          },
+          {
+            "name": "Virtue of the ideal",
+            "level": 10,
+            "changes": ["Adjusted each stack of power to 10% (from 8%)."]
+          },
+          {
+            "name": "Virtue of heroism",
+            "level": 10,
+            "changes": [
+              "Heavy attacks are uninterruptible.",
+              "Heavy attacks deal up to 3 times damage based on charge time."
             ]
           },
           {
@@ -117,12 +192,30 @@
           {
             "name": "Virtue of Stoicism",
             "level": 25,
-            "changes": ["Thps regeneration reduced from 50% to 25%."]
+            "changes": [
+              "Thps regeneration reduced from 50% to 25%.",
+              "Additional 25% health restored after 10 seconds."
+            ]
+          },
+          {
+            "name": "Virtue of discipline",
+            "level": 25,
+            "changes": ["Increased duration to 10s (from 6s)."]
+          },
+          {
+            "name": "Virtue of the Joust",
+            "level": 25,
+            "changes": ["Removes melee weapon movement slowdown."]
           },
           {
             "name": "Virtue of the Impetuous Knight",
             "level": 30,
-            "changes": ["Duration increased from 15s to 25s.", "In addition, 30% CDR added."]
+            "changes": [
+              "Duration increased from 15s to 25s.",
+              "In addition, 30% CDR added.",
+              "Changed the Movement Speed buff proc condition to: on ult usage (from on_kill).",
+              "Grants knockback immunity against projectiles and warpfire for 25s on ult use."
+            ]
           },
           {
             "name": "Virtue of Confidence",
@@ -254,14 +347,18 @@
         "icon": "/images/bardin/bardin-ranger-veteran.webp",
         "passives": [
           "Fast Hands: In addition Ranged Power increased by 10%.",
-          "Effective range for Ranged weapons increased by 100%.",
-          "Additionally, there is a 5% chance to drop a bomb, once per game."
+          "Effective range for Ranged weapons increased by 100%."
         ],
         "talents": [
           {
             "name": "Foe Feller",
             "level": 10,
             "changes": ["Bonus attack speed increased from 5% to 15%."]
+          },
+          {
+            "name": "Last Resort",
+            "level": 10,
+            "changes": ["Added proc condition: On Empty Magazine."]
           },
           {
             "name": "Drunken Brawler",
@@ -283,11 +380,20 @@
             "changes": ["DR decreased from 30% to 20%."]
           },
           {
+            "name": "No Dawdling",
+            "level": 25,
+            "changes": ["Additionally grants unlimited dodges and no slowdown from melee weapons."]
+          },
+          {
+            "name": "Exhilarating Vapours",
+            "level": 30,
+            "changes": ["Fixed more THP bugs."]
+          },
+          {
             "name": "Parting Gift",
             "level": 30,
             "changes": [
-              "Bomb-dupe buff now has a finite duration of 10s",
-              "Fire Bomb DoT Damage now decreased by 52% while the Parting Gift Buff is active."
+              "Only dupes Engineer Bombs and 5% chance to drop an Engineer Bomb on special kill."
             ]
           },
           {
@@ -324,7 +430,10 @@
       "slayer": {
         "name": "slayer",
         "icon": "/images/bardin/bardin-slayer.webp",
-        "passives": [],
+        "passives": [
+          "Leap (Career Ability): Reduced attack speed by 15%.",
+          "Trophy Hunter: Grants 5% attack speed per stack and also grant ranged weapon damage"
+        ],
         "talents": [
           {
             "name": "A Thousand Cuts",
@@ -339,7 +448,10 @@
           {
             "name": "Impatience",
             "level": 20,
-            "changes": ["In addition -5% dodge range per stack of Trophy Hunter added."]
+            "changes": [
+              "In addition -5% dodge range per stack of Trophy Hunter added.",
+              "Trophy Hunter duration increased to 5 seconds."
+            ]
           },
           {
             "name": "Adrenaline Surge",
@@ -349,18 +461,43 @@
             ]
           },
           {
+            "name": "Grimnir's Focus",
+            "level": 25,
+            "changes": ["Decreased damage reduction to 30% (from 40%)."]
+          },
+          {
             "name": "Barge",
             "level": 25,
-            "changes": ["In addition: 10% dodge range and 15% damage reduction added."]
+            "changes": [
+              "Increased stagger amount to a shield push.",
+              "Increased radius to 3 (from 1.5)."
+            ]
+          },
+          {
+            "name": "Dawi-Drop",
+            "level": 30,
+            "changes": ["Grant maximum trophy hunter stacks when leaping."]
+          },
+          {
+            "name": "No Escape",
+            "level": 30,
+            "changes": ["No slowdown from melee or ranged attacks."]
           }
         ]
       },
       "outcast-engineer": {
         "name": "outcast engineer",
         "icon": "/images/bardin/bardin-outcast-engineer.webp",
-        "untouched": true,
-        "passives": [],
-        "talents": []
+        "passives": [
+          "Ultimate: Added starts firing at full speed to baseline and Increased dodge count to 3 (from 1)."
+        ],
+        "talents": [
+          {
+            "name": "Linked Compression Chamber",
+            "level": 30,
+            "changes": ["Reduced 'time to fire' to 0.2s (from 0.5s)."]
+          }
+        ]
       }
     },
     "weapons": [
@@ -466,30 +603,37 @@
           {
             "name": "Drakira's Alacrity",
             "level": 10,
-            "changes": [
-              "Bonus Attack Speed increased from 15% to 20%.",
-              "Duration increased from 5s to 10s."
-            ]
+            "changes": ["Duration increased from 5s to 10s."]
           },
           {
             "name": "Isha's Embrace",
             "level": 20,
-            "changes": ["Bonus to Amaranthe regen increased from 50% to 100%."]
+            "changes": ["Reduced health cap to 75% (from 100%).", "Allows passive ammo regen."]
           },
           {
             "name": "Spirit Arrows",
             "level": 20,
-            "changes": ["Additional 1 ammo regen per tick."]
+            "changes": ["Changed to cooldown reduction to 10% (from 5%)"]
           },
           {
             "name": "Fervent Huntress",
             "level": 25,
-            "changes": ["Added noclip."]
+            "changes": ["Removes slowdown from melee weapons."]
           },
           {
             "name": "Ricochet",
             "level": 25,
-            "changes": ["While below 10 ammo ricochet hits refund 1 ammo.."]
+            "changes": [
+              "Charging a shot for 1 second (counted from the start of the draw) grants ricochet projectiles true-flight.",
+              "Drains 10% ability bar over 10 seconds on consumption.",
+              "Ability bar drain locks out ability usage",
+              "Ricochet don't proc after piercing an enemy."
+            ]
+          },
+          {
+            "name": "Asrai Focus",
+            "level": 25,
+            "changes": ["Changed to 20% cooldown regeneration (from 20% cooldown reduction)"]
           },
           {
             "name": "Kurnous Reward",
@@ -512,8 +656,12 @@
         "name": "handmaiden",
         "icon": "/images/kerillian/kerillian-handmaiden.webp",
         "passives": [
-          "NEW 'Bendy': Increases healing received by 40% ",
-          "Renewal: Range (radius) of Aura increased from 5 to 20."
+          "Range (radius) of Aura increased from 5 to 20.",
+          "40% increased healing received.",
+          "Kerillian shares excess healing as temp health to injured teammates.",
+          "Aura that makes knocked downed allies take 50% less damage",
+          "Revived teammates gain 50% damage reduction for 2 seconds.",
+          "Added instant block."
         ],
         "talents": [
           {
@@ -553,9 +701,14 @@
             "changes": ["Bonus Max Health increased from 15% to 20%."]
           },
           {
+            "name": "Birch Stance",
+            "level": 25,
+            "changes": ["Added 30% damage reduction while blocking."]
+          },
+          {
             "name": "Quiver of Plenty",
             "level": 25,
-            "changes": ["Bonus Ammunition increased from 40% to 70%."]
+            "changes": ["Bonus Ammunition increased from 40% to 100%."]
           },
           {
             "name": "Power From Pain",
@@ -572,22 +725,66 @@
         "name": "shade",
         "icon": "/images/kerillian/kerillian-shade.webp",
         "passives": [
-          "Blur: Parry window increased by 50% (from 0.5 to 0.75).",
-          "Ultimate (Infiltrate): Duration reduced by 50% (from 5 to 2.5 seconds), Damage against monsters increased by ~15%."
+          "Increases movement speed by 10%.",
+          "Blur: Moved to Blood Drinker.",
+          "Ultimate (Infiltrate): Duration reduced by 50% (from 5 to 2.5 seconds), Damage against monsters increased by ~15%.",
+          "Murderous Prowess: Moved to Blood Drinker, Instant kill effect only applies to 2 enemies per attack.",
+          "Grim Fortune (Replaces Blur): Increased crit chance to 10%, Parrying (0.75s) an attack grants 1 guaranteed critical strike lasting 3 seconds."
         ],
         "talents": [
           {
             "name": "Cruelty",
             "level": 10,
+            "changes": ["Critical strike damage bonus increased to 80% (from 50%)."]
+          },
+          {
+            "name": "Exploit Weakness",
+            "level": 10,
             "changes": [
-              "Critical strike damage bonus increased to 80% (from 50%).",
-              "Now also grants 5% bonus Crit Chance."
+              "Poison, Bleed, and Burn each individually increase damage dealt by 20%.",
+              "Stacks additive, up to 60% against a target suffering from all 3.",
+              "All attacks apply one instance of bleed (WHC flense)."
+            ]
+          },
+          {
+            "name": "Chain Killer",
+            "level": 20,
+            "changes": [
+              "Increases headshot damage by 25% for each stack.",
+              "Also procs on melee headshots."
             ]
           },
           {
             "name": "Bloodfletcher",
             "level": 20,
-            "changes": ["Backstabs now return 5% of maximum ammo."]
+            "changes": [
+              "Backstabs now return 5% of maximum ammo.",
+              "Also procs on melee headshots."
+            ]
+          },
+          {
+            "name": "Focused Slaying",
+            "level": 20,
+            "changes": ["Also procs on melee headshot kills."]
+          },
+          {
+            "name": "Blur (NEW)",
+            "level": 25,
+            "changes": [
+              "Blur: Parrying an Attack and quickly Dodging grants Kerillian Stealth for a short period."
+            ]
+          },
+          {
+            "name": "Khaine's Counter (NEW)",
+            "level": 25,
+            "changes": [
+              "Parrying grants guaranteed backstabs for 3 to 6 seconds depending on parry timing (0.75s/0.5s)."
+            ]
+          },
+          {
+            "name": "Ruthless Precision (NEW)",
+            "level": 25,
+            "changes": ["All melee headshots are considered backstabs."]
           },
           {
             "name": "Cloak of Pain",
@@ -599,7 +796,16 @@
           {
             "name": "Shimmer Strike",
             "level": 30,
-            "changes": ["Limited to a total of 4 attacks during ult."]
+            "changes": [
+              "Limited to a total of 4 attacks during ult.",
+              "Increase stealth duration extension to 3s",
+              "5% cooldown per consumed stack"
+            ]
+          },
+          {
+            "name": "Hungry Wind",
+            "level": 30,
+            "changes": ["Also grants guaranteed critical strikes for the duration."]
           }
         ]
       },
@@ -615,7 +821,17 @@
           {
             "name": "Briar's Malice",
             "level": 10,
-            "changes": ["Crit stacks only consumed on hit.."]
+            "changes": ["Crit stacks only consumed on hit.", "Increased crit stacks to 3 (from 2)."]
+          },
+          {
+            "name": "Surge of Malice",
+            "level": 10,
+            "changes": ["+15% attack speed when above 70% health."]
+          },
+          {
+            "name": "Atharti's Delight",
+            "level": 10,
+            "changes": ["Bleed applied only to poisoned enemies with a melee headshot."]
           },
           {
             "name": "Radiant Inheritance",
@@ -623,9 +839,17 @@
             "changes": ["Activates on regular ult.", "Duration can stack 2 times and refresh."]
           },
           {
+            "name": "Repel",
+            "level": 25,
+            "changes": ["+100% stamina recovery."]
+          },
+          {
             "name": "Ironbark Thicket",
             "level": 30,
-            "changes": ["Increased duration removed (decreased from 10s to default 6s)."]
+            "changes": [
+              "While casting press weapon special to toggle flat wall/carpet.",
+              "Enemies can walk through flat walls, but slows their movement by 50% for 10s."
+            ]
           },
           {
             "name": "Blackvenom Thicket",
@@ -749,7 +973,9 @@
           {
             "name": "Riposte",
             "level": 10,
-            "changes": ["Corrected description: Crits apply to ranged as well.."]
+            "changes": [
+              "Landing a melee headshot during the guaranteed crit from riposte grants Victor an additional guaranteed melee critical strike for 2 seconds."
+            ]
           },
           {
             "name": "Templar's Knowledge",
@@ -760,21 +986,26 @@
             ]
           },
           {
-            "name": "I Shall Judge You All ",
+            "name": "I Shall Judge You All",
             "level": 30,
             "changes": [
               "Headshotting enemies affected by Witch Hunt extends the duration of Animosity by 2 seconds.",
               "Animosity's critical strike chance bonus decays by 1% per second after the first 6 seconds.",
-              "Ping all specials permanently (temporary)."
+              "Animosity also grants an aura applying Witch Hunt and marking all enemies."
             ]
           },
           {
-            "name": "Fervency ",
+            "name": "Fervency",
             "level": 30,
             "changes": [
               "Increased duration to 10s.",
               "Additionally Victors next 20 melee hits are guaranteed critical strikes."
             ]
+          },
+          {
+            "name": "The Unending Hunt",
+            "level": 30,
+            "changes": ["Reduced crit chance granted to allies to 15% (from 25%)."]
           }
         ]
       },
@@ -787,18 +1018,27 @@
         ],
         "talents": [
           {
-            "name": "Blessed Combat",
+            "name": "Weight of Fire",
+            "level": 10,
+            "changes": ["Increased power per ammo in clip to 2% (from 1%)."]
+          },
+          {
+            "name": "Cruel Fortune",
             "level": 20,
-            "changes": [
-              "Feature where killing an enemy with a melee attack resets cooldown of Blessed Shot is removed from the talent and now a passive."
-            ]
+            "changes": ["Grants an additional guaranteed critical strike (6s cooldown)."]
           },
           {
             "name": "Blessed Combat",
             "level": 20,
             "changes": [
+              "Feature where killing an enemy with a melee attack resets cooldown of Blessed Shot is removed from the talent and now a passive.",
               "Ranged hits now also grants up to the next 6 melee strikes 15% increased attack speed."
             ]
+          },
+          {
+            "name": "Rile the Mob",
+            "level": 25,
+            "changes": ["Added 10% attack speed for the team."]
           },
           {
             "name": "Job Well Done",
@@ -808,7 +1048,12 @@
           {
             "name": "Salvage Ammunition",
             "level": 25,
-            "changes": ["Also procs on Specials now."]
+            "changes": [
+              "Also procs on Specials.",
+              "Activates at below 10% ammo left.",
+              "ncreased ammo refunded to 25% (from 20%).",
+              "Increases blessed kill melee kill reload to 25% of ammo clip."
+            ]
           },
           {
             "name": "Just Reward",
@@ -835,20 +1080,47 @@
       "zealot": {
         "name": "zealot",
         "icon": "/images/saltzpyre/saltzpyre-zealot.webp",
-        "passives": ["Ultimate (Holy Fervour): When used, converts all green HP to THP."],
+        "passives": [
+          "Ultimate (Holy Fervour): When used, converts all green HP to THP.",
+          "Fiery Faith: Victor converts damage taken into up to 100 shared Overhealth for allies, damage taken by allies is first reduced by remaining Overhealth.",
+          "Chasten (NEW): Grants 30% increased healing received."
+        ],
         "talents": [
           {
             "name": "Smite",
             "level": 10,
-            "changes": ["No longer prevents random crits from occurring."]
+            "changes": [
+              "No longer prevents random crits from occurring.",
+              "Guaranteed every 4 hits (from 5)."
+            ]
           },
           {
             "name": "Unbending Purpose",
             "level": 10,
+            "changes": ["Changed to 5% Power + 15% Melee Power(from 20% melee power)."]
+          },
+          {
+            "name": "Holy Fortitude",
+            "level": 20,
+            "changes": ["Reduced increased healing per stack to 10% from 15%."]
+          },
+          {
+            "name": "Devotion",
+            "level": 25,
             "changes": [
-              "No longer grants generic Power, instead grants Melee Power.",
-              "Bonus Melee Power increased from 5% to 20%."
+              "Removes all movement speed penalties.",
+              "Knockback immunity to ranged projectiles and warpfire."
             ]
+          },
+          {
+            "name": "Redemption through Blood",
+            "level": 25,
+            "changes": ["Additionally 5% melee damage per missing stamina point."]
+          },
+          {
+            "name": "Calloused Without and Within",
+            "level": 25,
+            "changes": ["Heart of Iron's cooldown reduced to 90 seconds (base is 120s)."]
           }
         ]
       },
@@ -856,7 +1128,11 @@
         "name": "warrior priest",
         "icon": "/images/saltzpyre/saltzpyre-warrior-priest.webp",
         "passives": [
-          "Ultimate (Shield of Faith): No longer staggers nearby enemies while active nor provides immunity to ranged knockback."
+          "Ultimate:",
+          "No longer staggers nearby enemies while active nor provides immunity to ranged knockback.",
+          "Initial explosion damage reduced to 0.1 from (0.25).",
+          "DoT duration increased to 5s (from 5s).",
+          "Time between DoT increased to 5s (from 0.7s)."
         ],
         "talents": [
           {
@@ -866,11 +1142,6 @@
               "Replaced with 'Prayer of Flight':",
               "Provides the team with 10% increased movement speed."
             ]
-          },
-          {
-            "name": "United in Prayer",
-            "level": 30,
-            "changes": ["Duration reduced by 40% (from 5 to 3 seconds)."]
           },
           {
             "name": "Unyielding Blessing",
@@ -1059,10 +1330,39 @@
         "icon": "/images/sienna/sienna-unchained.webp",
         "passives": [
           "Blood Magic: Heat no longer generated by Gas, Gunners, Warpfire, or FF.",
+          "Blood Magic: Converts 5% health to 10% ult at 4 times per second for 2.5 seconds (lethal).",
           "DR no longer applies to Gas, Gunners, Warpfire, or FF.",
-          "Becoming incapacitated whilst exploding no longer causes Unchained to instantly explode."
+          "Becoming incapacitated whilst exploding no longer causes Unchained to instantly explode.",
+          "Ultimate: Added AoE stagger."
         ],
-        "talents": []
+        "talents": [
+          {
+            "name": "Dissipate",
+            "level": 20,
+            "changes": ["Adjusted heat cost consumption to 0.5 (from 0.2, official 1.0)."]
+          },
+          {
+            "name": "Numb to Pain",
+            "level": 20,
+            "changes": ["Additionally triggers on damage taken."]
+          },
+          {
+            "name": "Enfeebling Flames",
+            "level": 25,
+            "changes": ["Adjusted enemy damage dealt reduction to 20% (from 30%)."]
+          },
+          {
+            "name": "Abandon",
+            "level": 25,
+            "changes": [
+              "Abandon was moved to the passive Blood Magic.",
+              "Instantly explode when overcharging (non-lethal).",
+              "Same health loss as from Abandon (5%/0.25 seconds for 2.5 seconds).",
+              "During the health loss can not cast spells with Staff.",
+              "Health loss can be cancelled early with ult."
+            ]
+          }
+        ]
       },
       "necromancer": {
         "name": "necromancer",
