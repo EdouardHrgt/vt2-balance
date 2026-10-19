@@ -76,11 +76,7 @@
           {
             "name": "Have at Thee!",
             "level": 10,
-            "changes": [
-              "Duration increased from 10s to 15s.",
-              "Procs on applying mainstay stagger count.",
-              "Reverted duration to 10s (from 15s)."
-            ]
+            "changes": ["Procs on applying mainstay stagger count."]
           },
           {
             "name": "Crowd Clearer",
@@ -144,11 +140,6 @@
               "Increased charge stagger radius on stop to 4 units (from 3).",
               "Reduced charge width to 4 units (from 5)."
             ]
-          },
-          {
-            "name": "Bull of Ostland",
-            "level": 30,
-            "changes": ["Increased duration to 15 seconds (from 10s)."]
           }
         ]
       },
@@ -193,18 +184,17 @@
             "level": 25,
             "changes": [
               "Thps regeneration reduced from 50% to 25%.",
-              "Additional 25% health restored after 10 seconds."
+              "Additional 25% health restored after 5 seconds."
             ]
-          },
-          {
-            "name": "Virtue of discipline",
-            "level": 25,
-            "changes": ["Increased duration to 10s (from 6s)."]
           },
           {
             "name": "Virtue of the Joust",
             "level": 25,
-            "changes": ["Removes melee weapon movement slowdown."]
+            "changes": [
+              "Removes melee weapon movement slowdown.",
+              "Increased push and block angle to 70% (from 30%).",
+              "Increased stamina regeneration to 70% (from 30%)."
+            ]
           },
           {
             "name": "Virtue of the Impetuous Knight",
@@ -263,6 +253,10 @@
         "icon": "/images/kruber/weapons/greathammer.webp",
         "changes": [
           "Push Attack: Non-Crit Infantry Damage increased by 50%.",
+          "Light 1: Increased infantry damage by 100%.",
+          "Light 2 & 3: Added shield break.",
+          "Reduced chain timing for light 2 into light 3 to 0.6",
+          "Reduced chain timing for light 3 into light 1 to 0.32.",
           "Heavies: Non-Crit Infantry Damage increased by 50%, Attack Speed increased by ~33%.",
           "Mass modifier on heavies changed to Heavy Linesman (from Tank)"
         ]
@@ -283,8 +277,9 @@
           "Light 1: Damage Cleave increased by ~45%, Non-Crit Infantry Damage increased by 25%, Damage on 2nd Target increased by 50%, Damage on 3rd Target increased by 50%.",
           "Light 2: Damage increased by 25%, Non-Crit Armor Damage increased by 180%, Armor Crit Multiplier increased by 100%.",
           "Light 3 and Push Attack: Finesse Coefficient increased by 50%, Headshot/Crit Curve changed from Smiter to Ninja (higher headshot or crit damage, but the same headshot crit damage), Non-Crit Armor and Super Armor Damage decreased by 5%, Armor and Super Armor Crit Multipliers decreased by 5%.",
-          "Heavy 1: Non-Crit Armor Damage increased by ~24%, Armor Crit Multiplier increased by 12%.",
-          "Heavy 2: Damage increased by 38%, Non-Crit Infantry Damage increased by 15%, Time to chain into attack from L1 decreased from 0.65 to 0.5."
+          "Heavy 1: Non-Crit Armor Damage increased by ~24%, Armor Crit Multiplier increased by 12%, Increased headshot and critical strike bonus damage by 40%.",
+          "Heavy 2: Damage increased by 38%, Non-Crit Infantry Damage increased by 15%, Increased headshot and critical strike bonus damage by 75% (boss headshots unaffected).",
+          "Increased push attack armor damage and crit damage by 64%."
         ]
       },
       {
@@ -751,7 +746,7 @@
             "level": 10,
             "changes": [
               "Poison, Bleed, and Burn each individually increase damage dealt by 10%.",
-              "Stacks additive, up to 60% against a target suffering from all 3.",
+              "Stacks additive, up to 30% against a target suffering from all 3.",
               "All attacks apply one instance of bleed (WHC flense)."
             ]
           },
@@ -814,7 +809,9 @@
           {
             "name": "Hungry Wind",
             "level": 30,
-            "changes": ["Also grants guaranteed critical strikes for the duration."]
+            "changes": [
+              "Each kill during the 10 seconds after leaving Infiltrate extends the movement speed, Power and pass-through by 1 second, up to 10 additional seconds."
+            ]
           }
         ]
       },
@@ -1092,7 +1089,6 @@
         "icon": "/images/saltzpyre/saltzpyre-zealot.webp",
         "passives": [
           "Ultimate (Holy Fervour): When used, converts all green HP to THP.",
-          "Fiery Faith: Victor converts damage taken into up to 20 Overhealth per teammate, damage taken by allies is first reduced by remaining Overhealth.",
           "Chasten (NEW): Grants 30% increased healing received."
         ],
         "talents": [
@@ -1107,7 +1103,7 @@
           {
             "name": "Unbending Purpose",
             "level": 10,
-            "changes": ["Changed to 5% Power + 15% Melee Power(from 20% melee power)."]
+            "changes": ["Changed to 10% Power + 10% Melee Power."]
           },
           {
             "name": "Holy Fortitude",
@@ -1115,22 +1111,20 @@
             "changes": ["Reduced increased healing per stack to 10% from 15%."]
           },
           {
-            "name": "Devotion",
-            "level": 25,
+            "name": "Crusade",
+            "level": 20,
             "changes": [
-              "Removes all movement speed penalties.",
-              "Knockback immunity to ranged projectiles and warpfire."
+              "Additionally grants a chance to avoid damage equal to the movement speed bonus.",
+              "Including Crusade (5% per Fiery Faith stack), Devotion (30% movement speed after taking damage), movement speed trinket (5%) and speed potions (50%) also add to this chance, up to 100%."
             ]
           },
           {
-            "name": "Redemption through Blood",
+            "name": "Devotion",
             "level": 25,
-            "changes": ["Additionally 5% melee damage per missing stamina point."]
-          },
-          {
-            "name": "Calloused Without and Within",
-            "level": 25,
-            "changes": ["Heart of Iron's cooldown reduced to 90 seconds (base is 120s)."]
+            "changes": [
+              " immune to slowing debuffs (bile, plague, fire, etc.).",
+              "Knockback immunity to ranged projectiles and warpfire."
+            ]
           }
         ]
       },
@@ -1152,11 +1146,6 @@
               "Replaced with 'Prayer of Flight':",
               "Provides the team with 10% increased movement speed."
             ]
-          },
-          {
-            "name": "Unyielding Blessing",
-            "level": 30,
-            "changes": ["Duration reduced by 30% (from 10 to 7 seconds)."]
           }
         ]
       }
@@ -1366,16 +1355,22 @@
             "level": 25,
             "changes": [
               "Abandon was moved to the passive Blood Magic.",
-              "Instantly explode when overcharging (non-lethal).",
+              "Instantly explode when overcharging (lethal).",
               "Same health loss as from Abandon (5%/0.25 seconds for 2.5 seconds).",
               "During the health loss can not cast spells with Staff.",
-              "Health loss can be cancelled early with ult."
+              "Health loss can be cancelled early with ult.",
+              "Overcharge explosions deal no friendly-fire."
             ]
           },
           {
             "name": "Bomb Balm",
             "level": 25,
             "changes": ["Removed AoE stagger from Bomb Balm."]
+          },
+          {
+            "name": "Natural Talent",
+            "level": 25,
+            "changes": ["Increased overcharge generation reduction to 20%."]
           }
         ]
       },

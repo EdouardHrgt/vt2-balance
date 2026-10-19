@@ -59,7 +59,7 @@ const balanceData = {
       'THP Talent Changes': [
         'THP from Bloodlust (Kill) gives more from the smaller rats whilst Monsters and Chaos Warriors give notably less.',
         'THP from Regrowth (Headshot/Crit) increased on headshot (from 1 to 3.5), crit (from 1 to 1.5), and headshot crit (from 2 to 4.5).',
-        'Mainstay: Melee hits apply 1 count for 2s, only accounted by mainstay and exclude lord and boss. Deal 40% more melee damage to staggered enemies, increased to 60% against enemies with more than 1 stagger effect.',
+        'Mainstay: Melee hits apply 1 count for 2s, only accounted by mainstay and only on elites. Deal 40% more melee damage to staggered enemies, increased to 60% against enemies with more than 1 stagger effect.',
         'Bulwark: Increases stagger power by 10%, Increases damage from all sources by 10% for 10s after staggering with any attack, Staggering an enemy also applies a stagger count lasting 10 seconds (Max 1 stacks).',
       ],
       'Traits and Properties': [
