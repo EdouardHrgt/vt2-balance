@@ -34,7 +34,10 @@
           {
             "name": "On Yer Feet Mates",
             "level": 30,
-            "changes": ["Additionally, cooldown resets when allies are knocked down."]
+            "changes": [
+              "Additionally, cooldown resets when allies are knocked down.",
+              "Double range for reviving players"
+            ]
           }
         ]
       },
@@ -68,7 +71,7 @@
         "icon": "/images/kruber/kruber-foot-knight.webp",
         "passives": [
           "CDR from Damage Taken: Decreased from 0.5 to 0.35.",
-          "Protective Presence: Aura DR increased from 10% to 15%, Range (radius) of Aura increased from 5 to 20.",
+          "Protective Presence: Aura DR increased from 10% to 15%, Range (radius) of Aura increased from 5 to 10.",
           "Valiant Charge (Career Ability): CD decreased from 40s to 30s, Cleave of baseline ult (not battering ram) increased by 100% (from 2 to 4), Ending explosion radius of baseline ult (not battering ram) increased by ~33%.",
           "Valiant Charge (Career Ability): Increased interrupt blast radius to 5 (form 3)."
         ],
@@ -101,7 +104,8 @@
             "name": "That's Bloody Teamwork",
             "level": 20,
             "changes": [
-              "Decreased damage reduction per nearby ally to 3.33% (from 5%) (to 10% from 15% at max stacks)."
+              "Decreased damage reduction per nearby ally to 3.33% (from 5%) (to 10% from 15% at max stacks).",
+              "Reduced range to 10 (from 20)"
             ]
           },
           {
@@ -109,7 +113,8 @@
             "level": 20,
             "changes": [
               "Closest player mode (green outline buff icon).",
-              "Press weapon inspect while blocking to guard specific team mate (red outline buff icon)."
+              "Press weapon inspect while blocking to guard specific team mate (red outline buff icon).",
+              "Reduced range to 10 (from 20)."
             ]
           },
           {
@@ -223,11 +228,12 @@
         "name": "Tuskgor Spear",
         "icon": "/images/kruber/weapons/tuskgorspear.webp",
         "changes": [
-          "Light 1: Non-crit Armor damage increased by 40%, Crit Armor Multiplier increased by 17.5%.",
-          "Light 2: Non-crit Infantry damage increased by 33.5%, Non-crit Armor damage increased by 80%, Crit Armor Multiplier increased by 12.5%, Non-crit Monster damage increased by 22.2%, Crit Monster Multiplier increased by 10%.",
-          "Light 3: Non-crit Berserker damage increased by 16%, Non-crit Super Armor damage added, Crit Super Armour Multiplier increased by 20%.",
-          "Light 4: Finesses Coefficient reduced by 53.4%, Non-crit Infantry damage increased by 100%, Non-crit Armor damage increased by 260%, Crit Infantry Multiplier increased by 80%, Crit Armor Multiplier increased by 100%, Non-crit Berserker damage increased by 120%, Non-crit Super Armor damage increased by 20%, Crit Super Armour Multiplier increased by 50%.",
-          "Heavy 1: Non-crit Infantry damage increased by 20.8%, Crit Infantry Multiplier increased by 13%, Non-crit Armor damage increased by 124%, Crit Armor Multiplier increased by 94%, Non-crit Super Armor damage increased by 124%, Crit Super Armor Multiplier increased by 94%."
+          "Light 1: Non-crit Armor damage increased by 40%, Crit Armor Multiplier increased by 17.5%, +5% crit chance.",
+          "Light 2: Non-crit Infantry damage increased by 33.5%, Non-crit Armor damage increased by 80%, Crit Armor Multiplier increased by 12.5%, Non-crit Monster damage increased by 22.2%, Crit Monster Multiplier increased by 10%, +10% crit chance.",
+          "Light 3: Non-crit Berserker damage increased by 16%, Non-crit Super Armor damage added, Crit Super Armour Multiplier increased by 20%, +15% crit chance.",
+          "Light 4: Finesses Coefficient reduced by 53.4%, Non-crit Infantry damage increased by 100%, Non-crit Armor damage increased by 260%, Crit Infantry Multiplier increased by 80%, Crit Armor Multiplier increased by 100%, Non-crit Berserker damage increased by 120%, Non-crit Super Armor damage increased by 20%, Crit Super Armour Multiplier increased by 50%, +20% crit chance.",
+          "Heavy 1: Non-crit Infantry damage increased by 20.8%, Crit Infantry Multiplier increased by 13%, Non-crit Armor damage increased by 124%, Crit Armor Multiplier increased by 94%, Non-crit Super Armor damage increased by 124%, Crit Super Armor Multiplier increased by 94%, +5% crit chance.",
+          "Heavy 2: +15% crit chance."
         ]
       },
       {
@@ -244,8 +250,11 @@
         "name": "Bretonnian Sword and Shield",
         "icon": "/images/kruber/weapons/bretonnianswordandshield.webp",
         "changes": [
-          "Charging heavy Overhead and Poke put you blocking state like Flail and Shield heavies.",
-          "Heavy Overhead and Poke can be charged indefinitely."
+          "Heavy Overhead and Poke can be charged indefinitely.",
+          "Light 1:",
+          "Light 2:",
+          "Light 3:",
+          "Heavies 1 & 3: Added blocking whilst charging the attack."
         ]
       },
       {
@@ -274,11 +283,11 @@
         "icon": "/images/kruber/weapons/halberd.webp",
         "changes": [
           "Overall, damage is increased and spread more evenly across attacks.",
-          "Light 1: Damage Cleave increased by ~45%, Non-Crit Infantry Damage increased by 25%, Damage on 2nd Target increased by 50%, Damage on 3rd Target increased by 50%.",
-          "Light 2: Damage increased by 25%, Non-Crit Armor Damage increased by 180%, Armor Crit Multiplier increased by 100%.",
-          "Light 3 and Push Attack: Finesse Coefficient increased by 50%, Headshot/Crit Curve changed from Smiter to Ninja (higher headshot or crit damage, but the same headshot crit damage), Non-Crit Armor and Super Armor Damage decreased by 5%, Armor and Super Armor Crit Multipliers decreased by 5%.",
-          "Heavy 1: Non-Crit Armor Damage increased by ~24%, Armor Crit Multiplier increased by 12%, Increased headshot and critical strike bonus damage by 40%.",
-          "Heavy 2: Damage increased by 38%, Non-Crit Infantry Damage increased by 15%, Increased headshot and critical strike bonus damage by 75% (boss headshots unaffected).",
+          "Light 1: Damage Cleave increased by ~45%, Non-Crit Infantry Damage increased by 25%, Damage on 2nd Target increased by 50%, Damage on 3rd Target increased by 50%, armoured damages decreased (crit & non-crit).",
+          "Light 2: Damage increased by 25%, damage against armoured decreased (crit & non-crit).",
+          "Light 3 and Push Attack: Finesse Coefficient increased by 50%, Headshot/Crit Curve changed from Smiter to Ninja (higher headshot or crit damage, but the same headshot crit damage), non-crit infantry / monster damages increased, armoured damages decreased  (crit & non-crit).",
+          "Heavy 1: Non-Crit Armor Damage increased by ~24%, Armor Crit Multiplier increased by 12%, Increased headshot and critical strike bonus damage by 40%,Finesse Coefficient reduced by 28.6%.",
+          "Heavy 2: Damage increased by 38%, Non-Crit Infantry Damage increased by 15%, Increased headshot and critical strike bonus damage by 75% (boss headshots unaffected), Finesse Coefficient reduced by 42.9%, Non-Crit Armour damage reduced by 64.2%.",
           "Increased push attack armor damage and crit damage by 64%."
         ]
       },
@@ -396,7 +405,9 @@
             "name": "Parting Gift",
             "level": 30,
             "changes": [
-              "Only dupes Engineer Bombs and 5% chance to drop an Engineer Bomb on special kill."
+              "Increased bomb drop chance to 12% (from 6%).",
+              "Bomb drops now replace ammo drops.",
+              "Free bomb buff can stack 3 times."
             ]
           },
           {
@@ -565,6 +576,11 @@
         "changes": [
           "Alt Fire: Damage Interval increased by 20%, Does not affect DoT, Target cap decreased from 50 enemies to 19 enemies."
         ]
+      },
+      {
+        "name": "Throwing Axes",
+        "icon": "/images/bardin/weapons/masterworkpistol.webp",
+        "changes": ["Light Throw: Increased animation speed by 25%.", "Charged throw: Increased animation speed by 25%.", "Reload: Increased animation by 20% and 50%."]
       },
       {
         "name": "Masterwork Pistol",
@@ -883,8 +899,8 @@
           "Light 2: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Berserker damage, Crit Infantry damage, Crit Berserker damage, Damage on 2nd Target, Stagger on 2nd Target, Stagger on 3rd Target, Stagger on 4th Target. Nerfs ➔ Non-crit Armour stagger, Crit Monster damage, Crit Armour stagger, Finesse coefficient on 1st Target, Strength Coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Damage on 4th Target, Damage on 5th Target and Beyond.",
           "Light 3: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Monster damage, Non-crit Berserker damage, Crit Berserker damage, Damage on 1st Target, Stagger on 1st Target, Damage on 2nd Target, Stagger on 2nd Target, Damage on 3rd Target, Stagger on 3rd Target, Damage on 4th Target, Stagger on 4th Target, Damage on 5th Target, Stagger on 5th Target, Damage on 6th Target and Beyond. Nerfs ➔ Crit Infantry damage, Crit Monster damage, Finesse coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Finesse coefficient on 5th Target.",
           "Light 4: Buffs ➔ Damage Cleave, Non-crit Infantry damage, Non-crit Monster damage, Non-crit Berserker damage, Crit Infantry damage, Crit Berserker damage, Damage on 1st Target, Stagger on 1st Target, Damage on 2nd Target, Stagger on 2nd Target, Damage on 3rd Target, Stagger on 3rd Target, Damage on 4th Target, Stagger on 4th Target, Damage on 5th Target, Stagger on 5th Target, Damage on 6th Target and Beyond. Nerfs ➔ Finesse coefficient on 1st Target, Finesse coefficient on 2nd Target, Finesse coefficient on 3rd Target, Finesse coefficient on 4th Target, Finesse coefficient on 5th Target.",
-          "Heavy 1: Buffs ➔ Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Damage Cleave, Stagger Cleave, Finesse coefficient on 1st Target, Non-crit Infantry damage, Non-crit Armour damage, Non-crit Berserker damage.",
-          "Heavy 2: Buffs ➔ Non-crit Infantry damage, Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Damage Cleave, Stagger Cleave, Non-crit Armour damage."
+          "Heavy 1: Buffs ➔ Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Finesse coefficient on 1st Target, Non-crit Infantry damage, Non-crit Armour damage, Non-crit Berserker damage.",
+          "Heavy 2: Buffs ➔ Non-crit Infantry damage, Crit Infantry damage, Crit Armour damage, Crit Berserker damage. Nerfs ➔ Non-crit Armour damage."
         ]
       },
       {
@@ -996,22 +1012,18 @@
             "level": 30,
             "changes": [
               "Headshotting enemies affected by Witch Hunt extends the duration of Animosity by 2 seconds.",
-              "Animosity's critical strike chance bonus decays by 1% per second after the first 6 seconds.",
-              "Animosity also grants an aura applying Witch Hunt and marking all enemies."
+              "Animosity's critical strike chance bonus decays by 1% per second after the first 6 seconds."
             ]
           },
           {
             "name": "Fervency",
             "level": 30,
-            "changes": [
-              "Increased duration to 10s.",
-              "Additionally Victors next 20 melee hits are guaranteed critical strikes."
-            ]
+            "changes": ["Increased duration to 8s."]
           },
           {
             "name": "The Unending Hunt",
             "level": 30,
-            "changes": ["Reduced crit chance granted to allies to 15% (from 25%)."]
+            "changes": ["Reduced crit chance granted to allies to 10% (from 25%)."]
           }
         ]
       },
@@ -1078,8 +1090,8 @@
             "name": "Indiscriminate Blast",
             "level": 30,
             "changes": [
-              "CDR increased from 25% to 60%.",
-              "Killing enemies with the ult no longer grants additional pellets to the next ult."
+              "Killing enemies with the ult no longer grants additional pellets to the next ult.",
+              "Pellets have massively increased cleave and stagger."
             ]
           }
         ]
@@ -1109,14 +1121,6 @@
             "name": "Holy Fortitude",
             "level": 20,
             "changes": ["Reduced increased healing per stack to 10% from 15%."]
-          },
-          {
-            "name": "Crusade",
-            "level": 20,
-            "changes": [
-              "Additionally grants a chance to avoid damage equal to the movement speed bonus.",
-              "Including Crusade (5% per Fiery Faith stack), Devotion (30% movement speed after taking damage), movement speed trinket (5%) and speed potions (50%) also add to this chance, up to 100%."
-            ]
           },
           {
             "name": "Devotion",
@@ -1291,11 +1295,6 @@
               "Stat change: Attack Speed ⇒ Melee Attack Speed.",
               "Hit Requirement: 4 ⇒ 1."
             ]
-          },
-          {
-            "name": "Kaboom",
-            "level": 30,
-            "changes": ["In addition, 20% CDR added."]
           }
         ]
       },
@@ -1343,7 +1342,10 @@
           {
             "name": "Numb to Pain",
             "level": 20,
-            "changes": ["Additionally triggers on damage taken."]
+            "changes": [
+              "Additionally triggers on damage taken.",
+              "Renamed to Numb to Flames to be discernable from Numb to Pain from Foot Knight."
+            ]
           },
           {
             "name": "Enfeebling Flames",
@@ -1371,6 +1373,16 @@
             "name": "Natural Talent",
             "level": 25,
             "changes": ["Increased overcharge generation reduction to 20%."]
+          },
+          {
+            "name": "Fuel For The Fire",
+            "level": 30,
+            "changes": ["Lowered power per stack to 3% (from 5%)."]
+          },
+          {
+            "name": "Bomb Balm",
+            "level": 30,
+            "changes": ["Lowered temp health granted to 15 (from 30)."]
           }
         ]
       },
@@ -1457,8 +1469,8 @@
         "icon": "/images/sienna/weapons/sword.webp",
         "changes": [
           "Dodge Count increased from 3 to 4.",
-          "Light 1 and 2: Damage increased by ~14%, Headshot/Crit Curve changed from Linesman to Ninja.",
-          "Light 3: Range increased by 20%, Shield Break added.",
+          "Light 1 and 2: Damage increased by ~14%, Headshot/Crit Curve changed from Linesman to Ninja, Non-Crit Infantry damage reduced by 30%, Crit Infantry multiplier reduced by 7%, Crit Armour multiplier reduced by 70.6%, Crit Berserker multiplier reduced by 32.5%.",
+          "Light 3: Range increased by 20%, Shield Break added, Non-Crit Armour damage reduced by 64.2%.",
           "Heavies: Damage Cleave decreased by ~33%, Stagger Cleave decreased by 25%, Damage on 1st Target increased by ~17%, Damage on 2nd Target increased by 75%, Non-Crit Armor Damage on 1st Target increased by 30%, Non-Crit Super Armor Damage on 1st Target increased by 30%, Non-Crit Monster Damage on 1st Target increased by 100%, Armor Crit Multiplier increased by 30%, Super Armor Crit Multiplier increased by 30%, Monster Crit Multiplier increased by 150%, Range increased by ~15%, Headshot/Crit Curve changed from Tank to Ninja, Finesse Coefficient decreased by 25%."
         ]
       },
